@@ -5,6 +5,8 @@ const countyInput = document.querySelector("#countyInput");
 const resultsTitle = document.querySelector("#resultsTitle");
 const resultsHint = document.querySelector("#resultsHint");
 const resultLinks = document.querySelector("#resultLinks");
+const navToggle = document.querySelector(".nav-toggle");
+const mainNav = document.querySelector("#mainNav");
 
 const clean = (value) => value.trim().replace(/\s+/g, " ");
 const query = (...parts) => encodeURIComponent(parts.filter(Boolean).join(" "));
@@ -63,17 +65,33 @@ function renderLinks(city, state, county) {
   });
 }
 
-lawForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const city = clean(cityInput.value);
-  const state = clean(stateInput.value).toUpperCase();
-  const county = clean(countyInput.value);
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
-  if (!city || !state) {
-    return;
-  }
+  mainNav.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) {
+      mainNav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
-  renderLinks(city, state, county);
-});
+if (lawForm) {
+  lawForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const city = clean(cityInput.value);
+    const state = clean(stateInput.value).toUpperCase();
+    const county = clean(countyInput.value);
 
-renderLinks("Austin", "TX", "Travis");
+    if (!city || !state) {
+      return;
+    }
+
+    renderLinks(city, state, county);
+  });
+
+  renderLinks("Austin", "TX", "Travis");
+}
