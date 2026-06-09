@@ -201,6 +201,12 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.button.secondary-dark {
+  border-color: var(--line);
+  color: var(--leaf-dark);
+  background: var(--field);
+}
+
 .section {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -556,6 +562,81 @@ a {
   margin-bottom: 6px;
 }
 
+.tier-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tier-summary article {
+  padding: 22px;
+  background: var(--field);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 32px rgba(40, 38, 28, 0.06);
+}
+
+.tier-summary span,
+.shopping-card span {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.tier-summary h2,
+.shopping-card h3 {
+  margin: 8px 0;
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+.tier-summary h2 {
+  font-size: 1.35rem;
+}
+
+.tier-summary p,
+.shopping-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.supplies-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.64fr) minmax(340px, 1.36fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+.shopping-list {
+  display: grid;
+  gap: 14px;
+}
+
+.shopping-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #cad9d7;
+  border-radius: var(--radius);
+}
+
+.shopping-card.priority {
+  border-color: var(--gold);
+  box-shadow: 0 16px 42px rgba(40, 38, 28, 0.09);
+}
+
+.shopping-card.cold-weather {
+  background: #f8fbfb;
+}
+
+.shopping-card p {
+  margin: 0;
+}
+
 .site-footer {
   padding: 28px clamp(20px, 5vw, 64px);
   background: var(--leaf-dark);
@@ -630,7 +711,9 @@ a {
   .two-column,
   .law-layout,
   .next-steps,
-  .guide-layout {
+  .guide-layout,
+  .tier-summary,
+  .supplies-layout {
     grid-template-columns: 1fr;
   }
 
@@ -642,6 +725,10 @@ a {
 
   .guide-nav {
     position: static;
+  }
+
+  .shopping-card {
+    grid-template-columns: 1fr;
   }
 
   .setup-table,

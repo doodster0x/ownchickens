@@ -9,6 +9,7 @@ The beginner's guide to backyard laying hens.
 - `housing.html` — coop, run, and predator-proofing guide
 - `feeding.html` — feed, water, grit, and treat basics
 - `care.html` — daily and weekly care routine
+- `supplies.html` — tiered infrastructure list and T1 Amazon starter setup
 - `styles.css` — shared site styling
 - `script.js` — mobile nav and local-law search link builder
 - `favicon.svg` — site icon
