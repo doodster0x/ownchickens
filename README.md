@@ -5,11 +5,14 @@ The beginner's guide to backyard laying hens.
 ## Structure
 
 - `index.html` — homepage
+- `starthere.html` — guided beginner on ramp
 - `breeds.html` — beginner breed selection guide
 - `housing.html` — coop, run, and predator-proofing guide
 - `feeding.html` — feed, water, grit, and treat basics
 - `care.html` — daily and weekly care routine
 - `supplies.html` — infrastructure lists and Convenience List Amazon starter setup
+- `laws.html` — local law finder page
+- `flock.html` — flock sourcing page
 - `styles.css` — shared site styling
 - `script.js` — mobile nav and local-law search link builder
 - `favicon.svg` — site icon
@@ -21,6 +24,4 @@ This site is hosted on GitHub Pages. Push to `main` and changes go live automati
 
 ## Adding pages
 
-Add new `.html` files to the root for each guide section:
-- `laws.html`
-- `sourcing.html`
+Add new `.html` files to the root for each guide section.
