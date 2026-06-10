@@ -29,6 +29,7 @@ Add new `.html` files to the root for each guide section.
 ## Future Todo
 
 - Rebuild the public roadmap later as a more useful planning or coming-soon section.
+- Build a real budget setup guide with salvage and local sourcing, material lists, rough costs, tradeoffs, and what not to cheap out on.
 - Include affiliate-ready product review pages by category.
 - Include a cheap setup calculator with low, middle, and premium tiers.
 - Include city law pages for high-traffic areas, each with source dates and official links.
