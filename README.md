@@ -25,3 +25,11 @@ This site is hosted on GitHub Pages. Push to `main` and changes go live automati
 ## Adding pages
 
 Add new `.html` files to the root for each guide section.
+
+## Future Todo
+
+- Rebuild the public roadmap later as a more useful planning or coming-soon section.
+- Include affiliate-ready product review pages by category.
+- Include a cheap setup calculator with low, middle, and premium tiers.
+- Include city law pages for high-traffic areas, each with source dates and official links.
+- Consider email capture for users who want an ordinance checked before they buy supplies.
