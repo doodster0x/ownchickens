@@ -35,7 +35,7 @@
         <div class="section-heading">
           <p class="eyebrow">Local laws</p>
           <h1>Check the rules before you buy birds</h1>
-          <p>Start with your city and county. Confirm flock limits, rooster rules, coop setbacks, permits, and nuisance rules before spending money.</p>
+          <p>Start with your city or town and ZIP code. Confirm flock limits, rooster rules, coop setbacks, permits, forms, and nuisance rules before spending money.</p>
         </div>
       </section>
 
@@ -45,32 +45,28 @@
             <p class="eyebrow">Rule finder</p>
             <h2>Find backyard chicken laws and permits near you</h2>
             <p>
-              Enter a city, state, and optional county. The tool builds search links focused on official municipal,
-              county, code library, and agriculture extension sources.
+              Enter your city or town and ZIP code. If the database has a match, it shows direct official links for laws,
+              prerequisites, flock limits, permits, and forms. If not, it builds official-source searches.
             </p>
           </div>
 
           <div>
             <form class="law-form" id="lawForm">
               <label>
-                City
-                <input id="cityInput" name="city" autocomplete="address-level2" placeholder="Austin" required />
+                City or town
+                <input id="cityInput" name="city" autocomplete="address-level2" placeholder="Madison" required />
               </label>
               <label>
-                State
-                <input id="stateInput" name="state" autocomplete="address-level1" placeholder="TX" required />
+                ZIP code
+                <input id="zipInput" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" placeholder="53703" required />
               </label>
-              <label>
-                County <span>optional</span>
-                <input id="countyInput" name="county" placeholder="Travis" />
-              </label>
-              <button class="button primary" type="submit">Build law links</button>
+              <button class="button primary" type="submit">Find local rules</button>
             </form>
 
             <div class="results-panel" aria-live="polite">
               <div class="results-heading">
                 <h3 id="resultsTitle">Try your location</h3>
-                <p id="resultsHint">Good searches include backyard chickens, hens, livestock, animals, fowl, setbacks, and permit.</p>
+                <p id="resultsHint">Database coverage is starting small. Always verify your exact address with the official city, town, or county office.</p>
               </div>
               <div class="result-links" id="resultLinks"></div>
             </div>

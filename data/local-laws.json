@@ -1,0 +1,91 @@
+[
+  {
+    "id": "madison-wi",
+    "city": "Madison",
+    "state": "WI",
+    "zipCodes": ["53703", "53704", "53705", "53711", "53713", "53714", "53715", "53716", "53717", "53718", "53719", "53726"],
+    "aliases": ["madison"],
+    "sourceLastChecked": "2026-06-11",
+    "summary": "City of Madison allows up to 8 chickens with a city chicken license. Roosters and on-site slaughter are prohibited.",
+    "chickenLimit": "Up to 8 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "City chicken license required",
+    "prerequisites": [
+      "Apply within 30 days of getting chickens and renew before January 1 each year.",
+      "Complete required property or resident notifications when applicable.",
+      "Register with Wisconsin DATCP livestock premises registration before submitting the city license application."
+    ],
+    "rules": [
+      "Chickens must have a covered enclosure and stay in the covered or fenced enclosure.",
+      "The enclosure must be at least 25 feet from any residential structure on an adjacent lot.",
+      "The Zoning Administrator may revoke a license after repeated ordinance violations."
+    ],
+    "links": [
+      {
+        "label": "City of Madison chicken license page",
+        "detail": "Official city instructions, prerequisites, license process, and chicken rules.",
+        "href": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens"
+      },
+      {
+        "label": "Chicken license application PDF",
+        "detail": "Printable Madison chicken license application.",
+        "href": "https://www.cityofmadison.com/dpced/building-inspection/documents/ChickenLicenseApplication.pdf"
+      },
+      {
+        "label": "Notification form PDF",
+        "detail": "Use when notification is required for your property type.",
+        "href": "https://www.cityofmadison.com/dpced/building-inspection/documents/ChickenNotificationForm.pdf"
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration step referenced by Madison before the city license application.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ]
+  },
+  {
+    "id": "milwaukee-wi",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zipCodes": ["53202", "53203", "53204", "53205", "53206", "53207", "53208", "53209", "53210", "53211", "53212", "53213", "53214", "53215", "53216", "53217", "53218", "53219", "53220", "53221", "53222", "53223", "53224", "53225", "53226", "53227", "53228", "53233"],
+    "aliases": ["milwaukee"],
+    "sourceLastChecked": "2026-06-11",
+    "summary": "City of Milwaukee allows up to 4 chickens on a residential premise with a permit. Roosters and slaughter are prohibited.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Chicken keeping permit required",
+    "prerequisites": [
+      "Complete the DNS-362 Chicken Coop Site Plan form.",
+      "Submit the site plan and permit fee to the Department of Neighborhood Services.",
+      "DNS notifies directly or diagonally abutting property owners before a permit is issued."
+    ],
+    "rules": [
+      "Residential premises only; commercial and mixed-use occupancies are not eligible.",
+      "Coop and yard together must provide at least 16 square feet per chicken.",
+      "Coops cannot be taller than 10 feet or exceed 50 square feet.",
+      "Enclosures must be at least 25 feet from any residential structure on an adjacent lot and cannot be in the front yard."
+    ],
+    "links": [
+      {
+        "label": "City of Milwaukee chicken keeping page",
+        "detail": "Official city permit process, rules, fee note, and contact information.",
+        "href": "https://city.milwaukee.gov/chickenkeeping"
+      },
+      {
+        "label": "Chicken Coop Site Plan form PDF",
+        "detail": "DNS-362 site plan form required for Milwaukee chicken permits.",
+        "href": "https://city.milwaukee.gov/ImageLibrary/Groups/dnsAuthors/Environmental/images/DNS-362_CoopSitePlanV4wb.pdf"
+      },
+      {
+        "label": "Milwaukee chicken keeping ordinance PDF",
+        "detail": "Official ordinance text for keeping chickens in the city.",
+        "href": "https://city.milwaukee.gov/ImageLibrary/Groups/dnsAuthors/Animals/Chickens/78-6.5KeepingofChickensintheCity.pdf"
+      },
+      {
+        "label": "Chicken keeping brochure PDF",
+        "detail": "City brochure summarizing application steps, chicken limits, and coop rules.",
+        "href": "https://city.milwaukee.gov/DNS-361_V6aChickenBrochurewb.pdf"
+      }
+    ]
+  }
+]

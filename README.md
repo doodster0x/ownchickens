@@ -15,6 +15,7 @@ The beginner's guide to backyard laying hens.
 - `flock.html` — flock sourcing page
 - `styles.css` — shared site styling
 - `script.js` — mobile nav and local-law search link builder
+- `data/local-laws.json` — starter local chicken-law database for lookup results
 - `favicon.svg` — site icon
 - `CNAME` — custom domain for GitHub Pages
 
