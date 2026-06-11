@@ -33,4 +33,4 @@ Add new `.html` files to the root for each guide section.
 - Include affiliate-ready product review pages by category.
 - Include a cheap setup calculator with low, middle, and premium tiers.
 - Include city law pages for high-traffic areas, each with source dates and official links.
-- Consider email capture for users who want an ordinance checked before they buy supplies.
+- Add email capture for users who want ordinance help before buying supplies, likely framed as "get help checking your local rules" or "get the starter checklist."
