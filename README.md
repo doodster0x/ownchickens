@@ -5,7 +5,6 @@ The beginner's guide to backyard laying hens.
 ## Structure
 
 - `index.html` — homepage
-- `starthere.html` — guided beginner on ramp
 - `breeds.html` — beginner breed selection guide
 - `housing.html` — coop, run, and predator-proofing guide
 - `feeding.html` — feed, water, grit, and treat basics
