@@ -1,7 +1,8 @@
 """Generate one page per city in data/local-laws.json at laws/<id>.html.
 
 Only add cities whose rules you verified on official sources, with links and
-a sourceLastChecked date. Then run:
+a sourceLastChecked date. This script also refreshes the city cards on
+laws.html (between the city-cards markers). Then run:
 
   python3 tools/build_city_pages.py && python3 tools/sync_layout.py \
     && python3 tools/build_sitemap.py && python3 tools/check_site.py
@@ -141,6 +142,28 @@ def main() -> None:
         with open(os.path.join(layout.ROOT_DIR, rec["page"]), "w", encoding="utf-8") as fh:
             fh.write(city_page(rec, recs))
     print(f"Built {len(recs)} city pages")
+    refresh_laws_cards(recs)
+
+
+def refresh_laws_cards(records) -> None:
+    """Rebuild the city cards block on laws.html from the same data."""
+    path = os.path.join(layout.ROOT_DIR, "laws.html")
+    start, end = "<!-- city-cards:start -->", "\n          <!-- city-cards:end -->"
+    with open(path, encoding="utf-8") as fh:
+        html = fh.read()
+    if start not in html or end not in html:
+        print("laws.html: city-cards markers not found, skipped")
+        return
+    cards = "".join(
+        f'\n          <a class="link-card" href="{r["page"]}"><span>{r["state"]} &middot; checked {r["sourceLastChecked"]}</span>'
+        f'<strong>{esc(r["city"])}</strong><small>{esc(r["chickenLimit"])}. {esc(r["roosterRule"])}. '
+        f'{esc(r["permitRequired"].split(";")[0].split("(")[0].strip())}.</small></a>'
+        for r in records
+    )
+    a, b = html.index(start) + len(start), html.index(end)
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(html[:a] + cards + html[b:])
+    print(f"laws.html: {len(records)} city cards")
 
 
 if __name__ == "__main__":
