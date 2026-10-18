@@ -64,10 +64,18 @@
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header" aria-label="Primary">
-      <a class="brand" href="index.html" aria-label="Own Chickens home"><span class="brand-mark" aria-hidden="true">OC</span><span>Own Chickens</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <a class="brand" href="index.html" aria-label="Own Chickens home">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>Own Chickens</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span><span class="sr-only">Menu</span>
+      </button>
       <nav class="nav-links" id="mainNav" aria-label="Main navigation">
-        <a href="supplies.html">See Starter Supplies</a><a href="breeds.html">Breeds</a><a href="housing.html">Housing</a><a href="feeding.html" aria-current="page">Feeding</a><a href="care.html">Daily Care</a><a href="laws.html">Local Laws</a><a class="nav-cta" href="flock.html">Get Your Flock</a>
+        <a href="supplies.html">See Starter Supplies</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="laws.html">Local Laws</a>
+        <a href="flock.html" class="nav-cta">Get Your Flock</a>
       </nav>
     </header>
 
@@ -104,11 +112,53 @@
             <h2>Store feed like it attracts pests, because it does</h2>
             <p>Use a sealed bin, keep bags dry, and clean spilled feed. Rodents are easier to prevent than remove once they learn the coop is a buffet.</p>
           </article>
+          <section class="signup" aria-labelledby="signup-feeding-title">
+        <div class="signup-copy">
+          <p class="eyebrow">Free starter checklist</p>
+          <h2 id="signup-feeding-title">Get the free First-Year Chicken Starter Checklist</h2>
+          <p>One printable page covering rules, setup, supplies, and the first month of care. Join the list for the checklist plus occasional seasonal reminders. No spam, unsubscribe anytime.</p>
+        </div>
+        <form class="signup-form" data-signup data-source="feeding" action="checklist.html" method="get" novalidate>
+          <label for="signup-feeding-email">Email address</label>
+          <div class="signup-row">
+            <input id="signup-feeding-email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required data-signup-email />
+            <button class="button primary" type="submit">Send me the checklist</button>
+          </div>
+          <p class="signup-status" role="status" aria-live="polite" data-signup-status></p>
+          <p class="signup-fine">Prefer not to sign up? <a href="checklist.html">Open the printable checklist</a> anytime. See our <a href="privacy.html">privacy notes</a>.</p>
+        </form>
+      </section>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><div><p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p><nav aria-label="Footer navigation"><a href="supplies.html">See Starter Supplies</a><a href="breeds.html">Breeds</a><a href="housing.html">Housing</a><a href="feeding.html">Feeding</a><a href="care.html">Daily Care</a></nav></div></footer>
+    <footer class="site-footer">
+      <div>
+        <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
+        <div class="footer-columns">
+          <nav aria-label="Learn">
+            <h2>Learn</h2>
+            <a href="breeds.html">Breeds</a>
+            <a href="housing.html">Housing</a>
+            <a href="feeding.html" aria-current="page">Feeding</a>
+            <a href="care.html">Daily Care</a>
+          </nav>
+          <nav aria-label="Plan and buy">
+            <h2>Plan and buy</h2>
+            <a href="supplies.html">See Starter Supplies</a>
+            <a href="supplies.html#budget-list">The Budget List</a>
+            <a href="checklist.html">Starter Checklist</a>
+            <a href="flock.html">Get Your Flock</a>
+          </nav>
+          <nav aria-label="More">
+            <h2>More</h2>
+            <a href="laws.html">Local Laws</a>
+            <a href="privacy.html">Privacy and Disclosures</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

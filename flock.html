@@ -54,11 +54,8 @@
       <nav class="nav-links" id="mainNav" aria-label="Main navigation">
         <a href="supplies.html">See Starter Supplies</a>
         <a href="breeds.html">Breeds</a>
-        <a href="housing.html">Housing</a>
-        <a href="feeding.html">Feeding</a>
-        <a href="care.html">Daily Care</a>
         <a href="laws.html">Local Laws</a>
-        <a class="nav-cta" href="flock.html" aria-current="page">Get Your Flock</a>
+        <a href="flock.html" class="nav-cta" aria-current="page">Get Your Flock</a>
       </nav>
     </header>
 
@@ -92,6 +89,22 @@
             <h2>Bring birds home after setup</h2>
             <p>Have the coop, run, feed, water, bedding, and local approval ready first. Birds are easy when the system is ready before they arrive.</p>
           </article>
+          <section class="signup" aria-labelledby="signup-flock-title">
+        <div class="signup-copy">
+          <p class="eyebrow">Free starter checklist</p>
+          <h2 id="signup-flock-title">Get the free First-Year Chicken Starter Checklist</h2>
+          <p>One printable page covering rules, setup, supplies, and the first month of care. Join the list for the checklist plus occasional seasonal reminders. No spam, unsubscribe anytime.</p>
+        </div>
+        <form class="signup-form" data-signup data-source="flock" action="checklist.html" method="get" novalidate>
+          <label for="signup-flock-email">Email address</label>
+          <div class="signup-row">
+            <input id="signup-flock-email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required data-signup-email />
+            <button class="button primary" type="submit">Send me the checklist</button>
+          </div>
+          <p class="signup-status" role="status" aria-live="polite" data-signup-status></p>
+          <p class="signup-fine">Prefer not to sign up? <a href="checklist.html">Open the printable checklist</a> anytime. See our <a href="privacy.html">privacy notes</a>.</p>
+        </form>
+      </section>
         </div>
       </section>
     </main>
@@ -99,15 +112,30 @@
     <footer class="site-footer">
       <div>
         <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
-        <nav aria-label="Footer navigation">
-          <a href="supplies.html">See Starter Supplies</a>
-          <a href="breeds.html">Breeds</a>
-          <a href="housing.html">Housing</a>
-          <a href="feeding.html">Feeding</a>
-          <a href="care.html">Daily Care</a>
-        </nav>
+        <div class="footer-columns">
+          <nav aria-label="Learn">
+            <h2>Learn</h2>
+            <a href="breeds.html">Breeds</a>
+            <a href="housing.html">Housing</a>
+            <a href="feeding.html">Feeding</a>
+            <a href="care.html">Daily Care</a>
+          </nav>
+          <nav aria-label="Plan and buy">
+            <h2>Plan and buy</h2>
+            <a href="supplies.html">See Starter Supplies</a>
+            <a href="supplies.html#budget-list">The Budget List</a>
+            <a href="checklist.html">Starter Checklist</a>
+            <a href="flock.html" aria-current="page">Get Your Flock</a>
+          </nav>
+          <nav aria-label="More">
+            <h2>More</h2>
+            <a href="laws.html">Local Laws</a>
+            <a href="privacy.html">Privacy and Disclosures</a>
+          </nav>
+        </div>
       </div>
     </footer>
+    <script src="site-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
