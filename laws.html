@@ -97,13 +97,62 @@
             <div class="results-panel" aria-live="polite" aria-atomic="true">
               <div class="results-heading">
                 <h3 id="resultsTitle">Try your location</h3>
-                <p id="resultsHint">Database coverage is starting small. Always verify your exact address with the official city, town, or county office.</p>
+                <p id="resultsHint">We have verified rules for a growing list of cities. Always verify your exact address with the official city, town, or county office.</p>
               </div>
               <div class="result-links" id="resultLinks"></div>
             </div>
           </div>
         </div>
       </section>
+<!-- city-list:start -->
+      <section class="section section-tight" id="cities" aria-labelledby="cities-title">
+        <div class="section-heading">
+          <p class="eyebrow">Verified cities</p>
+          <h2 id="cities-title">Cities with checked chicken rules</h2>
+          <p>Each city page summarizes the official rules in plain language, links the source documents, and shows the date we last checked. We only list cities we could verify on official city sources. Wisconsin cities come first, with more on the way.</p>
+        </div>
+        <div class="card-grid" style="margin-top:20px">
+          <a class="link-card" href="laws/madison-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Madison</strong><small>Up to 8 chickens. Roosters prohibited. City chicken license required.</small></a>
+          <a class="link-card" href="laws/milwaukee-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Milwaukee</strong><small>Up to 4 chickens. Roosters prohibited. Chicken keeping permit required.</small></a>
+          <a class="link-card" href="laws/green-bay-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Green Bay</strong><small>Up to 5 hens. Roosters prohibited. Annual hen license from the City Clerk.</small></a>
+          <a class="link-card" href="laws/appleton-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Appleton</strong><small>Up to 6 chickens (hens only). Roosters not allowed (the rules define chickens as hens only). Annual Health Department permit.</small></a>
+          <a class="link-card" href="laws/eau-claire-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Eau Claire</strong><small>Up to 5 poultry (hens; quail included). Roosters, cocks, and drakes prohibited. Annual poultry license.</small></a>
+          <a class="link-card" href="laws/la-crosse-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>La Crosse</strong><small>Up to 8 chickens. Roosters prohibited. Annual chicken license.</small></a>
+          <a class="link-card" href="laws/oshkosh-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Oshkosh</strong><small>Up to 6 chickens and/or ducks per residential lot. The permit covers hens; confirm rooster rules in Chapter 6 of the Municipal Code. Annual permit.</small></a>
+          <a class="link-card" href="laws/kenosha-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Kenosha</strong><small>Up to 4 chickens. Roosters prohibited. Annual license.</small></a>
+          <a class="link-card" href="laws/columbus-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Columbus</strong><small>Up to 4 chickens. Roosters prohibited. Annual license via the City Clerk.</small></a>
+          <a class="link-card" href="laws/janesville-wi.html"><span>WI &middot; checked 2026-10-18</span><strong>Janesville</strong><small>Up to 4 hens or 4 female ducks (not both). Roosters and drakes prohibited. Annual residential chicken or duck premises permit.</small></a>
+          <a class="link-card" href="laws/minneapolis-mn.html"><span>MN &middot; checked 2026-10-18</span><strong>Minneapolis</strong><small>Permit fee tiers cover 1-6, 7-15, and 16-30 birds. Separate rooster permit fee ($110); neighbor consent required. Annual fowl permit: $32 for 1-6 birds, $58 for 7-15, $84 for 16-30.</small></a>
+          <a class="link-card" href="laws/saint-paul-mn.html"><span>MN &middot; checked 2026-10-18</span><strong>Saint Paul</strong><small>Up to 15 hens (Tier One: 1-6, Tier Two: 7-15). Roosters prohibited. Tier One: $26 initial, $16 annual renewal. Tier Two: $76 initial, $28 annual renewal.</small></a>
+        </div>
+      </section>
+
+      <section class="section section-tight guide-layout" aria-label="How we check local laws">
+        <nav class="guide-nav" aria-label="Related guides">
+          <a href="flock.html">Get your flock</a>
+          <a href="housing.html">Coop size</a>
+          <a href="cost-calculator.html">Cost calculator</a>
+          <a href="checklist.html">Starter checklist</a>
+        </nav>
+        <div class="guide-content">
+          <article class="guide-card">
+            <h2>How we check</h2>
+            <ul>
+              <li>We read the city's own pages, ordinances, applications, and fact sheets, and link every source we use.</li>
+              <li>We record the date we last checked. Fees and rules change, so treat older dates with extra care.</li>
+              <li>We do not guess. If a rule is unclear on official sources, we say so and point you to the ordinance.</li>
+              <li>City rules apply inside city limits only. Villages, towns, townships, and counties have their own rules, and HOAs or leases can be stricter.</li>
+            </ul>
+          </article>
+          <article class="guide-card" id="correction">
+            <h2>Report a correction or request a city</h2>
+            <p>Found a rule that changed, or want your city added? Send the official source link and we will check it.</p>
+            <p><a class="button secondary-dark" href="https://github.com/doodster0x/ownchickens/issues/new?title=Law%20correction%20or%20city%20request&amp;body=City%20and%20state%3A%0A%0AOfficial%20source%20link%3A%0A%0AWhat%20changed%3A%0A" data-correction="local rules" target="_blank" rel="noopener">Report a correction</a></p>
+          </article>
+        </div>
+      </section>
+      <!-- city-list:end -->
+
       <section class="signup" aria-labelledby="signup-laws-title">
         <div class="signup-copy">
           <p class="eyebrow">Free starter checklist</p>

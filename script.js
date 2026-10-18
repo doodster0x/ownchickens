@@ -306,6 +306,16 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
+function setupCorrectionLinks() {
+  const email = ((CONFIG.corrections || {}).email || "").trim();
+  if (!email) return;
+  document.querySelectorAll("a[data-correction]").forEach((link) => {
+    link.href = `mailto:${email}?subject=${encodeURIComponent(`Law correction: ${link.dataset.correction}`)}`;
+    link.removeAttribute("target");
+  });
+}
+
 setupSignupForms();
+setupCorrectionLinks();
 setupAmazonLinks();
 setupAnalytics();

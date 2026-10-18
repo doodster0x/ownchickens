@@ -3,22 +3,42 @@
     "id": "madison-wi",
     "city": "Madison",
     "state": "WI",
-    "zipCodes": ["53703", "53704", "53705", "53711", "53713", "53714", "53715", "53716", "53717", "53718", "53719", "53726"],
-    "aliases": ["madison"],
-    "sourceLastChecked": "2026-06-11",
-    "summary": "City of Madison allows up to 8 chickens with a city chicken license. Roosters and on-site slaughter are prohibited.",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53703",
+      "53704",
+      "53705",
+      "53711",
+      "53713",
+      "53714",
+      "53715",
+      "53716",
+      "53717",
+      "53718",
+      "53719",
+      "53726"
+    ],
+    "zipPrefixes": [
+      "537"
+    ],
+    "aliases": [
+      "madison",
+      "city of madison"
+    ],
+    "summary": "City of Madison allows up to 8 chickens with a city chicken license on lots with up to four dwelling units. Roosters and on-site slaughter are prohibited.",
     "chickenLimit": "Up to 8 chickens",
     "roosterRule": "Roosters prohibited",
-    "permitRequired": "City chicken license required",
+    "permitRequired": "City chicken license required ($10 by mail per the city page)",
     "prerequisites": [
-      "Apply within 30 days of getting chickens and renew before January 1 each year.",
-      "Complete required property or resident notifications when applicable.",
-      "Register with Wisconsin DATCP livestock premises registration before submitting the city license application."
+      "Apply within 30 days of getting chickens and renew before January 1 each year (license year runs January 1 to December 31).",
+      "Complete required notifications when you rent, live in a two- to four-unit building, or keep chickens at a museum, school, or day care. Owner-occupied single-family homes do not need to notify.",
+      "Register with the Wisconsin DATCP Livestock Premises Registration program (free) before submitting the city license application."
     ],
     "rules": [
-      "Chickens must have a covered enclosure and stay in the covered or fenced enclosure.",
+      "Chickens must have a covered enclosure and stay in the covered or fenced enclosure at all times.",
       "The enclosure must be at least 25 feet from any residential structure on an adjacent lot.",
-      "The Zoning Administrator may revoke a license after repeated ordinance violations."
+      "Keeping chickens is allowed as an accessory use on lots with up to four dwelling units, and at museums, schools, or day care centers.",
+      "The Zoning Administrator may revoke a license after three or more chicken-ordinance violations in six months."
     ],
     "links": [
       {
@@ -38,37 +58,75 @@
       },
       {
         "label": "Wisconsin livestock premises registration",
-        "detail": "State registration step referenced by Madison before the city license application.",
+        "detail": "State registration step required before the city license application.",
         "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
       }
-    ]
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/madison-wi.html"
   },
   {
     "id": "milwaukee-wi",
     "city": "Milwaukee",
     "state": "WI",
-    "zipCodes": ["53202", "53203", "53204", "53205", "53206", "53207", "53208", "53209", "53210", "53211", "53212", "53213", "53214", "53215", "53216", "53217", "53218", "53219", "53220", "53221", "53222", "53223", "53224", "53225", "53226", "53227", "53228", "53233"],
-    "aliases": ["milwaukee"],
-    "sourceLastChecked": "2026-06-11",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53202",
+      "53203",
+      "53204",
+      "53205",
+      "53206",
+      "53207",
+      "53208",
+      "53209",
+      "53210",
+      "53211",
+      "53212",
+      "53213",
+      "53214",
+      "53215",
+      "53216",
+      "53217",
+      "53218",
+      "53219",
+      "53220",
+      "53221",
+      "53222",
+      "53223",
+      "53224",
+      "53225",
+      "53226",
+      "53227",
+      "53228",
+      "53233"
+    ],
+    "zipPrefixes": [
+      "532"
+    ],
+    "aliases": [
+      "milwaukee",
+      "city of milwaukee"
+    ],
     "summary": "City of Milwaukee allows up to 4 chickens on a residential premise with a permit. Roosters and slaughter are prohibited.",
     "chickenLimit": "Up to 4 chickens",
     "roosterRule": "Roosters prohibited",
-    "permitRequired": "Chicken keeping permit required",
+    "permitRequired": "Chicken keeping permit required (one-time fee; $35.56 per the city page)",
     "prerequisites": [
       "Complete the DNS-362 Chicken Coop Site Plan form.",
-      "Submit the site plan and permit fee to the Department of Neighborhood Services.",
-      "DNS notifies directly or diagonally abutting property owners before a permit is issued."
+      "Mail the site plan and a check or money order for the one-time fee to the Department of Neighborhood Services. Cash is not accepted.",
+      "DNS notifies the owners of the property and of directly or diagonally abutting properties, including across an alley, before a permit is issued."
     ],
     "rules": [
       "Residential premises only; commercial and mixed-use occupancies are not eligible.",
       "Coop and yard together must provide at least 16 square feet per chicken.",
-      "Coops cannot be taller than 10 feet or exceed 50 square feet.",
-      "Enclosures must be at least 25 feet from any residential structure on an adjacent lot and cannot be in the front yard."
+      "Coops cannot be taller than 10 feet or exceed 50 square feet, and must be raised or on a hard surface.",
+      "Enclosures must be at least 25 feet from any residential structure on an adjacent lot and cannot be in the front yard.",
+      "Unusual illness or death of chickens must be reported to the Health Department."
     ],
     "links": [
       {
         "label": "City of Milwaukee chicken keeping page",
-        "detail": "Official city permit process, rules, fee note, and contact information.",
+        "detail": "Official city permit process, rules, fee, and contact information.",
         "href": "https://city.milwaukee.gov/chickenkeeping"
       },
       {
@@ -78,7 +136,7 @@
       },
       {
         "label": "Milwaukee chicken keeping ordinance PDF",
-        "detail": "Official ordinance text for keeping chickens in the city.",
+        "detail": "Official ordinance text (78-6.5) for keeping chickens in the city.",
         "href": "https://city.milwaukee.gov/ImageLibrary/Groups/dnsAuthors/Animals/Chickens/78-6.5KeepingofChickensintheCity.pdf"
       },
       {
@@ -86,6 +144,486 @@
         "detail": "City brochure summarizing application steps, chicken limits, and coop rules.",
         "href": "https://city.milwaukee.gov/DNS-361_V6aChickenBrochurewb.pdf"
       }
-    ]
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/milwaukee-wi.html"
+  },
+  {
+    "id": "green-bay-wi",
+    "city": "Green Bay",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "543"
+    ],
+    "aliases": [
+      "green bay",
+      "city of green bay"
+    ],
+    "summary": "City of Green Bay allows up to 5 hens, with no roosters, under an annual hen license from the City Clerk. One license per parcel.",
+    "chickenLimit": "Up to 5 hens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Annual hen license from the City Clerk (fee per city fee schedule)",
+    "prerequisites": [
+      "Get a license on or before the date a hen turns 20 weeks old, and renew each year (licenses expire December 31; the city asks you to renew 30 days early).",
+      "Bring the completed application, the license fee from the City Fee Schedule, and a copy of a valid photo ID to the City Clerk's Office, Room 106, City Hall.",
+      "A late fee applies if you do not license before April 1, within 30 days of getting a licensable hen, or before a hen reaches licensable age."
+    ],
+    "rules": [
+      "Only one hen license may be issued per parcel.",
+      "Keeping hens in a structure larger than 50 square feet requires a building permit from the City Inspection Division.",
+      "Full rules are in Green Bay Municipal Code Section 6-3."
+    ],
+    "links": [
+      {
+        "label": "City of Green Bay chicken (hen) license page",
+        "detail": "Official license overview, expiration, and documents.",
+        "href": "https://www.greenbaywi.gov/215/Chicken-Hen-License"
+      },
+      {
+        "label": "Hen license application and fact sheet PDF",
+        "detail": "Application, instructions, late-fee rules, and building permit note.",
+        "href": "https://www.greenbaywi.gov/DocumentCenter/View/262/Chicken-Hen-License-Application-PDF?bidId="
+      },
+      {
+        "label": "Green Bay Municipal Code, Section 6-3",
+        "detail": "Ordinance text for licensing and keeping hens (Municode).",
+        "href": "https://library.municode.com/wi/green_bay/codes/code_of_ordinances?nodeId=COOR_CH6AN_S6-3LIKEHE"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/green-bay-wi.html"
+  },
+  {
+    "id": "appleton-wi",
+    "city": "Appleton",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "549"
+    ],
+    "aliases": [
+      "appleton",
+      "city of appleton"
+    ],
+    "summary": "City of Appleton allows up to 6 hens on single-family or two-family properties with an annual Health Department permit and a pre-license inspection. Roosters are not allowed.",
+    "chickenLimit": "Up to 6 chickens (hens only)",
+    "roosterRule": "Roosters not allowed (the rules define chickens as hens only)",
+    "permitRequired": "Annual Health Department permit; the 2026 application lists an $81 pre-inspection fee and a $28 annual license",
+    "prerequisites": [
+      "Read the city's Chicken Keeping Rules and Regulations.",
+      "Register your premises with the Wisconsin Livestock Identification Consortium (free).",
+      "Submit the application with a diagram of the coop location and distances to neighboring structures, a coop design and materials plan, and a manure disposal plan.",
+      "Schedule the pre-licensing inspection. Renters need written permission from the property owner."
+    ],
+    "rules": [
+      "Single-family or two-family dwellings only; not commercial or mixed-use properties.",
+      "Coop must be in the rear yard, at least 3 feet from side and rear lot lines, 10 feet from other structures on the parcel unless attached to a garage or shed, and 25 feet from a home, church, school, or business on an abutting lot.",
+      "Coop floor must give at least 2 square feet per bird, be a hard cleanable surface (no dirt floor), and the coop cannot be taller than 8 feet. The attached run is limited to 100 square feet.",
+      "Chickens must stay in the coop or attached run at all times. Off-site sale of eggs is prohibited.",
+      "Coops of 50 square feet or more need a building permit; electricity needs an electrical permit.",
+      "Unusual illness or death must be reported to the Health Department immediately."
+    ],
+    "links": [
+      {
+        "label": "Appleton chicken keeping rules and regulations PDF",
+        "detail": "Official rules adopted under Sec. 3-52 of the Appleton Municipal Code.",
+        "href": "https://appletonwi.gov/Documents/Health/Environmental%20Health/Applications/Chicken%20keeping%20requirements.pdf"
+      },
+      {
+        "label": "Steps to obtaining a backyard chicken permit PDF",
+        "detail": "Four-step permit process including premises registration and inspection.",
+        "href": "https://appletonwi.gov/Documents/Health/Environmental%20Health/Applications/Steps%20Obtaining%20Backyard%20Chicken%20Permit.pdf"
+      },
+      {
+        "label": "Chicken and pigeon keeping license application (2026) PDF",
+        "detail": "Application form with 2026 fees and required attachments.",
+        "href": "https://appletonwi.gov/Documents/Health/Environmental%20Health/Applications/Chicken%20%26%20Pigeon%20Keeping%20License%20Application_2026.pdf"
+      },
+      {
+        "label": "Appleton Health Department license applications",
+        "detail": "City page that links current license applications.",
+        "href": "https://appletonwi.gov/government/departments/health/environmental_health/licenses.php"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/appleton-wi.html"
+  },
+  {
+    "id": "eau-claire-wi",
+    "city": "Eau Claire",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "547"
+    ],
+    "aliases": [
+      "eau claire",
+      "city of eau claire"
+    ],
+    "summary": "City of Eau Claire allows up to 5 hens with an annual poultry license, mainly on R-1 single-family lots. Roosters are prohibited. Neighbors within 100 feet are notified and can object.",
+    "chickenLimit": "Up to 5 poultry (hens; quail included)",
+    "roosterRule": "Roosters, cocks, and drakes prohibited",
+    "permitRequired": "Annual poultry license (January 1 to December 31) plus inspection",
+    "prerequisites": [
+      "Apply before getting birds; do not start building the coop until the application is submitted.",
+      "Register with Wisconsin DATCP and provide proof of registration.",
+      "Submit a site plan showing coop size and distances to lot lines and structures. Renters need the owner's authorization form.",
+      "The city notifies owners within 100 feet; abutting owners have 14 days to object, which sends the application to the City Council.",
+      "The completed coop is inspected before the license is issued."
+    ],
+    "rules": [
+      "Allowed on lots zoned R-1 and used as a single-family home, or R-2 multi-family with written support from the landlord and all tenants.",
+      "Coop and run must be in the back or side yard: at least 10 feet from an abutting lot, 25 feet from homes on adjacent lots, 5 feet from homes on your own lot, and 2 feet from all lot lines.",
+      "Detached, stationary coop only; no more than 64 square feet and 8 feet tall; at least 3 square feet per bird; hard, rodent-resistant floor.",
+      "Birds must stay in the coop or enclosed run, and be secured in the coop during non-daylight hours.",
+      "No commercial sales. Limited on-site slaughter is allowed under specific conditions in the ordinance."
+    ],
+    "links": [
+      {
+        "label": "City of Eau Claire licensing page",
+        "detail": "Official chicken / poultry license overview and forms.",
+        "href": "https://www.eauclairewi.gov/617/Licensing"
+      },
+      {
+        "label": "Chapter 6.15 Keeping of Poultry PDF",
+        "detail": "Full ordinance text including setbacks, coop design, and conditions.",
+        "href": "https://www.eauclairewi.gov/DocumentCenter/View/648/615-Keeping-of-Poultry-PDF"
+      },
+      {
+        "label": "Coop site plan PDF",
+        "detail": "Site plan form with coop size and distance requirements.",
+        "href": "https://www.eauclairewi.gov/DocumentCenter/View/649/Site-Plan-PDF"
+      },
+      {
+        "label": "Owner's authorization PDF",
+        "detail": "Required if you do not own the property.",
+        "href": "https://www.eauclairewi.gov/DocumentCenter/View/650/Owners-Authorization-PDF"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/eau-claire-wi.html"
+  },
+  {
+    "id": "la-crosse-wi",
+    "city": "La Crosse",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "546"
+    ],
+    "aliases": [
+      "la crosse",
+      "lacrosse",
+      "city of la crosse"
+    ],
+    "summary": "City of La Crosse allows up to 8 chickens on single-family or duplex properties with an annual license. Roosters and slaughter are prohibited.",
+    "chickenLimit": "Up to 8 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Annual chicken license; the city page lists a $40 non-refundable fee",
+    "prerequisites": [
+      "Get a license within 30 days of acquiring chickens; the license year runs January 1 to December 31 and must be renewed each year.",
+      "File the application with the City Clerk, including a scale drawing of lot lines, coop and enclosure size, and distances to adjoining lot lines and homes.",
+      "Applications go to the Judiciary and Administration Committee for approval.",
+      "If a complaint was filed in the prior year, renewal requires written approval from at least 50% of owner-occupied neighbors within 100 feet."
+    ],
+    "rules": [
+      "One-family or two-family dwellings only.",
+      "Chickens need a covered enclosure of at least 3 square feet per bird and must stay in it or a fenced backyard enclosure at all times.",
+      "No enclosure may be closer than 25 feet to any home on an adjacent lot.",
+      "Full rules are in Sec. 6-16 of the La Crosse Municipal Code."
+    ],
+    "links": [
+      {
+        "label": "City of La Crosse chicken license page",
+        "detail": "Official license period, fee, application process, and conditions.",
+        "href": "https://www.cityoflacrosse.org/Your-Government/Departments/City-Clerk/Licenses-Permits/License-to-Own-Keep-andor-Harbor-Chickens"
+      },
+      {
+        "label": "La Crosse Municipal Code Sec. 6-16",
+        "detail": "Ordinance text for keeping chickens (Municode).",
+        "href": "https://library.municode.com/wi/la_crosse/codes/code_of_ordinances?nodeId=PTIGEOR_CH6AN_ARTIINGE_S6-16KECH"
+      },
+      {
+        "label": "La Crosse City Clerk licenses and permits",
+        "detail": "Clerk's list of license types and fees.",
+        "href": "https://www.cityoflacrosse.org/Your-Government/Departments/City-Clerk/Licenses-Permits"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/la-crosse-wi.html"
+  },
+  {
+    "id": "oshkosh-wi",
+    "city": "Oshkosh",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "549"
+    ],
+    "aliases": [
+      "oshkosh",
+      "city of oshkosh"
+    ],
+    "summary": "City of Oshkosh allows up to 6 hens and/or ducks per residential lot at single- and two-family homes with an annual city permit.",
+    "chickenLimit": "Up to 6 chickens and/or ducks per residential lot",
+    "roosterRule": "The permit covers hens; confirm rooster rules in Chapter 6 of the Municipal Code",
+    "permitRequired": "Annual permit; the application lists a $15 fee (calendar year, not pro-rated)",
+    "prerequisites": [
+      "Register with the State of Wisconsin livestock premises program (www.wiid.org or WLIC at 888-808-1910) and include proof.",
+      "Include a scaled site plan approved by Planning Services.",
+      "Renters must include a written statement of support from the property owner and a written agreement on coop maintenance and what happens to the hens if you move."
+    ],
+    "rules": [
+      "Permits are for single- and two-family homes only, regardless of zoning district.",
+      "Permits run January 1 to December 31 and must be renewed each year.",
+      "Full regulations are in Chapter 6, Animals, of the Oshkosh Municipal Code. The city may revoke a permit for violations and not reissue it for at least two years."
+    ],
+    "links": [
+      {
+        "label": "Oshkosh permit to keep chickens and/or ducks application PDF",
+        "detail": "Official application with fee, limits, and required attachments.",
+        "href": "https://www.oshkoshwi.gov/PlanningServices/Documents/Chicken_Permit_Application.pdf"
+      },
+      {
+        "label": "Oshkosh Municipal Codes",
+        "detail": "City-hosted municipal code documents, including Chapter 6, Animals.",
+        "href": "https://www.oshkoshwi.gov/WebLink/Browse.aspx?cr=1&startid=575047"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/oshkosh-wi.html"
+  },
+  {
+    "id": "kenosha-wi",
+    "city": "Kenosha",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "531"
+    ],
+    "aliases": [
+      "kenosha",
+      "city of kenosha"
+    ],
+    "summary": "City of Kenosha allows up to 4 chickens on single-family properties with an annual backyard chicken coop license reviewed by a city committee. Roosters and slaughter are prohibited.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Annual license; the application (rev. 10/25) lists $200 per year new and $100 per year renewal",
+    "prerequisites": [
+      "Property must be zoned single-family residential; renters need the landlord's signed consent.",
+      "Attach a diagram showing property lines, the enclosure, and all structures within 100 feet.",
+      "Apply for the Wisconsin livestock premises registry; the license will not be issued until registration is verified.",
+      "List owners and adult tenants of all directly or diagonally abutting properties, including across an alley.",
+      "The application goes to the Public Safety and Welfare Committee; contact your alderperson at least 7 days before review."
+    ],
+    "rules": [
+      "Coops must be in the rear yard and at least 25 feet from any home on an adjacent lot.",
+      "Provide at least 16 square feet of floor space per chicken, with at least 3 square feet per chicken under a watertight cover. Maximum coop height is 6 feet.",
+      "Coops over 120 square feet need a building permit; electricity needs an electrical permit and cannot be supplied by extension cords.",
+      "No selling chickens, eggs, or manure from the property; no commercial breeding.",
+      "Chickens stay in the coop or enclosure and may not trespass on neighboring properties. Unwanted chickens cannot be released or taken to Animal Control."
+    ],
+    "links": [
+      {
+        "label": "Kenosha backyard chicken coop license application PDF",
+        "detail": "Official application, fees, attachments, and terms and conditions (Ordinance 14.02).",
+        "href": "https://www.kenosha.org/Chicken_CLK086_REV%20(3).pdf"
+      },
+      {
+        "label": "Kenosha City Clerk licenses and permits",
+        "detail": "City Clerk/Treasurer license page.",
+        "href": "https://kenosha.org/departments/city_clerk_treasurer/licenses___permits.php"
+      },
+      {
+        "label": "Kenosha Code of Ordinances",
+        "detail": "Municode library for the full code of general ordinances.",
+        "href": "https://library.municode.com/wi/kenosha/codes/code_of_ordinances"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/kenosha-wi.html"
+  },
+  {
+    "id": "columbus-wi",
+    "city": "Columbus",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53925"
+    ],
+    "zipPrefixes": [
+      "53925"
+    ],
+    "aliases": [
+      "columbus",
+      "city of columbus"
+    ],
+    "summary": "City of Columbus, Wisconsin allows up to 4 chickens per lot with an annual license from the Common Council. Roosters and slaughter are prohibited.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Annual license via the City Clerk (application and license fees set by council resolution)",
+    "prerequisites": [
+      "Get the license before January 1 each year, or within 30 days of first getting chickens.",
+      "File the application with the City Clerk and pay the non-refundable application fee plus the license fee.",
+      "The city confirms the setup meets the ordinance before issuing the license."
+    ],
+    "rules": [
+      "Chickens must have a covered and fenced enclosure and stay in it at all times.",
+      "Enclosures must be at least 25 feet from any neighboring residential structure and follow accessory-building zoning rules.",
+      "All stored feed must be kept in airtight, rodent-proof containers.",
+      "No slaughtering on the lot. City code also says chickens or other fowl may not be given away, bartered, or sold.",
+      "Full rules are in Sec. 14-19 of the Columbus Municipal Code."
+    ],
+    "links": [
+      {
+        "label": "Columbus Municipal Code, Chapter 14 Animals (Sec. 14-19)",
+        "detail": "Ordinance text limiting chickens and setting license rules (Municode).",
+        "href": "https://library.municode.com/WI/Columbus/codes/Code_of_Ordinances?nodeId=MUCO_CH14AN"
+      },
+      {
+        "label": "City of Columbus licenses and permits",
+        "detail": "City license and permit applications.",
+        "href": "https://www.columbuswi.gov/2357/Licenses-Permits"
+      },
+      {
+        "label": "City of Columbus City Clerk",
+        "detail": "Where chicken license applications are filed.",
+        "href": "https://www.columbuswi.gov/2171/City-Clerk"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/columbus-wi.html"
+  },
+  {
+    "id": "janesville-wi",
+    "city": "Janesville",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipPrefixes": [
+      "535"
+    ],
+    "aliases": [
+      "janesville",
+      "city of janesville"
+    ],
+    "summary": "City of Janesville allows up to 4 female chickens or ducks (not both) on a lot with one single-family home, with an annual residential premises permit. Roosters and drakes are not allowed.",
+    "chickenLimit": "Up to 4 hens or 4 female ducks (not both)",
+    "roosterRule": "Roosters and drakes prohibited",
+    "permitRequired": "Annual residential chicken or duck premises permit (fees set by City Council)",
+    "prerequisites": [
+      "Get the permit before keeping birds or building a coop or run. The permit year runs January 1 to December 31.",
+      "Submit an accurately scaled drawing of the coop and run location, distances to lot lines and the nearest neighboring home, and coop and run dimensions.",
+      "Include proof of Wisconsin DATCP premises registration.",
+      "If you do not own the property, the owner must sign the application, and the signature must be notarized."
+    ],
+    "rules": [
+      "One shared coop with an attached run, entirely in the rear yard.",
+      "New coops need at least 3 square feet per chicken and cannot exceed 24 square feet; coop and run together cannot be taller than 6 feet.",
+      "Run cannot exceed 50 square feet or 1% of the rear yard, whichever is greater, and never more than 200 square feet.",
+      "Coop and run must be at least 10 feet from the rear wall of your home, 10 feet from property lines, and 18 feet from any home on adjacent property.",
+      "Birds must be in the coop from sunset to sunrise. Food scraps may only be fed inside the coop. Slaughter only at a licensed facility.",
+      "Report any unusual illness or death to Wisconsin DATCP within 24 hours."
+    ],
+    "links": [
+      {
+        "label": "Janesville Ordinance 2026-932 (Sec. 8-70) PDF",
+        "detail": "Amended backyard chickens and ducks ordinance adopted April 27, 2026.",
+        "href": "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/15605/1422200/pdf"
+      },
+      {
+        "label": "Janesville residential building permits",
+        "detail": "Janesville Building Division residential permits page, a starting point for permit questions.",
+        "href": "https://www.janesvillewi.gov/departments-services/public-works/building-division/building-permits/residential-building-permits"
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration required with the permit application.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/janesville-wi.html"
+  },
+  {
+    "id": "minneapolis-mn",
+    "city": "Minneapolis",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipPrefixes": [
+      "554"
+    ],
+    "aliases": [
+      "minneapolis",
+      "city of minneapolis"
+    ],
+    "summary": "City of Minneapolis allows backyard chickens and other fowl with an annual fowl permit. You need neighbor consent, a fowl education course, zoning approval, and an inspection before getting birds.",
+    "chickenLimit": "Permit fee tiers cover 1-6, 7-15, and 16-30 birds",
+    "roosterRule": "Separate rooster permit fee ($110); neighbor consent required",
+    "permitRequired": "Annual fowl permit: $32 for 1-6 birds, $58 for 7-15, $84 for 16-30 (application and renewal)",
+    "prerequisites": [
+      "Do not buy any birds until the permit is approved.",
+      "Contact 311 to apply. Show proof of consent from your neighbors.",
+      "Attend an approved fowl education course.",
+      "Get zoning approval from the Community Planning and Economic Development department.",
+      "Pass an inspection by an Animal Care and Control officer."
+    ],
+    "rules": [
+      "The permit covers chickens, turkeys, ducks, pigeons, and quail.",
+      "Permits renew every year.",
+      "Full rules are in Minneapolis Code of Ordinances section 63.90, Fowl."
+    ],
+    "links": [
+      {
+        "label": "Minneapolis pet licenses and animal permits",
+        "detail": "Official fowl permit steps and fee table.",
+        "href": "https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/minneapolis-mn.html"
+  },
+  {
+    "id": "saint-paul-mn",
+    "city": "Saint Paul",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipPrefixes": [
+      "551"
+    ],
+    "aliases": [
+      "saint paul",
+      "st paul",
+      "st. paul",
+      "city of saint paul"
+    ],
+    "summary": "City of Saint Paul requires a Backyard Chicken Keeping Permit. Tier One covers 1-6 hens; Tier Two covers 7-15 hens and needs a neighbor petition. Roosters are prohibited.",
+    "chickenLimit": "Up to 15 hens (Tier One: 1-6, Tier Two: 7-15)",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "Tier One: $26 initial, $16 annual renewal. Tier Two: $76 initial, $28 annual renewal",
+    "prerequisites": [
+      "Tier One: submit an application, site plan, and payment, and notify all adjacent neighbors in writing.",
+      "Tier Two: submit an application, site plan, payment, and a neighbor petition with 75% approval (see the city page for the distance rule).",
+      "Coops over 200 square feet or that use electricity also need a building and/or electrical permit."
+    ],
+    "rules": [
+      "Roosters are prohibited.",
+      "No more than 15 birds at a time.",
+      "Permitted coops are inspected by Animal Control officers every year."
+    ],
+    "links": [
+      {
+        "label": "Saint Paul backyard chicken keeping page",
+        "detail": "Official permit tiers, fees, requirements, and restrictions.",
+        "href": "https://www.stpaul.gov/departments/safety-inspections/animal-control/animal-licenses-and-permits/backyard-chicken-keeping"
+      },
+      {
+        "label": "Backyard chicken keeping permit application PDF",
+        "detail": "Printable application and instructions.",
+        "href": "https://www.stpaul.gov/sites/default/files/2024-04/Application%20Backyard%20Chicken%20Keeping%20Permit%204%202%2024.pdf"
+      }
+    ],
+    "sourceLastChecked": "2026-10-18",
+    "page": "laws/saint-paul-mn.html"
   }
 ]

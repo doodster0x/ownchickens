@@ -1572,3 +1572,7 @@ main > .signup {
   color: var(--muted);
   font-weight: 500;
 }
+
+.guide-card h2 + .law-facts {
+  margin-top: 14px;
+}
