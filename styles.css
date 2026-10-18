@@ -1533,3 +1533,33 @@ main:focus {
 main > .signup {
   margin-top: 72px;
 }
+
+.guide-layout > *,
+.guide-content > *,
+.law-layout > *,
+.supplies-layout > * {
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .guide-layout,
+  .law-layout,
+  .supplies-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .guide-nav {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .guide-nav a {
+    flex: 0 0 auto;
+  }
+}
