@@ -157,10 +157,21 @@ def footer(current: str, prefix: str = "") -> str:
     </footer>"""
 
 
-def guide_nav(current: str, prefix: str = "", label: str = "Guide pages") -> str:
+REVIEW_NAV = [
+    ("reviews/index.html", "All buying guides"),
+    ("reviews/coops.html", "Coops"),
+    ("reviews/feeders.html", "Feeders"),
+    ("reviews/waterers.html", "Waterers"),
+    ("reviews/automatic-coop-doors.html", "Automatic doors"),
+    ("reviews/heaters.html", "Winter heat"),
+    ("supplies.html", "Starter supplies"),
+]
+
+
+def guide_nav(current: str, prefix: str = "", label: str = "Guide pages", items=None) -> str:
     links = "".join(
         f"\n          {_link(prefix, href, text, current)}"
-        for href, text in GUIDE_NAV
+        for href, text in (items or GUIDE_NAV)
         if target_exists(href)
     )
     return f"""<nav class="guide-nav" aria-label="{esc(label)}">{links}
