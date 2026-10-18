@@ -1563,3 +1563,12 @@ main > .signup {
     flex: 0 0 auto;
   }
 }
+
+.data-table td:has(input) {
+  white-space: nowrap;
+}
+
+.data-table th small {
+  color: var(--muted);
+  font-weight: 500;
+}
