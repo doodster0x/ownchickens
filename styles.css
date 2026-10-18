@@ -1576,3 +1576,8 @@ main > .signup {
 .guide-card h2 + .law-facts {
   margin-top: 14px;
 }
+
+/* Blog index */
+.blog-seasons h2 { margin-top: 40px; }
+.blog-seasons h2:first-child { margin-top: 0; }
+.blog-seasons > p { margin: 4px 0 16px; color: var(--muted, #5b6157); }
