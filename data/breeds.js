@@ -1,0 +1,203 @@
+/*
+ * Breed data for breed-quiz.html. Ratings are general and qualitative
+ * (1 = needs extra care, 2 = okay with good housing, 3 = handles it well;
+ * kids: 1 = less suited to handling, 3 = very handleable). Individual birds
+ * and hatchery lines vary. Also shown in the breeds.html comparison table.
+ */
+window.OWN_CHICKENS_BREEDS = [
+  {
+    "id": "rhode-island-red",
+    "name": "Rhode Island Red",
+    "egg": "Brown",
+    "laying": "Excellent",
+    "cold": 3,
+    "heat": 3,
+    "temper": "Hardy and confident; can be bossy",
+    "size": "Standard",
+    "broody": "Rarely",
+    "kids": 2,
+    "notes": "A classic, widely available workhorse layer that handles Midwest winters and summers."
+  },
+  {
+    "id": "barred-rock",
+    "name": "Barred Plymouth Rock",
+    "egg": "Brown",
+    "laying": "Very good",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Calm and friendly",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 3,
+    "notes": "Steady, curious, and easy to handle. One of the best all-around beginner birds."
+  },
+  {
+    "id": "buff-orpington",
+    "name": "Buff Orpington",
+    "egg": "Light brown",
+    "laying": "Good",
+    "cold": 3,
+    "heat": 1,
+    "temper": "Very gentle",
+    "size": "Large",
+    "broody": "Often",
+    "kids": 3,
+    "notes": "Famously sweet and fluffy. Needs shade in hot summers; tends to go broody."
+  },
+  {
+    "id": "australorp",
+    "name": "Black Australorp",
+    "egg": "Brown",
+    "laying": "Excellent",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Calm",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 3,
+    "notes": "A strong layer with a quiet personality. Dark feathers mean it needs shade in heat."
+  },
+  {
+    "id": "wyandotte",
+    "name": "Wyandotte (Silver or Golden Laced)",
+    "egg": "Brown",
+    "laying": "Good",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Calm, a bit independent",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 2,
+    "notes": "Rose comb resists frostbite. Beautiful laced feathers and good cold tolerance."
+  },
+  {
+    "id": "speckled-sussex",
+    "name": "Speckled Sussex",
+    "egg": "Light brown",
+    "laying": "Good",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Friendly and curious",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 3,
+    "notes": "Chatty, people-friendly, and a good forager. Speckles increase with each molt."
+  },
+  {
+    "id": "easter-egger",
+    "name": "Easter Egger",
+    "egg": "Blue or green (varies)",
+    "laying": "Good",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Friendly",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 3,
+    "notes": "A mixed type, not a standard breed. Pea comb handles cold; egg color varies by bird."
+  },
+  {
+    "id": "brahma",
+    "name": "Brahma",
+    "egg": "Brown",
+    "laying": "Fair",
+    "cold": 3,
+    "heat": 1,
+    "temper": "Gentle giant",
+    "size": "Large",
+    "broody": "Sometimes",
+    "kids": 3,
+    "notes": "Very cold hardy with feathered feet. Big birds need more space and struggle in heat and mud."
+  },
+  {
+    "id": "leghorn",
+    "name": "White Leghorn",
+    "egg": "White",
+    "laying": "Excellent",
+    "cold": 1,
+    "heat": 3,
+    "temper": "Active and flighty",
+    "size": "Light",
+    "broody": "Rarely",
+    "kids": 1,
+    "notes": "Top-tier layer that handles heat well. Large single comb is prone to frostbite; not cuddly."
+  },
+  {
+    "id": "delaware",
+    "name": "Delaware",
+    "egg": "Brown",
+    "laying": "Very good",
+    "cold": 3,
+    "heat": 2,
+    "temper": "Calm",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 2,
+    "notes": "A heritage dual-purpose bird that lays well and handles cold. Less common at stores."
+  },
+  {
+    "id": "sex-link",
+    "name": "Red or Black Sex-Link (hybrid)",
+    "egg": "Brown",
+    "laying": "Excellent",
+    "cold": 2,
+    "heat": 2,
+    "temper": "Friendly",
+    "size": "Standard",
+    "broody": "Rarely",
+    "kids": 3,
+    "notes": "Hybrids bred for laying; chicks can be sexed by color. Very productive early, often slows sooner."
+  },
+  {
+    "id": "cochin",
+    "name": "Cochin",
+    "egg": "Brown",
+    "laying": "Fair",
+    "cold": 3,
+    "heat": 1,
+    "temper": "Very gentle",
+    "size": "Large",
+    "broody": "Often",
+    "kids": 3,
+    "notes": "Round, fluffy, feathered feet, and very docile. More pet than production bird."
+  },
+  {
+    "id": "silkie",
+    "name": "Silkie (bantam)",
+    "egg": "Cream or tinted, small",
+    "laying": "Fair",
+    "cold": 2,
+    "heat": 2,
+    "temper": "Very gentle",
+    "size": "Bantam",
+    "broody": "Very often",
+    "kids": 3,
+    "notes": "Fur-like feathers are not waterproof, so keep them dry. Beloved by kids, often broody."
+  },
+  {
+    "id": "welsummer",
+    "name": "Welsummer",
+    "egg": "Dark brown, often speckled",
+    "laying": "Good",
+    "cold": 2,
+    "heat": 2,
+    "temper": "Friendly, active",
+    "size": "Standard",
+    "broody": "Rarely",
+    "kids": 2,
+    "notes": "Pretty dark eggs and a good forager. Single comb needs frostbite care in hard winters."
+  },
+  {
+    "id": "marans",
+    "name": "Black Copper Marans",
+    "egg": "Dark chocolate brown",
+    "laying": "Fair",
+    "cold": 2,
+    "heat": 2,
+    "temper": "Calm",
+    "size": "Standard",
+    "broody": "Sometimes",
+    "kids": 2,
+    "notes": "Known for very dark eggs. Egg color varies by line and fades over the laying season."
+  }
+];

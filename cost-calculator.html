@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <title>Backyard Chicken Setup Cost Calculator | Own Chickens</title>
+    <link rel="canonical" href="https://ownchickens.com/cost-calculator.html" />
+    <meta property="og:site_name" content="Own Chickens" />
+    <meta property="og:title" content="Backyard Chicken Setup Cost Calculator | Own Chickens" />
+    <meta property="og:description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ownchickens.com/cost-calculator.html" />
+    <meta property="og:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Backyard Chicken Setup Cost Calculator | Own Chickens" />
+    <meta name="twitter:description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <meta name="twitter:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ownchickens.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cost Calculator",
+      "item": "https://ownchickens.com/cost-calculator.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Backyard Chicken Setup Cost Calculator",
+  "url": "https://ownchickens.com/cost-calculator.html",
+  "description": "Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Own Chickens",
+    "url": "https://ownchickens.com/"
+  }
+}
+    </script>
+      <script data-goatcounter="https://ownchickens.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Own Chickens home">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>Own Chickens</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+      <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+        <a href="supplies.html">See Starter Supplies</a>
+        <a href="guides.html">Guides</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="cost-calculator.html" aria-current="page">Cost Calculator</a>
+        <a href="reviews/">Reviews</a>
+        <a href="blog/">Blog</a>
+        <a href="laws.html">Local Laws</a>
+        <a href="flock.html" class="nav-cta">Get Your Flock</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="section-heading">
+          <p class="eyebrow">Tool</p>
+          <h1>Chicken setup cost calculator</h1>
+          <p>Estimate what a budget, middle, or premium backyard chicken setup might cost for your flock size, plus about what you will spend each year after.</p>
+          <p class="page-meta">Estimates only: typical range, check local prices. Assumptions last reviewed 2026-10-18.</p>
+        </div>
+      </section>
+
+      <section class="section law-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Your flock</p>
+          <h2>Tell us about your setup</h2>
+          <p>Results update as you type. Every price is a wide, approximate range meant for planning, not a quote. Prices vary by region, season, and store, so check local prices before you buy.</p>
+          <p class="disclosure">Want to adjust the numbers? Edit any value in the <a href="#assumptions">assumption table</a> below to match prices near you.</p>
+        </div>
+        <div>
+          <form class="tool-form" id="costForm">
+            <div>
+              <label class="field-label" for="birds">How many hens?</label>
+              <input id="birds" name="birds" type="number" min="1" max="30" value="4" inputmode="numeric" />
+            </div>
+            <fieldset>
+              <legend>Starting with</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="start" value="chicks" checked /> Day-old chicks</label>
+                <label><input type="radio" name="start" value="pullets" /> Started pullets</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Do your winters freeze?</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="freezing" value="yes" checked /> Yes, water freezes</label>
+                <label><input type="radio" name="freezing" value="no" /> No hard freezes</label>
+              </div>
+            </fieldset>
+            <div>
+              <label class="field-label" for="permit">City permit or license fee per year, if any ($)</label>
+              <input id="permit" name="permit" type="number" min="0" value="0" inputmode="decimal" />
+              <p class="signup-fine">Look up your city on the <a href="laws.html">local laws page</a>. Some cities charge nothing; others charge an application or inspection fee.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="results-title">
+        <div class="section section-tight">
+          <div class="section-heading">
+            <p class="eyebrow">Estimated ranges</p>
+            <h2 id="results-title">What your setup might cost</h2>
+            <p id="costNote" aria-live="polite"></p>
+          </div>
+          <div class="tier-results" id="costResults" aria-live="polite" style="margin-top:24px">
+            <noscript><p>The calculator needs JavaScript. You can still read the assumptions in the Budget List and buying guides.</p></noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="assumptions" aria-labelledby="assumptions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Editable assumptions</p>
+          <h2 id="assumptions-title">Change any number to match your local prices</h2>
+          <p><span class="estimate-note">All values are estimates: typical range, check local prices.</span> Each cell is a low-to-high dollar range. Coop and per-hen costs are multiplied by your flock size; feed uses about 90 lb per hen per year. Vet visits, fencing for a whole yard, electrical work, and permits beyond the fee you enter are not included.</p>
+        </div>
+        <div class="table-wrap" style="margin-top:20px">
+          <table class="data-table">
+            <caption>Cost assumptions in US dollars. Edits apply to this page only and reset when you reload.</caption>
+            <thead><tr><th scope="col">Item</th><th scope="col">Budget</th><th scope="col">Middle</th><th scope="col">Premium</th></tr></thead>
+            <tbody id="assumptionRows"></tbody>
+          </table>
+        </div>
+        <p><button class="button secondary-dark" type="button" id="resetAssumptions">Reset to default estimates</button></p>
+      </section>
+
+      <section class="section section-tight guide-layout">
+        <nav class="guide-nav" aria-label="Related guides">
+          <a href="guides.html">All guides</a>
+          <a href="breeds.html">Breeds</a>
+          <a href="housing.html">Housing</a>
+          <a href="predators.html">Predators</a>
+          <a href="feeding.html">Feeding</a>
+          <a href="care.html">Daily Care</a>
+          <a href="health.html">Health</a>
+          <a href="biosecurity.html">Biosecurity</a>
+          <a href="flock.html">Get Your Flock</a>
+        </nav>
+        <div class="guide-content">
+          <article class="guide-card">
+            <h2>How to use these numbers</h2>
+            <ul>
+              <li><strong>Budget</strong> assumes you have more time than cash: a used or DIY coop, salvaged materials, DIY feeders and waterers, and opening the coop door yourself. See <a href="supplies.html#budget-list">The Budget List</a>.</li>
+              <li><strong>Middle</strong> assumes a kit coop or simple new-lumber build, basic store-bought gear, and an automatic door.</li>
+              <li><strong>Premium</strong> assumes a heavy-duty coop and run, larger-capacity gear, and organic or specialty feed.</li>
+              <li>Whatever your tier, do not cheap out on predator-proofing, latches, and a safe heated waterer. Those protect the birds.</li>
+            </ul>
+          </article>
+          <article class="guide-card">
+            <h2>What is not included</h2>
+            <ul>
+              <li>Veterinary care. Find a vet who sees chickens before you need one.</li>
+              <li>Electrical work for a new outdoor outlet.</li>
+              <li>Building permits for large coops, which some cities require.</li>
+              <li>Treats, decorations, and upgrades.</li>
+              <li>Your time. Budget builds can take several weekends.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="signup" aria-labelledby="signup-calculator-title">
+        <div class="signup-copy">
+          <p class="eyebrow">Free starter checklist</p>
+          <h2 id="signup-calculator-title">Get the starter checklist with your budget</h2>
+          <p>The free printable checklist pairs with this calculator: what to buy, what to build, and what to check before birds come home.</p>
+        </div>
+        <form class="signup-form" data-signup data-source="calculator" action="checklist.html" method="get" novalidate>
+          <label for="signup-calculator-email">Email address</label>
+          <div class="signup-row">
+            <input id="signup-calculator-email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required data-signup-email />
+            <button class="button primary" type="submit">Send me the checklist</button>
+          </div>
+          <p class="signup-status" role="status" aria-live="polite" data-signup-status></p>
+          <p class="signup-fine">Prefer not to sign up? <a href="checklist.html">Open the printable checklist</a> anytime. See our <a href="privacy.html">privacy notes</a>.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
+        <div class="footer-columns">
+          <nav aria-label="Learn">
+            <h2>Learn</h2>
+            <a href="guides.html">All guides</a>
+            <a href="breeds.html">Breeds</a>
+            <a href="breed-quiz.html">Breed quiz</a>
+            <a href="housing.html">Housing</a>
+            <a href="predators.html">Predators</a>
+            <a href="feeding.html">Feeding</a>
+            <a href="care.html">Daily Care</a>
+            <a href="health.html">Health</a>
+            <a href="biosecurity.html">Biosecurity</a>
+          </nav>
+          <nav aria-label="Plan and buy">
+            <h2>Plan and buy</h2>
+            <a href="supplies.html">See Starter Supplies</a>
+            <a href="supplies.html#budget-list">The Budget List</a>
+            <a href="cost-calculator.html" aria-current="page">Cost Calculator</a>
+            <a href="checklist.html">Starter Checklist</a>
+            <a href="reviews/">Buying Guides</a>
+            <a href="flock.html">Get Your Flock</a>
+          </nav>
+          <nav aria-label="More">
+            <h2>More</h2>
+            <a href="laws.html">Local Laws</a>
+            <a href="blog/">Seasonal Blog</a>
+            <a href="privacy.html">Privacy and Disclosures</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
+    <script src="script.js"></script>
+    <script src="data/cost-assumptions.js"></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>
