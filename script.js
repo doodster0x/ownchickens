@@ -210,13 +210,20 @@ if (lawForm) {
 }
 
 /* ---------- Email signup ----------
- * Configure the provider in site-config.js (signup.actionUrl). Until then the
- * form never sends data anywhere and shows a "coming soon" message instead.
+ * Configure the provider in site-config.js (signup.provider "mailerlite", or
+ * signup.actionUrl for a plain form). With neither, the form never sends data
+ * anywhere and shows a "coming soon" message instead.
  */
 
 function setupSignupForms() {
   const signup = CONFIG.signup || {};
-  const live = Boolean(signup.actionUrl);
+  const ml = signup.provider === "mailerlite" ? signup.mailerlite || {} : null;
+  const useMailerLite = Boolean(ml && ml.accountId && ml.formId);
+  const live = !useMailerLite && Boolean(signup.actionUrl);
+
+  if (useMailerLite) {
+    setupMailerLite(ml, signup.fallbackAfterSeconds || 8);
+  }
 
   document.querySelectorAll("form[data-signup]").forEach((form) => {
     const email = form.querySelector("[data-signup-email]");
@@ -248,6 +255,11 @@ function setupSignupForms() {
         email.focus();
         return;
       }
+      if (useMailerLite) {
+        event.preventDefault();
+        showSignupFallback(form);
+        return;
+      }
       if (!live) {
         event.preventDefault();
         status.dataset.state = "info";
@@ -257,6 +269,51 @@ function setupSignupForms() {
       status.dataset.state = "success";
       status.textContent = "Thanks! Check your inbox to confirm your subscription.";
     });
+  });
+}
+
+/* MailerLite: the built-in form is hidden while the embedded form loads. If
+ * the universal script is blocked (ad blocker, offline) or the embed never
+ * renders, the built-in form comes back with a note and a checklist link.
+ * Nothing is ever sent from the fallback form. */
+
+function showSignupFallback(form) {
+  const status = form.querySelector("[data-signup-status]");
+  const checklistHref = form.getAttribute("action") || "checklist.html";
+  form.hidden = false;
+  form.parentElement.querySelectorAll(".ml-embedded").forEach((node) => {
+    node.hidden = true;
+  });
+  status.dataset.state = "info";
+  status.innerHTML = `The signup form could not load (a content blocker may be stopping it), so nothing was sent. You can <a href="${checklistHref}">open the printable starter checklist</a> directly, or try again with blockers off.`;
+}
+
+function setupMailerLite(ml, seconds) {
+  const forms = Array.from(document.querySelectorAll("form[data-signup]"));
+  if (!forms.length) return;
+
+  // Standard MailerLite universal snippet, built from site-config.js.
+  (function (w, d, e, u, f, l, n) {
+    w[f] = w[f] || function () { (w[f].q = w[f].q || []).push(arguments); };
+    l = d.createElement(e);
+    l.async = 1;
+    l.src = u;
+    n = d.getElementsByTagName(e)[0];
+    n.parentNode.insertBefore(l, n);
+    l.addEventListener("error", () => forms.forEach(showSignupFallback));
+  })(window, document, "script", ml.scriptSrc || "https://assets.mailerlite.com/js/universal.js", "ml");
+  window.ml("account", String(ml.accountId));
+
+  forms.forEach((form) => {
+    const embed = document.createElement("div");
+    embed.className = "ml-embedded";
+    embed.dataset.form = ml.formId;
+    form.hidden = true;
+    form.after(embed);
+    // MailerLite fills the div after the script runs; check it did.
+    window.setTimeout(() => {
+      if (!embed.hidden && !embed.children.length) showSignupFallback(form);
+    }, seconds * 1000);
   });
 }
 

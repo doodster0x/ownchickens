@@ -15,6 +15,10 @@ import layout  # noqa: E402
 
 HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
 FOOTER_RE = re.compile(r'<footer class="site-footer">.*?</footer>', re.S)
+GOATCOUNTER_TAG = (
+    '<script data-goatcounter="https://ownchickens.goatcounter.com/count" '
+    'async src="//gc.zgo.at/count.js"></script>'
+)
 SKIP_DIRS = {".git", "tools", "assets", "data", "node_modules"}
 
 
@@ -42,6 +46,8 @@ def sync(rel: str) -> bool:
     text = FOOTER_RE.sub(lambda _m: layout.footer(key, prefix), text, count=1)
     config_tag = f'<script src="{prefix}site-config.js"></script>'
     script_tag = f'<script src="{prefix}script.js"></script>'
+    if "data-goatcounter" not in text:
+        text = text.replace("</head>", f"    {GOATCOUNTER_TAG}\n  </head>", 1)
     if script_tag not in text:
         text = text.replace("  </body>", f"    {config_tag}\n    {script_tag}\n  </body>", 1)
     elif config_tag not in text:

@@ -1581,3 +1581,13 @@ main > .signup {
 .blog-seasons h2 { margin-top: 40px; }
 .blog-seasons h2:first-child { margin-top: 0; }
 .blog-seasons > p { margin: 4px 0 16px; color: var(--muted, #5b6157); }
+
+/* MailerLite embedded form: keep it inside the signup box and readable */
+.signup .ml-embedded {
+  min-width: 0;
+}
+
+.signup .ml-embedded[hidden],
+.signup .signup-form[hidden] {
+  display: none;
+}

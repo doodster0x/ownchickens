@@ -181,8 +181,9 @@ def guide_nav(current: str, prefix: str = "", label: str = "Guide pages", items=
 def signup(source: str, prefix: str = "", heading: str | None = None, body: str | None = None) -> str:
     """Email capture box. Wiring lives in site-config.js and script.js.
 
-    The email input has no name attribute until script.js finds a configured
-    provider, so nothing is sent anywhere while the list is not live.
+    With signup.provider "mailerlite", script.js hides this form and shows the
+    MailerLite embedded form instead. This form stays as the fallback when the
+    MailerLite script is blocked or fails to load; it never sends data itself.
     """
     heading = heading or "Get the free First-Year Chicken Starter Checklist"
     body = body or (
@@ -322,7 +323,8 @@ def page(
     <meta name="twitter:description" content="{esc(description)}" />
     <meta name="twitter:image" content="{OG_IMAGE}" />
     <link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="{prefix}styles.css" />{extra_head}
+    <link rel="stylesheet" href="{prefix}styles.css" />
+    <script data-goatcounter="https://ownchickens.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{extra_head}
     {ld}
   </head>
   <body{body_attr}>
