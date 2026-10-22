@@ -24,15 +24,12 @@ OG_IMAGE = f"{SITE}/assets/backyard-coop-hero-1200.jpg"
 
 # (href relative to site root, label)
 MAIN_NAV = [
-    ("supplies.html", "See Starter Supplies"),
     ("guides.html", "Guides"),
+    ("laws.html", "Laws"),
     ("breeds.html", "Breeds"),
-    ("cost-calculator.html", "Cost Calculator"),
-    ("reviews/", "Reviews"),
-    ("blog/", "Blog"),
-    ("laws.html", "Local Laws"),
+    ("cost-calculator.html", "Costs"),
 ]
-NAV_CTA = ("flock.html", "Get Your Flock")
+NAV_CTA = ("index.html#zip-lookup", "Check your ZIP")
 
 GUIDE_NAV = [
     ("guides.html", "All guides"),
@@ -46,40 +43,16 @@ GUIDE_NAV = [
     ("flock.html", "Get Your Flock"),
 ]
 
-FOOTER_COLUMNS = [
-    (
-        "Learn",
-        [
-            ("guides.html", "All guides"),
-            ("breeds.html", "Breeds"),
-            ("breed-quiz.html", "Breed quiz"),
-            ("housing.html", "Housing"),
-            ("predators.html", "Predators"),
-            ("feeding.html", "Feeding"),
-            ("care.html", "Daily Care"),
-            ("health.html", "Health"),
-            ("biosecurity.html", "Biosecurity"),
-        ],
-    ),
-    (
-        "Plan and buy",
-        [
-            ("supplies.html", "See Starter Supplies"),
-            ("supplies.html#budget-list", "The Budget List"),
-            ("cost-calculator.html", "Cost Calculator"),
-            ("checklist.html", "Starter Checklist"),
-            ("reviews/", "Buying Guides"),
-            ("flock.html", "Get Your Flock"),
-        ],
-    ),
-    (
-        "More",
-        [
-            ("laws.html", "Local Laws"),
-            ("blog/", "Seasonal Blog"),
-            ("privacy.html", "Privacy and Disclosures"),
-        ],
-    ),
+FOOTER_LINKS = [
+    ("guides.html", "Guides"),
+    ("laws.html", "Local laws"),
+    ("breeds.html", "Breeds"),
+    ("cost-calculator.html", "Costs"),
+    ("supplies.html", "Supplies"),
+    ("checklist.html", "Starter checklist"),
+    ("reviews/", "Buying guides"),
+    ("blog/", "Blog"),
+    ("privacy.html", "Privacy"),
 ]
 
 FOOTER_NOTE = (
@@ -134,26 +107,16 @@ def header(current: str, prefix: str = "") -> str:
 
 
 def footer(current: str, prefix: str = "") -> str:
-    cols = []
-    for title, items in FOOTER_COLUMNS:
-        links = "".join(
-            f"\n            {_link(prefix, href, label, current)}"
-            for href, label in items
-            if target_exists(href)
-        )
-        cols.append(
-            f"""<nav aria-label="{esc(title)}">
-            <h2>{esc(title)}</h2>{links}
-          </nav>"""
-        )
-    columns = "\n          ".join(cols)
-    return f"""<footer class="site-footer">
-      <div>
-        <p>{esc(FOOTER_NOTE)}</p>
-        <div class="footer-columns">
-          {columns}
-        </div>
-      </div>
+    links = "\n          ".join(
+        _link(prefix, href, label, current)
+        for href, label in FOOTER_LINKS
+        if target_exists(href)
+    )
+    return f"""<footer class="site-footer site-footer-slim">
+      <nav aria-label="Footer">
+          {links}
+      </nav>
+      <p>{esc(FOOTER_NOTE)}</p>
     </footer>"""
 
 
