@@ -53,14 +53,11 @@
         <span></span><span></span><span></span><span class="sr-only">Menu</span>
       </button>
       <nav class="nav-links" id="mainNav" aria-label="Main navigation">
-        <a href="supplies.html">See Starter Supplies</a>
         <a href="guides.html">Guides</a>
+        <a href="laws.html" aria-current="page">Laws</a>
         <a href="breeds.html">Breeds</a>
-        <a href="cost-calculator.html">Cost Calculator</a>
-        <a href="reviews/">Reviews</a>
-        <a href="blog/">Blog</a>
-        <a href="laws.html" aria-current="page">Local Laws</a>
-        <a href="flock.html" class="nav-cta">Get Your Flock</a>
+        <a href="cost-calculator.html">Costs</a>
+        <a href="index.html#zip-lookup" class="nav-cta">Check your ZIP</a>
       </nav>
     </header>
 
@@ -69,43 +66,23 @@
         <div class="section-heading">
           <p class="eyebrow">Local laws</p>
           <h1>Check the rules before you buy birds</h1>
-          <p>Start with your city or town and ZIP code. Confirm flock limits, rooster rules, coop setbacks, permits, forms, and nuisance rules before spending money.</p>
+          <p>Start with your ZIP code. Confirm flock limits, rooster rules, coop setbacks, permits, forms, and nuisance rules before spending money.</p>
         </div>
       </section>
 
-      <section class="law-section">
-        <div class="section law-layout">
-          <div class="section-heading">
-            <p class="eyebrow">Rule finder</p>
-            <h2>Find backyard chicken laws and permits near you</h2>
-            <p>
-              Enter your city or town and ZIP code. If the database has a match, it shows direct official links for laws,
-              prerequisites, flock limits, permits, and forms. If not, it builds official-source searches.
-            </p>
+      <section class="zip-hero zip-hero-laws" id="zip-lookup" aria-labelledby="zip-laws-title">
+        <h2 id="zip-laws-title">Check your ZIP code</h2>
+        <p class="zip-lede">Enter your ZIP code to see the backyard chicken rules for your area, with links to the official sources.</p>
+        <form class="zip-form" id="zipForm" novalidate>
+          <label for="zipLookupInput">US ZIP code</label>
+          <div class="zip-row">
+            <input id="zipLookupInput" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="10" pattern="[0-9]{5}" placeholder="e.g. 53925" aria-describedby="zipHelp zipError" required />
+            <button class="button primary" type="submit">Check rules</button>
           </div>
-
-          <div>
-            <form class="law-form" id="lawForm">
-              <label>
-                City or town
-                <input id="cityInput" name="city" autocomplete="address-level2" placeholder="Madison" required />
-              </label>
-              <label>
-                ZIP code
-                <input id="zipInput" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" placeholder="53703" required />
-              </label>
-              <button class="button primary" type="submit">Find local rules</button>
-            </form>
-
-            <div class="results-panel" aria-live="polite" aria-atomic="true">
-              <div class="results-heading">
-                <h3 id="resultsTitle">Try your location</h3>
-                <p id="resultsHint">We have verified rules for a growing list of cities. Always verify your exact address with the official city, town, or county office.</p>
-              </div>
-              <div class="result-links" id="resultLinks"></div>
-            </div>
-          </div>
-        </div>
+          <p class="zip-help" id="zipHelp">How it works: we look up your city, county and state, show verified local rules first, and otherwise point you to the official places to check.</p>
+          <p class="zip-error" id="zipError" role="alert"></p>
+        </form>
+        <div class="zip-results" id="zipResults" aria-live="polite" aria-atomic="false" tabindex="-1"></div>
       </section>
 <!-- city-list:start -->
       <section class="section section-tight" id="cities" aria-labelledby="cities-title">
@@ -175,41 +152,22 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
-        <div class="footer-columns">
-          <nav aria-label="Learn">
-            <h2>Learn</h2>
-            <a href="guides.html">All guides</a>
-            <a href="breeds.html">Breeds</a>
-            <a href="breed-quiz.html">Breed quiz</a>
-            <a href="housing.html">Housing</a>
-            <a href="predators.html">Predators</a>
-            <a href="feeding.html">Feeding</a>
-            <a href="care.html">Daily Care</a>
-            <a href="health.html">Health</a>
-            <a href="biosecurity.html">Biosecurity</a>
-          </nav>
-          <nav aria-label="Plan and buy">
-            <h2>Plan and buy</h2>
-            <a href="supplies.html">See Starter Supplies</a>
-            <a href="supplies.html#budget-list">The Budget List</a>
-            <a href="cost-calculator.html">Cost Calculator</a>
-            <a href="checklist.html">Starter Checklist</a>
-            <a href="reviews/">Buying Guides</a>
-            <a href="flock.html">Get Your Flock</a>
-          </nav>
-          <nav aria-label="More">
-            <h2>More</h2>
-            <a href="laws.html" aria-current="page">Local Laws</a>
-            <a href="blog/">Seasonal Blog</a>
-            <a href="privacy.html">Privacy and Disclosures</a>
-          </nav>
-        </div>
-      </div>
+    <footer class="site-footer site-footer-slim">
+      <nav aria-label="Footer">
+          <a href="guides.html">Guides</a>
+          <a href="laws.html" aria-current="page">Local laws</a>
+          <a href="breeds.html">Breeds</a>
+          <a href="cost-calculator.html">Costs</a>
+          <a href="supplies.html">Supplies</a>
+          <a href="checklist.html">Starter checklist</a>
+          <a href="reviews/">Buying guides</a>
+          <a href="blog/">Blog</a>
+          <a href="privacy.html">Privacy</a>
+      </nav>
+      <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
     </footer>
     <script src="site-config.js"></script>
     <script src="script.js"></script>
+    <script src="zip-lookup.js"></script>
   </body>
 </html>

@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Own Chickens helps new backyard chicken keepers learn the basics, plan a coop setup, buy starter supplies, and find local chicken laws and permits."
+      content="Enter your ZIP code to see backyard chicken rules for your area: flock limits, rooster rules, permits and official sources, plus beginner guides."
     />
-    <title>Own Chickens | Backyard Chicken Basics, Supplies, and Local Laws</title>
+    <title>Own Chickens | Backyard Chicken Laws by ZIP Code</title>
     <link rel="canonical" href="https://ownchickens.com/" />
     <meta property="og:site_name" content="Own Chickens" />
-    <meta property="og:title" content="Own Chickens | Backyard Chicken Basics, Supplies, and Local Laws" />
-    <meta property="og:description" content="Learn the basics, price out starter gear, and find local backyard chicken laws before bringing home your first hens." />
+    <meta property="og:title" content="Own Chickens | Backyard Chicken Laws by ZIP Code" />
+    <meta property="og:description" content="Enter your ZIP code to see backyard chicken rules for your area, with official sources." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ownchickens.com/" />
     <meta property="og:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="600" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Own Chickens | Backyard Chicken Basics, Supplies, and Local Laws" />
-    <meta name="twitter:description" content="Learn the basics, price out starter gear, and find local backyard chicken laws before bringing home your first hens." />
+    <meta name="twitter:title" content="Own Chickens | Backyard Chicken Laws by ZIP Code" />
+    <meta name="twitter:description" content="Enter your ZIP code to see backyard chicken rules for your area, with official sources." />
     <meta name="twitter:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="assets/backyard-coop-hero-1200.webp" imagesrcset="assets/backyard-coop-hero-700.webp 700w, assets/backyard-coop-hero-1200.webp 1200w, assets/backyard-coop-hero-1774.webp 1774w" imagesizes="100vw" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
 {
@@ -54,136 +53,34 @@
         <span></span><span></span><span></span><span class="sr-only">Menu</span>
       </button>
       <nav class="nav-links" id="mainNav" aria-label="Main navigation">
-        <a href="supplies.html">See Starter Supplies</a>
         <a href="guides.html">Guides</a>
+        <a href="laws.html">Laws</a>
         <a href="breeds.html">Breeds</a>
-        <a href="cost-calculator.html">Cost Calculator</a>
-        <a href="reviews/">Reviews</a>
-        <a href="blog/">Blog</a>
-        <a href="laws.html">Local Laws</a>
-        <a href="flock.html" class="nav-cta">Get Your Flock</a>
+        <a href="cost-calculator.html">Costs</a>
+        <a href="index.html#zip-lookup" class="nav-cta">Check your ZIP</a>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero" aria-label="Own Chickens introduction">
-        <img src="assets/backyard-coop-hero.jpg" srcset="assets/backyard-coop-hero-700.webp 700w, assets/backyard-coop-hero-1200.webp 1200w, assets/backyard-coop-hero-1774.webp 1774w" sizes="100vw" width="1774" height="887" fetchpriority="high" decoding="async" alt="Backyard chicken coop with hens in a tidy suburban yard" />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Backyard chicken ownership, without the guesswork</p>
-          <h1>Own Chickens</h1>
-          <p class="hero-copy">
-            Learn the basics, price out the starter gear, and find the local rules before you bring home your first hens.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="supplies.html">See starter supplies</a>
-            <a class="button secondary" href="laws.html">Check local laws</a>
+    <main id="main" class="home-simple">
+      <section class="zip-hero zip-hero-photo-wrap" id="zip-lookup" aria-labelledby="zip-title">
+        <picture class="zip-hero-photo">
+          <source type="image/webp" srcset="assets/backyard-coop-hero-700.webp 700w, assets/backyard-coop-hero-1200.webp 1200w, assets/backyard-coop-hero-1774.webp 1774w" sizes="100vw" />
+          <img src="assets/backyard-coop-hero-1200.jpg" width="1200" height="600" alt="A small wooden chicken coop with hens in a green backyard" fetchpriority="high" decoding="async" />
+        </picture>
+        <div class="zip-hero-panel">
+        <h1 id="zip-title">Can you keep chickens where you live?</h1>
+        <p class="zip-lede">Enter your ZIP code to see the backyard chicken rules for your area, with links to the official sources.</p>
+        <form class="zip-form" id="zipForm" novalidate>
+          <label for="zipLookupInput">US ZIP code</label>
+          <div class="zip-row">
+            <input id="zipLookupInput" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="10" pattern="[0-9]{5}" placeholder="e.g. 53925" aria-describedby="zipHelp zipError" required />
+            <button class="button primary" type="submit">Check rules</button>
           </div>
+          <p class="zip-help" id="zipHelp">How it works: we look up your city, county and state, show verified local rules first, and otherwise point you to the official places to check.</p>
+          <p class="zip-error" id="zipError" role="alert"></p>
+        </form>
         </div>
-      </section>
-
-      <section class="section intro-grid" id="why">
-        <div class="section-heading">
-          <p class="eyebrow">Start here</p>
-          <h2>What new chicken keepers need to know first</h2>
-          <p>
-            The birds are the easy part. The win is setting up a small system that is legal, affordable, and simple to care for.
-            Get these decisions right first and your first flock is extremely manageable instead of full of work.
-          </p>
-        </div>
-
-        <div class="basics-list" aria-label="Chicken ownership basics">
-          <article>
-            <span class="number">01</span>
-            <h3>Check the rules before buying birds</h3>
-            <p>Many cities limit flock size, ban roosters, set coop setbacks, or require permits. Confirm the rules before spending money. <a href="laws.html">Check local laws</a>.</p>
-          </article>
-          <article>
-            <span class="number">02</span>
-            <h3>Price the full first setup</h3>
-            <p>The coop is not the whole cost. Plan for feed, water, bedding, nest liners, basic cleaning, and the first month of care. Try the <a href="cost-calculator.html">cost calculator</a>.</p>
-          </article>
-          <article>
-            <span class="number">03</span>
-            <h3>Make chores easy to repeat</h3>
-            <p>Put feed, water, eggs, and bedding within easy reach. A simple routine keeps chickens healthier and makes you less likely to quit.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-tight" id="tools" aria-labelledby="tools-title">
-        <div class="section-heading">
-          <p class="eyebrow">Free tools</p>
-          <h2 id="tools-title">Plan your flock in a few minutes</h2>
-        </div>
-        <div class="card-grid">
-          <a class="link-card" href="cost-calculator.html"><span>Calculator</span><strong>Estimate your first-year cost</strong><small>Low, middle, and premium setups for your flock size, with editable numbers.</small></a>
-          <a class="link-card" href="breed-quiz.html"><span>Quiz</span><strong>Find breeds for your climate</strong><small>Six quick questions about winters, summers, kids, and eggs.</small></a>
-          <a class="link-card" href="checklist.html"><span>Printable</span><strong>First-year starter checklist</strong><small>One page covering rules, setup, supplies, and the first month.</small></a>
-          <a class="link-card" href="blog/"><span>Seasonal blog</span><strong>What to do this season</strong><small>Winter water, fall molting, spring chicks, and summer heat.</small></a>
-        </div>
-      </section>
-
-      <section class="band" id="supplies">
-        <div class="section two-column">
-          <div class="section-heading">
-            <p class="eyebrow">Buying list</p>
-            <h2>Starter supplies worth comparing</h2>
-            <p>
-              Start with the infrastructure list. The Convenience List is the easy Amazon route, and The Budget List mixes
-              local sourcing with handy building for people who have more time than cash.
-            </p>
-            <p class="disclosure">
-              Disclosure: some product links may be affiliate links. Our <a href="reviews/">buying guides</a> explain why an item is useful,
-              what to compare, and when a cheaper option is good enough. <a href="privacy.html#affiliate-disclosure">Full disclosure</a>.
-            </p>
-          </div>
-          <div class="supply-grid">
-            <a class="supply-card" href="supplies.html">
-              <span>The Convenience List</span>
-              <strong>Get everything from Amazon</strong>
-              <small>Fastest path for people who want fewer decisions and quick setup.</small>
-            </a>
-            <a class="supply-card" href="supplies.html#budget-list">
-              <span>The Budget List</span>
-              <strong>Local sourcing and handy building</strong>
-              <small>Lower cash cost for people who have more time than cash.</small>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="law-section" id="laws">
-        <div class="section law-layout">
-          <div class="section-heading">
-            <p class="eyebrow">Local rule finder</p>
-            <h2>Find backyard chicken laws and permits near you</h2>
-            <p>
-              Enter a city or town and ZIP code. The tool checks the growing database first, then builds official-source
-              searches when the location is not listed yet.
-            </p>
-          </div>
-
-          <form class="law-form" id="lawForm">
-            <label>
-              City or town
-              <input id="cityInput" name="city" autocomplete="address-level2" placeholder="Madison" required />
-            </label>
-            <label>
-              ZIP code
-              <input id="zipInput" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" placeholder="53703" required />
-            </label>
-            <button class="button primary" type="submit">Find local rules</button>
-          </form>
-
-          <div class="results-panel" aria-live="polite" aria-atomic="true">
-            <div class="results-heading">
-              <h3 id="resultsTitle">Try your location</h3>
-              <p id="resultsHint">We have verified rules for a growing list of cities. Always verify your exact address with the official city, town, or county office.</p>
-            </div>
-            <div class="result-links" id="resultLinks"></div>
-          </div>
-        </div>
+        <div class="zip-results" id="zipResults" aria-live="polite" aria-atomic="false" tabindex="-1"></div>
       </section>
 
       <section class="signup" aria-labelledby="signup-home-title">
@@ -204,42 +101,23 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
-        <div class="footer-columns">
-          <nav aria-label="Learn">
-            <h2>Learn</h2>
-            <a href="guides.html">All guides</a>
-            <a href="breeds.html">Breeds</a>
-            <a href="breed-quiz.html">Breed quiz</a>
-            <a href="housing.html">Housing</a>
-            <a href="predators.html">Predators</a>
-            <a href="feeding.html">Feeding</a>
-            <a href="care.html">Daily Care</a>
-            <a href="health.html">Health</a>
-            <a href="biosecurity.html">Biosecurity</a>
-          </nav>
-          <nav aria-label="Plan and buy">
-            <h2>Plan and buy</h2>
-            <a href="supplies.html">See Starter Supplies</a>
-            <a href="supplies.html#budget-list">The Budget List</a>
-            <a href="cost-calculator.html">Cost Calculator</a>
-            <a href="checklist.html">Starter Checklist</a>
-            <a href="reviews/">Buying Guides</a>
-            <a href="flock.html">Get Your Flock</a>
-          </nav>
-          <nav aria-label="More">
-            <h2>More</h2>
-            <a href="laws.html">Local Laws</a>
-            <a href="blog/">Seasonal Blog</a>
-            <a href="privacy.html">Privacy and Disclosures</a>
-          </nav>
-        </div>
-      </div>
+    <footer class="site-footer site-footer-slim">
+      <nav aria-label="Footer">
+          <a href="guides.html">Guides</a>
+          <a href="laws.html">Local laws</a>
+          <a href="breeds.html">Breeds</a>
+          <a href="cost-calculator.html">Costs</a>
+          <a href="supplies.html">Supplies</a>
+          <a href="checklist.html">Starter checklist</a>
+          <a href="reviews/">Buying guides</a>
+          <a href="blog/">Blog</a>
+          <a href="privacy.html">Privacy</a>
+      </nav>
+      <p>Own Chickens is an educational starting point. Always verify current rules with your city or county before buying birds or building a coop.</p>
     </footer>
 
     <script src="site-config.js"></script>
     <script src="script.js"></script>
+    <script src="zip-lookup.js"></script>
   </body>
 </html>

@@ -8,7 +8,8 @@ Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. There is no bui
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | Homepage: intro, free tools, supplies, law finder, signup |
+| `index.html` | Simple landing page: ZIP code law lookup, short how-it-works line, email signup |
+| `zip-lookup.js` | ZIP lookup: Zippopotam.us (city/state) + FCC Census Area API (county), matches `data/local-laws.json`, otherwise official-source links and a verified state table (WI, MN, IL, IA, MI). Shareable `?zip=53925` URLs |
 | `guides.html` | Guide hub |
 | `housing.html`, `predators.html`, `feeding.html`, `care.html`, `health.html`, `biosecurity.html`, `flock.html` | Core guides (each with FAQ + FAQPage JSON-LD and signup) |
 | `breeds.html` | 15-breed comparison table and breed profiles |
@@ -52,6 +53,12 @@ GoatCounter (`https://ownchickens.goatcounter.com/count`) is a privacy-friendly,
 
 The "Report a correction" links on the law pages open a prefilled GitHub issue. Optionally set `corrections.email` to a monitored inbox to offer email as well.
 
+## ZIP lookup (home page)
+
+`zip-lookup.js` runs fully in the browser with two free, no-key, CORS-enabled APIs: `https://api.zippopotam.us/us/{zip}` (city and state) and `https://geo.fcc.gov/api/census/area` (county, optional). It shows verified records from `data/local-laws.json` first (matched by exact ZIP or by city name + state). If there is no verified record it says so plainly and lists Municode / American Legal searches, city and county website searches, the state agriculture program and extension office (the `STATES` table in `zip-lookup.js`, URLs checked 2026-10-22), a note about unincorporated areas, and a "suggest this city" link. If the ZIP API is down it falls back to exact-ZIP matches in the local data. It never generates rules. Lookups are counted in GoatCounter as the `zip-lookup` event.
+
+To add a state, add an entry to `STATES` with official URLs only.
+
 ## Local law data
 
 `data/local-laws.json` holds one record per city. **Only add rules verified on official sources** (the city's site, ordinance, application or fact sheet). Each record needs source links and a `sourceLastChecked` date. Cities that could not be verified were left out on purpose; Waukesha and Chicago are still pending. Current coverage: 10 Wisconsin cities plus Minneapolis and Saint Paul, all checked 2026-10-18.
@@ -68,7 +75,7 @@ Re-check sources and update the dates at least yearly. Fees often change each Ja
 ## Editing workflow
 
 1. Edit page content directly in the HTML.
-2. To change the nav, footer or guide sub-nav, edit `tools/layout.py` and run `python3 tools/sync_layout.py`. This rewrites the header and footer on every page and makes sure `site-config.js` loads first.
+2. To change the nav (Guides, Laws, Breeds, Costs + "Check your ZIP"), the slim footer or guide sub-nav, edit `tools/layout.py` and run `python3 tools/sync_layout.py`. This rewrites the header and footer on every page and makes sure `site-config.js` loads first.
 3. After adding or removing pages, run `python3 tools/build_sitemap.py`. Pages marked `noindex` are skipped.
 4. Before pushing, run `python3 tools/check_site.py`. It checks tag balance, duplicate ids, internal links and anchors, image alt text, meta/OG/canonical tags, JSON-LD, FAQPage content, data files, law records and sitemap coverage.
 

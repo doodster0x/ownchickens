@@ -281,6 +281,9 @@ function showSignupFallback(form) {
   const status = form.querySelector("[data-signup-status]");
   const checklistHref = form.getAttribute("action") || "checklist.html";
   form.hidden = false;
+  const copyHead = form.parentElement.querySelector(".signup-copy");
+  if (copyHead) copyHead.hidden = false;
+  form.parentElement.classList.remove("signup--ml");
   form.parentElement.querySelectorAll(".ml-embedded").forEach((node) => {
     node.hidden = true;
   });
@@ -309,6 +312,10 @@ function setupMailerLite(ml, seconds) {
     embed.className = "ml-embedded";
     embed.dataset.form = ml.formId;
     form.hidden = true;
+    // MailerLite's embed brings its own heading; hide ours to avoid a duplicate.
+    const copyHead = form.parentElement.querySelector(".signup-copy");
+    if (copyHead) copyHead.hidden = true;
+    form.parentElement.classList.add("signup--ml");
     form.after(embed);
     // MailerLite fills the div after the script runs; check it did.
     window.setTimeout(() => {

@@ -1587,7 +1587,168 @@ main > .signup {
   min-width: 0;
 }
 
+/* When the MailerLite embed replaces our copy + form, use one full-width,
+ * centered column and stretch MailerLite's fixed-width containers. */
+/* :not(#ml-a):not(#ml-b) only raises specificity above MailerLite's #mlb2-<id> rules. */
+.signup.signup--ml:not(#ml-a):not(#ml-b) {
+  display: block;
+  text-align: center;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-embedded,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedContainer,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedWrapper,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedWrapper.embedForm {
+  width: 100% !important;
+  max-width: 640px !important;
+  margin: 0 auto !important;
+  float: none !important;
+  display: block !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedWrapper {
+  background: transparent !important;
+  border: 0 !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedBody,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-successBody {
+  padding: 0 !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedContent,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-successContent {
+  text-align: center !important;
+  margin-bottom: 18px !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedContent h4,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-successContent h4 {
+  text-align: center !important;
+  font-size: clamp(1.4rem, 3vw, 1.9rem) !important;
+  line-height: 1.2 !important;
+  word-break: normal !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedPermissionsContent p {
+  text-align: center !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedContent p,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-successContent p {
+  text-align: center !important;
+}
+@media (min-width: 640px) {
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-embedded form {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-formContent {
+    flex: 1 1 260px !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-fieldRow,
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-fieldRow.ml-last-item {
+    margin: 0 !important;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedSubmit {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedSubmit button {
+    width: auto !important;
+    height: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    white-space: nowrap;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-formContent { order: 1; }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedSubmit { order: 2; }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-embedded form > :not(.ml-form-formContent):not(.ml-form-embedSubmit) {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedPermissions { margin: 4px 0 0 !important; }
+}
+
 .signup .ml-embedded[hidden],
 .signup .signup-form[hidden] {
   display: none;
+}
+
+/* ---------- Simple home page + ZIP lookup ---------- */
+.home-simple { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.zip-hero { padding: clamp(48px, 10vw, 110px) 0 40px; text-align: center; }
+.zip-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 0 0 14px; color: var(--leaf-dark); }
+.zip-lede { font-size: 1.15rem; color: var(--muted); margin: 0 auto 28px; max-width: 34em; }
+.zip-form { max-width: 520px; margin: 0 auto; text-align: left; }
+.zip-form label { display: block; font-weight: 700; margin-bottom: 6px; }
+.zip-row { display: flex; gap: 10px; }
+.zip-row input { flex: 1; font-size: 1.5rem; padding: 14px 16px; letter-spacing: 0.08em; min-width: 0; }
+.zip-row .button { font-size: 1.1rem; padding: 0 22px; white-space: nowrap; }
+.zip-help { color: var(--muted); font-size: 0.95rem; margin: 12px 0 0; }
+.zip-error { color: var(--clay); font-weight: 700; min-height: 1.4em; margin: 8px 0 0; }
+.zip-results { text-align: left; margin-top: 18px; outline: none; }
+.zip-results:focus-visible { outline: 3px solid var(--gold); outline-offset: 6px; }
+.zip-results-title { font-size: 1.4rem; margin: 10px 0 14px; }
+.zip-results-title span { display: block; font-size: 1rem; font-weight: 400; color: var(--muted); }
+.zip-card { background: var(--field); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; margin-bottom: 16px; box-shadow: var(--shadow); }
+.zip-card h3 { margin: 0 0 8px; font-size: 1.35rem; }
+.zip-card h4 { margin: 18px 0 6px; }
+.zip-verified { border-top: 5px solid var(--leaf); }
+.zip-unverified { border-top: 5px solid var(--gold); }
+.zip-badge { display: inline-block; background: var(--sky); color: var(--leaf-dark); font-weight: 700; font-size: 0.85rem; padding: 4px 10px; border-radius: 999px; margin: 0 0 10px; }
+.zip-summary { font-size: 1.08rem; }
+.zip-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.zip-links a { display: block; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+.zip-links a:hover, .zip-links a:focus-visible { border-color: var(--leaf); background: var(--paper); }
+.zip-links strong { display: block; color: var(--leaf-dark); }
+.zip-links span { display: block; color: var(--muted); font-size: 0.92rem; }
+.zip-note { color: var(--muted); font-size: 0.95rem; }
+.zip-loading, .zip-error-box { padding: 14px; border: 1px dashed var(--line); border-radius: var(--radius); }
+.button.secondary-dark { background: var(--leaf-dark); color: #fff; }
+.home-simple .signup { width: 100%; max-width: 640px; margin: 40px auto 60px; }
+.site-footer-slim { padding: 22px 20px; text-align: center; }
+.site-footer-slim nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; margin-bottom: 10px; }
+.site-footer-slim p { font-size: 0.88rem; margin: 0 auto; max-width: 46em; }
+@media (max-width: 520px) { .zip-row { flex-direction: column; } .zip-row .button { padding: 14px; } }
+@media (max-width: 960px) { .home-simple .zip-hero { padding-top: 110px; } }
+
+/* Home hero photo behind the ZIP box */
+.signup .signup-copy[hidden] { display: none; }
+.zip-hero-photo-wrap { position: relative; overflow: hidden; padding: clamp(28px, 7vw, 80px) 16px 40px; isolation: isolate; }
+.zip-hero-photo { position: absolute; inset: 0; z-index: -1; }
+.zip-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; display: block; }
+.zip-hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,40,20,.15), rgba(20,40,20,.35)); }
+.zip-hero-panel { max-width: 640px; margin: 0 auto; background: rgba(255,255,255,.96); border-radius: var(--radius); padding: clamp(22px, 4vw, 40px); box-shadow: 0 12px 40px rgba(0,0,0,.22); }
+.zip-hero-photo-wrap .zip-results { max-width: 760px; margin: 18px auto 0; }
+.zip-hero-laws { padding: 24px 0 40px; }
+.zip-hero-laws h2 { margin: 0 0 10px; color: var(--leaf-dark); }
+@media (max-width: 640px) {
+  .zip-hero-photo-wrap { padding: 0 0 32px; }
+  .zip-hero-photo { position: relative; display: block; height: 200px; z-index: 0; }
+  .zip-hero-panel { position: relative; margin: -36px 12px 0; padding: 22px 18px; }
+  .zip-hero-photo-wrap .zip-results { padding: 0 12px; }
+  .zip-row { flex-direction: column; }
+  .zip-row .button { padding: 14px 22px; }
+}
+.home-simple .zip-hero-photo-wrap { margin-top: 96px; padding: 64px 28px 56px; border-radius: 18px; }
+.home-simple .zip-hero-photo-wrap .zip-results { background: rgba(255,255,255,.97); border-radius: var(--radius); padding: 0 16px; }
+.home-simple .zip-hero-photo-wrap .zip-results:empty { display: none; }
+@media (max-width: 960px) { .home-simple .zip-hero-photo-wrap { margin-top: 84px; padding-top: 48px; } }
+@media (max-width: 640px) {
+  .home-simple { padding: 0 12px; }
+  .home-simple .zip-hero-photo-wrap { margin-top: 72px; padding: 0 0 20px; background: #fff; box-shadow: var(--shadow); }
+  .home-simple .zip-hero-photo-wrap .zip-hero-panel { box-shadow: 0 -6px 20px rgba(0,0,0,.12); }
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedSubmit button.primary {
+  background: var(--clay) !important;
+  border-color: var(--clay) !important;
+  border-radius: var(--radius) !important;
+  min-height: 46px;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-fieldRow input {
+  min-height: 46px;
+  border-radius: var(--radius) !important;
+}
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedPermissions,
+.signup.signup--ml:not(#ml-a):not(#ml-b) .ml-form-embedSubmit {
+  float: none !important;
 }
