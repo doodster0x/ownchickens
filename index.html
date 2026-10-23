@@ -62,7 +62,12 @@
     </header>
 
     <main id="main" class="home-simple">
-      <section class="zip-hero" id="zip-lookup" aria-labelledby="zip-title">
+      <section class="zip-hero zip-hero-photo-wrap" id="zip-lookup" aria-labelledby="zip-title">
+        <picture class="zip-hero-photo">
+          <source type="image/webp" srcset="assets/backyard-coop-hero-700.webp 700w, assets/backyard-coop-hero-1200.webp 1200w, assets/backyard-coop-hero-1774.webp 1774w" sizes="100vw" />
+          <img src="assets/backyard-coop-hero-1200.jpg" width="1200" height="600" alt="A small wooden chicken coop with hens in a green backyard" fetchpriority="high" decoding="async" />
+        </picture>
+        <div class="zip-hero-panel">
         <h1 id="zip-title">Can you keep chickens where you live?</h1>
         <p class="zip-lede">Enter your ZIP code to see the backyard chicken rules for your area, with links to the official sources.</p>
         <form class="zip-form" id="zipForm" novalidate>
@@ -74,6 +79,7 @@
           <p class="zip-help" id="zipHelp">How it works: we look up your city, county and state, show verified local rules first, and otherwise point you to the official places to check.</p>
           <p class="zip-error" id="zipError" role="alert"></p>
         </form>
+        </div>
         <div class="zip-results" id="zipResults" aria-live="polite" aria-atomic="false" tabindex="-1"></div>
       </section>
 

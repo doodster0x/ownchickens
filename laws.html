@@ -66,43 +66,23 @@
         <div class="section-heading">
           <p class="eyebrow">Local laws</p>
           <h1>Check the rules before you buy birds</h1>
-          <p>Start with your city or town and ZIP code. Confirm flock limits, rooster rules, coop setbacks, permits, forms, and nuisance rules before spending money.</p>
+          <p>Start with your ZIP code. Confirm flock limits, rooster rules, coop setbacks, permits, forms, and nuisance rules before spending money.</p>
         </div>
       </section>
 
-      <section class="law-section">
-        <div class="section law-layout">
-          <div class="section-heading">
-            <p class="eyebrow">Rule finder</p>
-            <h2>Find backyard chicken laws and permits near you</h2>
-            <p>
-              Enter your city or town and ZIP code. If the database has a match, it shows direct official links for laws,
-              prerequisites, flock limits, permits, and forms. If not, it builds official-source searches.
-            </p>
+      <section class="zip-hero zip-hero-laws" id="zip-lookup" aria-labelledby="zip-laws-title">
+        <h2 id="zip-laws-title">Check your ZIP code</h2>
+        <p class="zip-lede">Enter your ZIP code to see the backyard chicken rules for your area, with links to the official sources.</p>
+        <form class="zip-form" id="zipForm" novalidate>
+          <label for="zipLookupInput">US ZIP code</label>
+          <div class="zip-row">
+            <input id="zipLookupInput" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="10" pattern="[0-9]{5}" placeholder="e.g. 53925" aria-describedby="zipHelp zipError" required />
+            <button class="button primary" type="submit">Check rules</button>
           </div>
-
-          <div>
-            <form class="law-form" id="lawForm">
-              <label>
-                City or town
-                <input id="cityInput" name="city" autocomplete="address-level2" placeholder="Madison" required />
-              </label>
-              <label>
-                ZIP code
-                <input id="zipInput" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" placeholder="53703" required />
-              </label>
-              <button class="button primary" type="submit">Find local rules</button>
-            </form>
-
-            <div class="results-panel" aria-live="polite" aria-atomic="true">
-              <div class="results-heading">
-                <h3 id="resultsTitle">Try your location</h3>
-                <p id="resultsHint">We have verified rules for a growing list of cities. Always verify your exact address with the official city, town, or county office.</p>
-              </div>
-              <div class="result-links" id="resultLinks"></div>
-            </div>
-          </div>
-        </div>
+          <p class="zip-help" id="zipHelp">How it works: we look up your city, county and state, show verified local rules first, and otherwise point you to the official places to check.</p>
+          <p class="zip-error" id="zipError" role="alert"></p>
+        </form>
+        <div class="zip-results" id="zipResults" aria-live="polite" aria-atomic="false" tabindex="-1"></div>
       </section>
 <!-- city-list:start -->
       <section class="section section-tight" id="cities" aria-labelledby="cities-title">
@@ -188,5 +168,6 @@
     </footer>
     <script src="site-config.js"></script>
     <script src="script.js"></script>
+    <script src="zip-lookup.js"></script>
   </body>
 </html>
