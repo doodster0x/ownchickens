@@ -371,7 +371,7 @@
     showError("");
     if (!/^\d{5}$/.test(zip)) {
       results.innerHTML = "";
-      showError("Please enter a 5-digit US ZIP code, like 53925.");
+      showError("Please enter a 5-digit US ZIP code, like 53703.");
       input.focus();
       return;
     }

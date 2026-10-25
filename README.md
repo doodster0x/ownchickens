@@ -9,7 +9,7 @@ Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. There is no bui
 | Path | What it is |
 | --- | --- |
 | `index.html` | Simple landing page: ZIP code law lookup, short how-it-works line, email signup |
-| `zip-lookup.js` | ZIP lookup: Zippopotam.us (city/state) + FCC Census Area API (county), matches `data/local-laws.json`, otherwise official-source links and a verified state table (all 50 US states). Shareable `?zip=53925` URLs |
+| `zip-lookup.js` | ZIP lookup: Zippopotam.us (city/state) + FCC Census Area API (county), matches `data/local-laws.json`, otherwise official-source links and a verified state table (all 50 US states). Shareable `?zip=53703` URLs |
 | `guides.html` | Guide hub |
 | `housing.html`, `predators.html`, `feeding.html`, `care.html`, `health.html`, `biosecurity.html`, `flock.html` | Core guides (each with FAQ + FAQPage JSON-LD and signup) |
 | `breeds.html` | 15-breed comparison table and breed profiles |
