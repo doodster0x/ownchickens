@@ -9,7 +9,7 @@ Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. There is no bui
 | Path | What it is |
 | --- | --- |
 | `index.html` | Simple landing page: ZIP code law lookup, short how-it-works line, email signup |
-| `zip-lookup.js` | ZIP lookup: Zippopotam.us (city/state) + FCC Census Area API (county), matches `data/local-laws.json`, otherwise official-source links and a verified state table (WI, MN, IL, IA, MI). Shareable `?zip=53925` URLs |
+| `zip-lookup.js` | ZIP lookup: Zippopotam.us (city/state) + FCC Census Area API (county), matches `data/local-laws.json`, otherwise official-source links and a verified state table (all 50 US states). Shareable `?zip=53925` URLs |
 | `guides.html` | Guide hub |
 | `housing.html`, `predators.html`, `feeding.html`, `care.html`, `health.html`, `biosecurity.html`, `flock.html` | Core guides (each with FAQ + FAQPage JSON-LD and signup) |
 | `breeds.html` | 15-breed comparison table and breed profiles |
@@ -55,13 +55,13 @@ The "Report a correction" links on the law pages open a prefilled GitHub issue. 
 
 ## ZIP lookup (home page)
 
-`zip-lookup.js` runs fully in the browser with two free, no-key, CORS-enabled APIs: `https://api.zippopotam.us/us/{zip}` (city and state) and `https://geo.fcc.gov/api/census/area` (county, optional). It shows verified records from `data/local-laws.json` first (matched by exact ZIP or by city name + state). If there is no verified record it says so plainly and lists Municode / American Legal searches, city and county website searches, the state agriculture program and extension office (the `STATES` table in `zip-lookup.js`, URLs checked 2026-10-22), a note about unincorporated areas, and a "suggest this city" link. If the ZIP API is down it falls back to exact-ZIP matches in the local data. It never generates rules. Lookups are counted in GoatCounter as the `zip-lookup` event.
+`zip-lookup.js` runs fully in the browser with two free, no-key, CORS-enabled APIs: `https://api.zippopotam.us/us/{zip}` (city and state) and `https://geo.fcc.gov/api/census/area` (county, optional). It shows verified records from `data/local-laws.json` first (matched by exact ZIP or by city name + state). If there is no verified record it says so plainly and lists Municode / American Legal searches, city and county website searches, the state agriculture program and extension office (the `STATES` table in `zip-lookup.js` covering all 50 US states, URLs checked 2026-10-25), a note about unincorporated areas, and a "suggest this city" link. If the ZIP API is down it falls back to exact-ZIP matches in the local data. It never generates rules. Lookups are counted in GoatCounter as the `zip-lookup` event.
 
 To add a state, add an entry to `STATES` with official URLs only.
 
 ## Local law data
 
-`data/local-laws.json` holds one record per city. **Only add rules verified on official sources** (the city's site, ordinance, application or fact sheet). Each record needs source links and a `sourceLastChecked` date. Cities that could not be verified were left out on purpose; Waukesha and Chicago are still pending. Current coverage: 10 Wisconsin cities plus Minneapolis and Saint Paul, all checked 2026-10-18.
+`data/local-laws.json` holds one record per city. **Only add rules verified on official sources** (the city's site, ordinance, application or fact sheet). Each record needs source links and a `sourceLastChecked` date. Current coverage: 37 verified cities across 7 Midwest states (24 Wisconsin cities plus 13 major cities across MN, IL, IA, MI, IN and OH), plus state-level agriculture and extension links for all 50 US states.
 
 After editing the JSON:
 
@@ -89,7 +89,7 @@ Hosted on GitHub Pages from `main`. Work happens on branches and is merged by th
 
 ## Status
 
-- Done: MailerLite email capture with fallback, GoatCounter analytics, printable checklist, expanded guides with FAQs, predators/health/biosecurity guides, cost calculator, Budget List, 12 verified city law pages, breed table and quiz, buying guides, seasonal blog.
+- Done: MailerLite email capture with fallback, GoatCounter analytics, printable checklist, expanded guides with FAQs, predators/health/biosecurity guides, cost calculator, Budget List, 37 verified city law pages, breed table and quiz, buying guides, seasonal blog.
 
 ## TODO / open decisions
 
