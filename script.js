@@ -383,3 +383,31 @@ setupSignupForms();
 setupCorrectionLinks();
 setupAmazonLinks();
 setupAnalytics();
+
+// Verified-city filter on laws.html: filters by city name and opens matching states.
+(function () {
+  var input = document.getElementById("cityFilter");
+  if (!input) return;
+  var groups = Array.prototype.slice.call(document.querySelectorAll(".state-group"));
+  var status = document.getElementById("cityFilterStatus");
+  var empty = document.getElementById("cityFilterEmpty");
+  var initialOpen = groups.map(function (g) { return g.open; });
+  var defaultStatus = status ? status.textContent : "";
+  input.addEventListener("input", function () {
+    var q = input.value.trim().toLowerCase();
+    var total = 0, states = 0;
+    groups.forEach(function (g, i) {
+      var n = 0;
+      g.querySelectorAll("li[data-city]").forEach(function (li) {
+        var hit = !q || li.getAttribute("data-city").indexOf(q) !== -1;
+        li.hidden = !hit;
+        if (hit) n++;
+      });
+      g.hidden = n === 0;
+      g.open = q ? n > 0 : initialOpen[i];
+      if (n) { total += n; states++; }
+    });
+    if (empty) empty.hidden = total > 0;
+    if (status) status.textContent = q ? total + (total === 1 ? " city" : " cities") + " in " + states + (states === 1 ? " state" : " states") : defaultStatus;
+  });
+})();
