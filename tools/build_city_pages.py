@@ -11,6 +11,7 @@ laws.html (between the city-cards markers). Then run:
 from __future__ import annotations
 
 import json
+import re
 import os
 import sys
 from urllib.parse import quote
@@ -154,16 +155,42 @@ def refresh_laws_cards(records) -> None:
     if start not in html or end not in html:
         print("laws.html: city-cards markers not found, skipped")
         return
-    cards = "".join(
-        f'\n          <a class="link-card" href="{r["page"]}"><span>{r["state"]} &middot; checked {r["sourceLastChecked"]}</span>'
-        f'<strong>{esc(r["city"])}</strong><small>{esc(r["chickenLimit"])}. {esc(r["roosterRule"])}. '
-        f'{esc(r["permitRequired"].split(";")[0].split("(")[0].strip())}.</small></a>'
-        for r in records
-    )
+    groups: dict[str, list[dict]] = {}
+    names: dict[str, str] = {}
+    for r in records:
+        groups.setdefault(r["state"], []).append(r)
+        names[r["state"]] = r.get("stateName", r["state"])
+    biggest = max(groups, key=lambda k: len(groups[k]))
+    order = sorted(groups, key=lambda k: names[k])
+    parts = [
+        '\n          <div class="city-filter">'
+        '\n            <label for="cityFilter">Filter cities</label>'
+        '\n            <input type="search" id="cityFilter" placeholder="Type a city name, e.g. Madison" autocomplete="off" />'
+        f'\n            <p class="city-filter-status" id="cityFilterStatus" aria-live="polite">{len(records)} cities in {len(groups)} states</p>'
+        '\n          </div>'
+    ]
+    for st in order:
+        cities = sorted(groups[st], key=lambda r: r["city"].lower())
+        n = len(cities)
+        items = "".join(
+            f'\n              <li data-city="{esc(r["city"].lower())}"><a class="link-card" href="{r["page"]}"><span>{r["state"]} &middot; checked {r["sourceLastChecked"]}</span>'
+            f'<strong>{esc(r["city"])}</strong><small>{esc(r["chickenLimit"])}. {esc(r["roosterRule"])}. '
+            f'{esc(r["permitRequired"].split(";")[0].split("(")[0].strip())}.</small></a></li>'
+            for r in cities
+        )
+        parts.append(
+            f'\n          <details class="state-group" data-state="{st}"{" open" if st == biggest else ""}>'
+            f'\n            <summary><span class="state-name">{esc(names[st])}</span><span class="state-count">{n} {"city" if n == 1 else "cities"}</span></summary>'
+            f'\n            <ul class="state-cities">{items}\n            </ul>'
+            '\n          </details>'
+        )
+    parts.append('\n          <p class="city-filter-empty" id="cityFilterEmpty" hidden>No verified city matches that name yet. Try the ZIP lookup above for official sources.</p>')
+    cards = "".join(parts)
+    html = re.sub(r"\(\d+ verified cities", f"({len(records)} verified cities", html)
     a, b = html.index(start) + len(start), html.index(end)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(html[:a] + cards + html[b:])
-    print(f"laws.html: {len(records)} city cards")
+    print(f"laws.html: {len(records)} cities in {len(groups)} state groups")
 
 
 if __name__ == "__main__":
