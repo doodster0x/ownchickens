@@ -26,7 +26,7 @@
     },
     AZ: {
       ag: { label: "Arizona Department of Agriculture: Animal Services Division", href: "https://agriculture.az.gov/animals", detail: "State animal health, poultry programs and disease reporting." },
-      ext: { label: "University of Arizona Cooperative Extension county offices", href: "https://extension.arizona.edu/locations" },
+      ext: { label: "University of Arizona Cooperative Extension county offices", href: "https://extension.arizona.edu/local-offices" },
     },
     AR: {
       ag: { label: "Arkansas Department of Agriculture: Livestock & Poultry", href: "https://www.agriculture.arkansas.gov/livestock-poultry/", detail: "State poultry health programs, NPIP and avian disease reporting." },
@@ -34,15 +34,15 @@
     },
     CA: {
       ag: { label: "California Department of Food and Agriculture: Avian Health Program", href: "https://www.cdfa.ca.gov/ahfss/Animal_Health/Avian_Health_Program.html", detail: "State backyard poultry health, biosecurity and sick-bird hotline." },
-      ext: { label: "UC Cooperative Extension county offices", href: "https://ucanr.edu/About/Locations/" },
+      ext: { label: "UC Cooperative Extension county offices", href: "https://www.ucanr.edu/counties" },
     },
     CO: {
       ag: { label: "Colorado Department of Agriculture: Animal Health", href: "https://ag.colorado.gov/animals", detail: "State livestock and poultry health programs and avian flu updates." },
-      ext: { label: "Colorado State University Extension county offices", href: "https://extension.colostate.edu/field-offices/" },
+      ext: { label: "Colorado State University Extension county offices", href: "https://extension.colostate.edu/extension-county-offices/" },
     },
     CT: {
-      ag: { label: "Connecticut Department of Agriculture: Animal Health Division", href: "https://portal.ct.gov/doag/regulatory/regulatory/animal-health-division", detail: "State poultry health, flock testing and avian disease reporting." },
-      ext: { label: "UConn Extension county offices", href: "https://cahnr.uconn.edu/extension/locations/" },
+      ag: { label: "Connecticut Department of Agriculture: Office of the State Veterinarian", href: "https://portal.ct.gov/doag/regulatory/regulatory/state-veterinarian", detail: "State poultry health, flock testing and avian disease reporting." },
+      ext: { label: "UConn Extension county offices", href: "https://extension.uconn.edu/locations/" },
     },
     DE: {
       ag: { label: "Delaware Department of Agriculture: Poultry and Animal Health", href: "https://agriculture.delaware.gov/poultry-animal-health/", detail: "State poultry registration, health and avian influenza resources." },
@@ -53,12 +53,12 @@
       ext: { label: "UF/IFAS Extension county offices", href: "https://sfyl.ifas.ufl.edu/find-your-local-office/" },
     },
     GA: {
-      ag: { label: "Georgia Department of Agriculture: Animal Health", href: "https://agr.georgia.gov/animal-health", detail: "State animal and poultry health programs and avian flu info." },
+      ag: { label: "Georgia Department of Agriculture: Animal Health & Diseases", href: "https://agr.georgia.gov/animal-health-diseases", detail: "State animal and poultry health programs and avian flu info." },
       ext: { label: "UGA Cooperative Extension county offices", href: "https://extension.uga.edu/county-offices.html" },
     },
     HI: {
-      ag: { label: "Hawaii Department of Agriculture: Animal Industry Division", href: "https://hdoa.hawaii.gov/ai/", detail: "State animal and poultry health, import permits and disease reporting." },
-      ext: { label: "UH CTAHR Cooperative Extension Service", href: "https://cms.ctahr.hawaii.edu/ces" },
+      ag: { label: "Hawaii Department of Agriculture: Animal Industry Division", href: "https://dab.hawaii.gov/ai/", detail: "State animal and poultry health, import permits and disease reporting." },
+      ext: { label: "UH CTAHR Cooperative Extension Service", href: "https://cms.ctahr.hawaii.edu/ce/Find-Us" },
     },
     ID: {
       ag: { label: "Idaho State Department of Agriculture: Animal Industries", href: "https://agri.idaho.gov/animals/", detail: "State poultry and livestock health programs." },
@@ -73,20 +73,20 @@
       ext: { label: "Purdue Extension county offices", href: "https://extension.purdue.edu/about/county-office.html" },
     },
     IA: {
-      ag: { label: "Iowa Department of Agriculture: Animal Industry Bureau", href: "https://iowaagriculture.gov/animal-industry-bureau", detail: "State animal and poultry health programs." },
-      ag2: { label: "Iowa Department of Agriculture: avian influenza", href: "https://iowaagriculture.gov/animal-industry-bureau/avian-influenza", detail: "Current bird flu status and reporting." },
+      ag: { label: "Iowa Department of Agriculture: Animal Industry Bureau", href: "https://iowaagriculture.gov/animal-industry-division", detail: "State animal and poultry health programs." },
+      ag2: { label: "Iowa Department of Agriculture: avian influenza", href: "https://iowaagriculture.gov/animal-industry-division/avian-influenza", detail: "Current bird flu status and reporting." },
       ext: { label: "Iowa State University Extension county services", href: "https://www.extension.iastate.edu/countyservices/" },
     },
     KS: {
       ag: { label: "Kansas Department of Agriculture: Division of Animal Health", href: "https://agriculture.ks.gov/divisions-programs/division-of-animal-health", detail: "State poultry disease control, NPIP and avian influenza guidance." },
-      ext: { label: "K-State Research and Extension local offices", href: "https://www.ksre.k-state.edu/about/statewide-locations.html" },
+      ext: { label: "K-State Research and Extension local offices", href: "https://extension.k-state.edu/about/statewide-locations/" },
     },
     KY: {
       ag: { label: "Kentucky Department of Agriculture: Office of State Veterinarian", href: "https://www.kyagr.com/statevet/", detail: "State poultry health, biosecurity and disease reporting." },
-      ext: { label: "University of Kentucky Cooperative Extension county offices", href: "https://extension.ca.uky.edu/county" },
+      ext: { label: "University of Kentucky Cooperative Extension county offices", href: "https://extension.mgcafe.uky.edu/county-offices" },
     },
     LA: {
-      ag: { label: "Louisiana Department of Agriculture & Forestry: Animal Health", href: "https://www.ldaf.la.gov/animals/animal-health", detail: "State poultry diagnostic lab, NPIP and animal health programs." },
+      ag: { label: "Louisiana Department of Agriculture & Forestry: Animal Health", href: "https://www.ldaf.la.gov/animals/health", detail: "State poultry diagnostic lab, NPIP and animal health programs." },
       ext: { label: "LSU AgCenter parish extension offices", href: "https://www.lsuagcenter.com/portals/our_offices/parishes" },
     },
     ME: {
@@ -94,25 +94,25 @@
       ext: { label: "University of Maine Cooperative Extension county offices", href: "https://extension.umaine.edu/county-offices/" },
     },
     MD: {
-      ag: { label: "Maryland Department of Agriculture: Animal Health (Poultry Registration)", href: "https://mda.maryland.gov/AnimalHealth/Pages/Poultry.aspx", detail: "Maryland requires poultry premises registration for backyard and commercial flocks." },
+      ag: { label: "Maryland Department of Agriculture: Animal Health (Poultry Registration)", href: "https://mda.maryland.gov/animals/animal-health-livestock-poultry/backyard-chickens-small-flocks", detail: "Maryland requires poultry premises registration for backyard and commercial flocks." },
       ext: { label: "University of Maryland Extension local offices", href: "https://extension.umd.edu/locations" },
     },
     MA: {
       ag: { label: "Massachusetts Department of Agricultural Resources: Poultry Program", href: "https://www.mass.gov/poultry-program", detail: "State poultry health, flock testing and biosecurity resources." },
-      ext: { label: "UMass Extension agriculture and livestock programs", href: "https://ag.umass.edu/extension-outreach" },
+      ext: { label: "UMass Extension agriculture and livestock programs", href: "https://www.umass.edu/agriculture-food-environment/extension-outreach-overview" },
     },
     MI: {
       ag: { label: "Michigan MDARD: Avian diseases", href: "https://www.michigan.gov/mdard/animals/diseases/avian", detail: "State poultry disease programs and reporting." },
-      ag2: { label: "Michigan MDARD: avian influenza (bird flu)", href: "https://www.michigan.gov/birdflu", detail: "Current bird flu status and backyard flock guidance." },
+      ag2: { label: "Michigan MDARD: avian influenza (bird flu)", href: "https://www.michigan.gov/mdard/animals/diseases/avian/avian-influenza", detail: "Current bird flu status and backyard flock guidance." },
       ext: { label: "MSU Extension: find your county office", href: "https://www.canr.msu.edu/outreach/county" },
     },
     MN: {
       ag: { label: "Minnesota Board of Animal Health: Poultry", href: "https://bah.state.mn.us/poultry", detail: "State poultry health programs, testing and contacts." },
       ag2: { label: "Minnesota Board of Animal Health: avian influenza", href: "https://bah.state.mn.us/hpai", detail: "Current bird flu response and backyard biosecurity." },
-      ext: { label: "University of Minnesota Extension local offices", href: "https://extension.umn.edu/find-extension-office" },
+      ext: { label: "University of Minnesota Extension local offices", href: "https://extension.umn.edu/about/our-work/local" },
     },
     MS: {
-      ag: { label: "Mississippi Board of Animal Health: Poultry Division", href: "https://www.mbah.ms.gov/poultry/", detail: "State backyard poultry health, registration and disease reporting." },
+      ag: { label: "Mississippi Board of Animal Health: Poultry Division", href: "https://www.mbah.ms.gov/animals/poultry/", detail: "State backyard poultry health, registration and disease reporting." },
       ext: { label: "Mississippi State University Extension county offices", href: "https://extension.msstate.edu/county-offices" },
     },
     MO: {
@@ -120,7 +120,7 @@
       ext: { label: "University of Missouri Extension county offices", href: "https://extension.missouri.edu/locations" },
     },
     MT: {
-      ag: { label: "Montana Department of Livestock: Animal Health Bureau", href: "https://liv.mt.gov/Animal-Health", detail: "State livestock and poultry health, import rules and disease reporting." },
+      ag: { label: "Montana Department of Livestock: Animal Health Bureau", href: "https://liv.mt.gov/animal-health/", detail: "State livestock and poultry health, import rules and disease reporting." },
       ext: { label: "Montana State University Extension local offices", href: "https://www.montana.edu/extension/localoffices.html" },
     },
     NE: {
@@ -128,51 +128,51 @@
       ext: { label: "Nebraska Extension (UNL) county offices", href: "https://epd.unl.edu/" },
     },
     NV: {
-      ag: { label: "Nevada Department of Agriculture: Division of Animal Industry", href: "https://agri.nv.gov/Animals/Animal_Industry_Home/", detail: "State animal and poultry disease programs." },
-      ext: { label: "University of Nevada, Reno Extension county offices", href: "https://extension.unr.edu/offices.aspx" },
+      ag: { label: "Nevada Department of Agriculture: Division of Animal Industry", href: "https://agri.nv.gov/animals/animal_home/", detail: "State animal and poultry disease programs." },
+      ext: { label: "University of Nevada, Reno Extension county offices", href: "https://extension.unr.edu/county-offices.aspx" },
     },
     NH: {
       ag: { label: "New Hampshire Department of Agriculture: Division of Animal Industry", href: "https://www.agriculture.nh.gov/divisions/animal-industry/index.htm", detail: "State poultry health, flock testing and disease reporting." },
-      ext: { label: "UNH Cooperative Extension county offices", href: "https://extension.unh.edu/about/office-locations" },
+      ext: { label: "UNH Cooperative Extension county offices", href: "https://extension.unh.edu/about/locations" },
     },
     NJ: {
       ag: { label: "New Jersey Department of Agriculture: Division of Animal Health", href: "https://www.nj.gov/agriculture/divisions/ah/", detail: "State poultry health, biosecurity and avian disease reporting." },
-      ext: { label: "Rutgers Cooperative Extension county offices", href: "https://njaes.rutgers.edu/county/" },
+      ext: { label: "Rutgers Cooperative Extension county offices", href: "https://extension.rutgers.edu/county" },
     },
     NM: {
       ag: { label: "New Mexico Livestock Board", href: "https://www.nmlbonline.com/", detail: "State livestock and poultry health and disease reporting." },
-      ext: { label: "New Mexico State University Cooperative Extension county offices", href: "https://aces.nmsu.edu/county/" },
+      ext: { label: "New Mexico State University Cooperative Extension county offices", href: "https://extension.nmsu.edu/about/location.html" },
     },
     NY: {
       ag: { label: "New York State Department of Agriculture and Markets: Animal Industry", href: "https://agriculture.ny.gov/animals", detail: "State poultry health, NPIP and avian influenza guidance." },
       ext: { label: "Cornell Cooperative Extension local offices", href: "https://cals.cornell.edu/cornell-cooperative-extension/local-offices" },
     },
     NC: {
-      ag: { label: "North Carolina Department of Agriculture: Veterinary Division (Poultry)", href: "https://www.ncagr.gov/divisions/veterinary/poultry", detail: "State poultry health, NPIP and NCFarmID premises registration." },
+      ag: { label: "North Carolina Department of Agriculture: Veterinary Division (Poultry)", href: "https://www.ncagr.gov/divisions/veterinary/poultry-health-programs", detail: "State poultry health, NPIP and NCFarmID premises registration." },
       ext: { label: "NC State Extension county centers", href: "https://www.ces.ncsu.edu/local-county-center/" },
     },
     ND: {
       ag: { label: "North Dakota Department of Agriculture: Animal Health Division", href: "https://www.ndda.nd.gov/divisions/animal-health", detail: "State poultry health, biosecurity and avian influenza updates." },
-      ext: { label: "NDSU Extension county offices", href: "https://www.ndsu.edu/agriculture/extension/county-extension-offices" },
+      ext: { label: "NDSU Extension county offices", href: "https://www.ndsu.edu/agriculture/extension/extension-county-offices" },
     },
     OH: {
       ag: { label: "Ohio Department of Agriculture: Division of Animal Health", href: "https://agri.ohio.gov/divisions/animal-health", detail: "State poultry health programs and avian disease reporting." },
       ext: { label: "Ohio State University Extension county offices", href: "https://extension.osu.edu/lao" },
     },
     OK: {
-      ag: { label: "Oklahoma Department of Agriculture: Animal Industry Services (Poultry)", href: "https://ag.ok.gov/divisions/animal-industry-services/", detail: "State poultry health, NPIP and avian influenza guidance." },
+      ag: { label: "Oklahoma Department of Agriculture: Animal Industry / State Veterinarian", href: "https://ag.ok.gov/divisions/animal-industry-state-veterinarian/", detail: "State poultry health, NPIP and avian influenza guidance." },
       ext: { label: "Oklahoma State University Extension county offices", href: "https://extension.okstate.edu/county/" },
     },
     OR: {
-      ag: { label: "Oregon Department of Agriculture: Animal Health and Identification", href: "https://www.oregon.gov/oda/animal-health-id/pages/default.aspx", detail: "State backyard poultry health and avian influenza resources." },
+      ag: { label: "Oregon Department of Agriculture: Animal Health, Feeds, and Livestock ID", href: "https://www.oregon.gov/oda/animal-health-feeds-livestock-id/pages/default.aspx", detail: "State backyard poultry health and avian influenza resources." },
       ext: { label: "Oregon State University Extension county offices", href: "https://extension.oregonstate.edu/find-us" },
     },
     PA: {
-      ag: { label: "Pennsylvania Department of Agriculture: Bureau of Animal Health", href: "https://www.pa.gov/agencies/pda/animals.html", detail: "State poultry health, premises registration and avian flu reporting." },
+      ag: { label: "Pennsylvania Department of Agriculture: Bureau of Animal Health", href: "https://www.pa.gov/agencies/pda/animals", detail: "State poultry health, premises registration and avian flu reporting." },
       ext: { label: "Penn State Extension county offices", href: "https://extension.psu.edu/county-offices" },
     },
     RI: {
-      ag: { label: "Rhode Island DEM Division of Agriculture: Animal Health", href: "https://dem.ri.gov/agriculture/animal-health-and-passive-surveillance", detail: "State domestic poultry health, biosecurity and registration." },
+      ag: { label: "Rhode Island DEM Division of Agriculture: Animal Health", href: "https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment/agriculture/animal-health", detail: "State domestic poultry health, biosecurity and registration." },
       ext: { label: "University of Rhode Island Cooperative Extension", href: "https://web.uri.edu/coopext/" },
     },
     SC: {
@@ -181,10 +181,10 @@
     },
     SD: {
       ag: { label: "South Dakota Animal Industry Board", href: "https://aib.sd.gov/", detail: "State poultry health, NPIP and disease reporting." },
-      ext: { label: "SDSU Extension regional centers", href: "https://extension.sdstate.edu/about/regional-centers" },
+      ext: { label: "SDSU Extension regional centers and locations", href: "https://extension.sdstate.edu/about" },
     },
     TN: {
-      ag: { label: "Tennessee Department of Agriculture: Animal Health", href: "https://www.tn.gov/agriculture/businesses/animals/animal-health.html", detail: "State poultry health programs and avian flu updates." },
+      ag: { label: "Tennessee Department of Agriculture: Animals and Animal Health", href: "https://www.tn.gov/agriculture/animals.html", detail: "State poultry health programs and avian flu updates." },
       ext: { label: "UT Extension county offices", href: "https://utextension.tennessee.edu/office-locations-departments-centers/" },
     },
     TX: {
@@ -192,7 +192,7 @@
       ext: { label: "Texas A&M AgriLife Extension county offices", href: "https://counties.agrilife.org/" },
     },
     UT: {
-      ag: { label: "Utah Department of Agriculture and Food: Animal Industry", href: "https://ag.utah.gov/farmers/animal-industry/", detail: "State poultry health, biosecurity and avian disease reporting." },
+      ag: { label: "Utah Department of Agriculture and Food: Animal Industry", href: "https://ag.utah.gov/animal-industry/", detail: "State poultry health, biosecurity and avian disease reporting." },
       ext: { label: "Utah State University Extension county offices", href: "https://extension.usu.edu/locations" },
     },
     VT: {
@@ -205,7 +205,7 @@
     },
     WA: {
       ag: { label: "Washington State Department of Agriculture: Avian Health Program", href: "https://agr.wa.gov/departments/animals-livestock-and-pets/avian-health", detail: "State backyard flock biosecurity and sick-bird reporting." },
-      ext: { label: "WSU Extension county offices", href: "https://extension.wsu.edu/locations/" },
+      ext: { label: "WSU Extension county offices", href: "https://cahnrs.wsu.edu/about/locations/" },
     },
     WV: {
       ag: { label: "West Virginia Department of Agriculture: Animal Health Division", href: "https://agriculture.wv.gov/divisions/animal-health/", detail: "State poultry health, NPIP and disease reporting." },
@@ -217,7 +217,7 @@
       ext: { label: "UW-Madison Extension county offices", href: "https://counties.extension.wisc.edu/" },
     },
     WY: {
-      ag: { label: "Wyoming Livestock Board: Animal Health", href: "https://wlsb.state.wy.us/public/animal-health", detail: "State livestock and poultry health programs and disease reporting." },
+      ag: { label: "Wyoming Livestock Board: Animal Health", href: "https://wlsb.state.wy.us/animal-health/", detail: "State livestock and poultry health programs and disease reporting." },
       ext: { label: "University of Wyoming Extension county offices", href: "https://www.uwyo.edu/uwe/county/" },
     },
   };

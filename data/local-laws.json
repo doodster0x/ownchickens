@@ -419,9 +419,9 @@
     ],
     "links": [
       {
-        "label": "Oshkosh permit to keep chickens and/or ducks application PDF",
+        "label": "Oshkosh Planning Services applications and brochures (chicken how-to guide and permit renewal)",
         "detail": "Official application with fee, limits, and required attachments.",
-        "href": "https://www.oshkoshwi.gov/PlanningServices/Documents/Chicken_Permit_Application.pdf"
+        "href": "https://www.oshkoshwi.gov/PlanningServices/ApplicationBrochures.aspx"
       },
       {
         "label": "Oshkosh Municipal Codes",
@@ -643,19 +643,14 @@
     ],
     "links": [
       {
-        "label": "Waukesha Ordinance No. 2023-4 (Municipal Code Sec. 33.07) PDF",
+        "label": "City of Waukesha Municipal Code (Sec. 33.07 Chickens and Other Fowl)",
         "detail": "Official ordinance creating Section 33.07 regulating the keeping of chickens and prohibiting other fowl.",
-        "href": "https://webfile.waukesha-wi.gov/waukesha/Document_Center/Government/Clerk-Treasurer/Recently%20Passed%20Ordinances/2023/2023-4.pdf"
+        "href": "https://waukesha.municipalcodeonline.com/book?type=ordinances"
       },
       {
         "label": "City of Waukesha permits and licenses",
         "detail": "Official city permits and applications portal.",
         "href": "https://www.waukesha-wi.gov/residents/licenses/index.php"
-      },
-      {
-        "label": "Waukesha Code of Ordinances (Municode)",
-        "detail": "Full Municipal Code for the City of Waukesha.",
-        "href": "https://library.municode.com/wi/waukesha/codes/code_of_ordinances"
       }
     ],
     "sourceLastChecked": "2026-10-25",
@@ -751,7 +746,7 @@
       {
         "label": "City of Wauwatosa chicken keeping permits page",
         "detail": "Official city permit requirements, fees, and application instructions.",
-        "href": "https://www.wauwatosa.net/government/departments/building-safety/permits/chicken-keeping-permits"
+        "href": "https://wauwatosa.gov/license-permit/chicken-keeping-permits/"
       },
       {
         "label": "Wauwatosa Municipal Code Sec. 9.04.050–9.04.060 (Municode)",
@@ -759,8 +754,8 @@
         "href": "https://library.municode.com/wi/wauwatosa/codes/code_of_ordinances?nodeId=TIT9AN_CH9.04DOAN_9.04.050DOKECHCI"
       }
     ],
-    "sourceLastChecked": "2026-10-25",
-    "verified": "2026-10-25",
+    "sourceLastChecked": "2026-11-01",
+    "verified": "2026-11-01",
     "page": "laws/wauwatosa-wi.html"
   },
   {
@@ -806,11 +801,11 @@
       {
         "label": "Fond du Lac Code of Ordinances, Chapter 216 Animals",
         "detail": "Official municipal code chapter governing animals and backyard hens (eCode360).",
-        "href": "https://ecode360.com/FO1891"
+        "href": "https://ecode360.com/15567165"
       }
     ],
-    "sourceLastChecked": "2026-10-25",
-    "verified": "2026-10-25",
+    "sourceLastChecked": "2026-11-01",
+    "verified": "2026-11-01",
     "page": "laws/fond-du-lac-wi.html"
   },
   {
@@ -1256,9 +1251,9 @@
     ],
     "links": [
       {
-        "label": "Beloit Code of General Ordinances (eCode360)",
+        "label": "Beloit Code of General Ordinances (city ordinances page)",
         "detail": "Official City of Beloit Municipal Code, including Section 7.244 (Chickens) and Chapter 19 (Zoning).",
-        "href": "https://ecode360.com/BE2802"
+        "href": "https://www.beloitwi.gov/ordinances"
       },
       {
         "label": "City of Beloit Planning & Building Services",
@@ -1869,9 +1864,9 @@
     ],
     "links": [
       {
-        "label": "Des Moines Urban Agriculture Governance FAQ",
+        "label": "Des Moines Raising Animals (urban chickens) page",
         "detail": "Official city summary of Municipal Code Chapter 18 urban chicken and livestock regulations.",
-        "href": "https://www.dsm.city/government/city_council_ordinances/urban_agriculture_governance_faq.php"
+        "href": "https://www.dsm.city/government/strategic_efforts/food_security/raising_animals.php"
       },
       {
         "label": "Des Moines Ordinance No. 16,402 (Sec. 18-4) PDF",
@@ -1884,8 +1879,8 @@
         "href": "https://library.municode.com/ia/des_moines/codes/code_of_ordinances"
       }
     ],
-    "sourceLastChecked": "2026-10-25",
-    "verified": "2026-10-25",
+    "sourceLastChecked": "2026-11-01",
+    "verified": "2026-11-01",
     "page": "laws/des-moines-ia.html",
     "zipCodes": [
       "50265",
@@ -2094,9 +2089,9 @@
     ],
     "links": [
       {
-        "label": "Ann Arbor Backyard Chickens Permit Application & Code Sec. 9:42 PDF",
+        "label": "Ann Arbor backyard chicken permit application PDF (revised 2025)",
         "detail": "Official City Clerk permit packet including the 40-foot waiver form and full text of Section 9:42.",
-        "href": "https://www.a2gov.org/media/1351/backyardchickenspermit.pdf"
+        "href": "https://www.a2gov.org/media/ixxnpw4f/chicken-permit-application-revised-2025.pdf"
       },
       {
         "label": "Ann Arbor City Code, Chapter 107 Animals (Municode)",
@@ -2104,8 +2099,8 @@
         "href": "https://library.municode.com/mi/ann_arbor/codes/code_of_ordinances?nodeId=TITIXPORE_CH107AN"
       }
     ],
-    "sourceLastChecked": "2026-10-25",
-    "verified": "2026-10-25",
+    "sourceLastChecked": "2026-11-01",
+    "verified": "2026-11-01",
     "page": "laws/ann-arbor-mi.html",
     "zipCodes": [
       "48103",
@@ -2149,7 +2144,7 @@
       {
         "label": "City of Grand Rapids Backyard Chicken Permit page",
         "detail": "Official Development Center guide covering lot-size tiers, coop limits, neighbor notification, and Citizen Access application.",
-        "href": "https://www.grandrapidsmi.gov/Services/Apply-for-a-Backyard-Chicken-Permit"
+        "href": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/residential-building-permits/backyard-chicken-permit/"
       },
       {
         "label": "Grand Rapids Code of Ordinances (Municode)",
@@ -2157,8 +2152,8 @@
         "href": "https://library.municode.com/mi/grand_rapids/codes/code_of_ordinances"
       }
     ],
-    "sourceLastChecked": "2026-10-25",
-    "verified": "2026-10-25",
+    "sourceLastChecked": "2026-11-01",
+    "verified": "2026-11-01",
     "page": "laws/grand-rapids-mi.html",
     "zipCodes": [
       "49501",
@@ -2404,5 +2399,170 @@
       "43299",
       "45830"
     ]
+  },
+  {
+    "id": "racine-wi",
+    "city": "Racine",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53402",
+      "53403",
+      "53404",
+      "53405",
+      "53406"
+    ],
+    "zipPrefixes": [
+      "534"
+    ],
+    "aliases": [
+      "racine",
+      "city of racine"
+    ],
+    "summary": "City of Racine allows up to 4 hens at single-family residences with an annual $55 Public Health Department chicken permit, plus a separate $80 Building Department permit for the coop.",
+    "chickenLimit": "Up to 4 hens",
+    "roosterRule": "The permit covers hens only; confirm rooster rules in Racine Municipal Code Sec. 10-6 (Urban Chickens)",
+    "permitRequired": "Annual chicken permit from the Public Health Department ($55, includes inspection, expires December 31) plus a Building Department coop permit ($80)",
+    "prerequisites": [
+      "Register your property with the Wisconsin DATCP Livestock Premises Registration program and list the registration number on the application.",
+      "Renters must include a signed statement from the property owner consenting to the application and to keeping chickens.",
+      "Get a Building Department permit for the coop (call 262-636-9464) and list the building permit number on the chicken permit application."
+    ],
+    "rules": [
+      "Governed by Racine Municipal Code Sec. 10-6 (Urban Chickens).",
+      "The permit application is for single-family residential properties and allows 1 to 4 hens.",
+      "The application requires a description or sketch of the hen house and pen with dimensions and exact location relative to property lines, adjacent properties, and your home, plus your plan for disposing of chicken waste.",
+      "Permits and inspections run on the calendar year and expire December 31."
+    ],
+    "links": [
+      {
+        "label": "City of Racine Animal Licensing & Ownership (chicken permits)",
+        "detail": "Official Public Health Department page with chicken permit fee, building permit requirement, and application download.",
+        "href": "https://cityofracinewi.gov/health/home-environment/animal-licensing-ownership/"
+      },
+      {
+        "label": "Racine chicken permit application PDF",
+        "detail": "Printable application listing the $55 fee, premises registration, and site sketch requirements.",
+        "href": "https://cityofracinewi.gov/uploadedFiles/_MainSiteContent/Departments/Health/_Documents/Environmental_Health/Application%20for%20Chicken%20Permit%20(Updated%206-24-15).pdf"
+      },
+      {
+        "label": "Racine Code of Ordinances, Chapter 10 Animals (Municode)",
+        "detail": "Full text of Sec. 10-6 Urban Chickens.",
+        "href": "https://library.municode.com/wi/racine/codes/code_of_ordinances?nodeId=PTIIMUCO_CH10AN"
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration required before the city permit.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-01",
+    "page": "laws/racine-wi.html",
+    "verified": "2026-11-01"
+  },
+  {
+    "id": "bloomington-mn",
+    "city": "Bloomington",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55420",
+      "55425",
+      "55431",
+      "55435",
+      "55437",
+      "55438"
+    ],
+    "zipPrefixes": [
+      "554"
+    ],
+    "aliases": [
+      "bloomington",
+      "city of bloomington",
+      "bloomington mn"
+    ],
+    "summary": "City of Bloomington allows up to 4 hens on single- and two-family residential properties, with strict setbacks (30 feet from lot lines, 50 feet from neighboring homes and streets) and a required 6-foot privacy fence. Roosters are prohibited.",
+    "chickenLimit": "Up to 4 hens (in addition to the 4 domestic-animal pet limit)",
+    "roosterRule": "Roosters (adult male chickens) prohibited anywhere in the city",
+    "permitRequired": "The city page does not list a separate chicken permit; confirm with the Planning Division (952-563-8920)",
+    "prerequisites": [
+      "Chickens are allowed only on single-family or two-family residential properties, not properties with three or more dwelling units.",
+      "Contact the Planning Division at 952-563-8920 or planning@BloomingtonMN.gov to confirm your coop location meets the setbacks before building."
+    ],
+    "rules": [
+      "Governed by Bloomington City Code Sec. 12.115/12.116 and Sec. 21.302.05.",
+      "Shelters and enclosures must be at least 30 feet from property lot lines, in the rear or side yard, and at least 50 feet from any adjacent street.",
+      "The shelter must be at least 50 feet from any dwelling on an abutting parcel and closer to your own home than to any neighbor's home.",
+      "A solid privacy fence at least 6 feet tall must screen the shelter and enclosure from abutting residential properties.",
+      "Shelters may not exceed 120 square feet or 6 feet in height; enclosures may not exceed 20 square feet per bird or 6 feet in height and need overhead netting.",
+      "Chickens must stay in the shelter or enclosure at all times, the shelter must be winterized, and chickens over 4 weeks old may not be kept in a dwelling or garage."
+    ],
+    "links": [
+      {
+        "label": "City of Bloomington beekeeping and chickens page",
+        "detail": "Official Planning Division summary of hen limits, setbacks, fencing, and coop size rules.",
+        "href": "https://www.bloomingtonmn.gov/plan/beekeeping-and-chickens"
+      },
+      {
+        "label": "Bloomington City Code Sec. 12.116 Farm poultry and farm animals (American Legal)",
+        "detail": "Official city code text.",
+        "href": "https://codelibrary.amlegal.com/codes/bloomington/latest/bloomington_mn/0-0-0-94669"
+      },
+      {
+        "label": "Bloomington City Code Sec. 21.302.05 Limited agriculture, bees, and gardening (American Legal)",
+        "detail": "Zoning standards for chicken shelters and enclosures.",
+        "href": "https://codelibrary.amlegal.com/codes/bloomington/latest/bloomington_mn/0-0-0-110663"
+      }
+    ],
+    "sourceLastChecked": "2026-11-01",
+    "page": "laws/bloomington-mn.html",
+    "verified": "2026-11-01"
+  },
+  {
+    "id": "dubuque-ia",
+    "city": "Dubuque",
+    "state": "IA",
+    "stateName": "Iowa",
+    "zipCodes": [
+      "52001",
+      "52002",
+      "52003"
+    ],
+    "zipPrefixes": [
+      "520"
+    ],
+    "aliases": [
+      "dubuque",
+      "city of dubuque"
+    ],
+    "summary": "City of Dubuque allows chicken and duck hens for egg production on residentially zoned property with no permit and no cap on the number of hens. Roosters and drakes are prohibited.",
+    "chickenLimit": "No city cap on the number of hens",
+    "roosterRule": "Roosters and male ducks prohibited",
+    "permitRequired": "No hen permit required; a building permit is needed only for coops with a footprint of 200 square feet or more",
+    "prerequisites": [
+      "Property must be residentially zoned (not commercial).",
+      "Check coop setbacks with Planning Services (563-589-4210, planning@cityofdubuque.org) before siting your coop."
+    ],
+    "rules": [
+      "Hens are allowed for egg production only.",
+      "Coops should be in the back yard and must meet accessory-structure setback requirements.",
+      "Hens must have adequate shelter and be kept in an enclosure that keeps them on your property and protects them from predators.",
+      "City nuisance and sanitary regulations apply to improper care or neighbor complaints."
+    ],
+    "links": [
+      {
+        "label": "City of Dubuque Keeping of Urban Hens page",
+        "detail": "Official city page on the 2014 ordinance change: no permit, no hen cap, roosters banned.",
+        "href": "https://www.cityofdubuque.org/2473/Urban-Hens"
+      },
+      {
+        "label": "Raising Hens in Dubuque guide (PDF)",
+        "detail": "City brochure with legal requirements, setback contacts, and building permit threshold.",
+        "href": "https://www.cityofdubuque.org/DocumentCenter/View/22054/Raising-Hens-in-Dubuque"
+      }
+    ],
+    "sourceLastChecked": "2026-11-01",
+    "page": "laws/dubuque-ia.html",
+    "verified": "2026-11-01"
   }
 ]
