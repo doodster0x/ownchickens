@@ -300,11 +300,11 @@
           <div><dt>Roosters</dt><dd>${esc(rec.roosterRule)}</dd></div>
           <div><dt>Permit or license</dt><dd>${esc(rec.permitRequired)}</dd></div>
         </dl>
+        <h4>Official sources</h4>
+        <ul class="zip-links">${links.map(linkItem).join("")}</ul>
         <h4>Key rules</h4>
         ${list(rec.rules)}
         ${rec.prerequisites && rec.prerequisites.length ? `<h4>Before you apply</h4>${list(rec.prerequisites)}` : ""}
-        <h4>Official sources</h4>
-        <ul class="zip-links">${links.map(linkItem).join("")}</ul>
       </article>`;
   }
 
@@ -352,6 +352,9 @@
     }
     html += `<p class="zip-note"><strong>Outside city or village limits?</strong> Unincorporated areas follow county or township rules (often zoning), not the nearby city's ordinance.</p>`;
     if (recs.length) html += `<p class="zip-note">Something out of date? <a href="${esc(suggestHref(`${p.city}, ${p.state} correction`))}" target="_blank" rel="noopener">Report a correction</a>.</p>`;
+    html += `<section class="zip-next" aria-label="Next steps"><h3>Next steps for new chicken keepers</h3><ul>
+      <li><a href="guides.html">Beginner guides</a></li><li><a href="breeds.html">Pick a breed</a></li>
+      <li><a href="cost-calculator.html">Estimate costs</a></li><li><a href="checklist.html">Starter checklist</a></li></ul></section>`;
     results.innerHTML = html;
   }
 
