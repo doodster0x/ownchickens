@@ -14,7 +14,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import layout  # noqa: E402
 
 HEADER_RE = re.compile(r'<header class="site-header".*?</header>', re.S)
-FOOTER_RE = re.compile(r'<footer class="site-footer">.*?</footer>', re.S)
+# Match site-footer and site-footer site-footer-slim (the live markup).
+FOOTER_RE = re.compile(r'<footer class="site-footer(?:\s[^"]*)?">.*?</footer>', re.S)
 GOATCOUNTER_TAG = (
     '<script data-goatcounter="https://ownchickens.goatcounter.com/count" '
     'async src="//gc.zgo.at/count.js"></script>'

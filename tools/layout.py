@@ -50,6 +50,7 @@ FOOTER_LINKS = [
     ("cost-calculator.html", "Costs"),
     ("supplies.html", "Supplies"),
     ("checklist.html", "Starter checklist"),
+    ("course.html", "Year One Starter"),
     ("reviews/", "Buying guides"),
     ("blog/", "Blog"),
     ("privacy.html", "Privacy"),
