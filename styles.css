@@ -1324,9 +1324,80 @@ main:focus {
   background: var(--sky);
 }
 
+.calc-page .page-hero {
+  padding: 112px clamp(20px, 5vw, 64px) 28px;
+}
+
+.calc-page .page-hero .section-heading {
+  width: min(1040px, 100%);
+}
+
+.calc-page .page-hero h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+}
+
+.calc-page .page-hero p:not(.eyebrow) {
+  margin: 12px 0 0;
+}
+
+.calc-page .law-layout {
+  padding-top: 32px;
+  padding-bottom: 56px;
+}
+
+.cost-live {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  margin: 0;
+  padding: 10px 12px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--leaf);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.cost-live-label {
+  color: var(--gold-text);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cost-live strong {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--leaf-dark);
+}
+
+.cost-live .is-premium {
+  color: var(--clay);
+}
+
+.cost-live-dot {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.section-heading p.cost-between {
+  max-width: 62ch;
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #fffdf8;
+  border-left: 3px solid var(--clay);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--ink);
+}
+
 .tier-results {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1337,9 +1408,12 @@ main:focus {
   border-radius: var(--radius);
 }
 
-.tier-result.featured {
-  border-color: var(--gold);
-  box-shadow: 0 16px 42px rgba(40, 38, 28, 0.09);
+.tier-result.tier-budget {
+  border-top: 3px solid var(--leaf);
+}
+
+.tier-result.tier-premium {
+  border-top: 3px solid var(--clay);
 }
 
 .tier-result h3 {
@@ -1350,8 +1424,9 @@ main:focus {
   display: block;
   margin: 10px 0 4px;
   color: var(--leaf-dark);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .tier-result p {
