@@ -14,7 +14,7 @@ Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. There is no bui
 | `housing.html`, `predators.html`, `feeding.html`, `care.html`, `health.html`, `biosecurity.html`, `flock.html` | Core guides (each with FAQ + FAQPage JSON-LD and signup) |
 | `breeds.html` | 15-breed comparison table and breed profiles |
 | `breed-quiz.html`, `breed-quiz.js`, `data/breeds.js` | "Best breed for your climate" quiz and its breed data |
-| `cost-calculator.html`, `calculator.js`, `data/cost-assumptions.js` | First-year cost calculator (low / middle / premium, editable table) |
+| `cost-calculator.html`, `calculator.js`, `data/cost-assumptions.js` | First-year cost calculator (Budget and Premium; the middle is getting creative; editable table) |
 | `supplies.html` | Convenience List (Amazon search links) and The Budget List (`#budget-list`) |
 | `reviews/` | Buying guides: coops, feeders, waterers, automatic doors, heated waterers / coop heat |
 | `blog/` | Seasonal blog index and posts |

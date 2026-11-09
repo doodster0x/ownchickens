@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <meta name="description" content="Free backyard chicken cost calculator: estimate Budget and Premium setup costs and yearly costs for your flock size, with editable assumptions." />
     <title>Backyard Chicken Setup Cost Calculator | Own Chickens</title>
     <link rel="canonical" href="https://ownchickens.com/cost-calculator.html" />
     <meta property="og:site_name" content="Own Chickens" />
     <meta property="og:title" content="Backyard Chicken Setup Cost Calculator | Own Chickens" />
-    <meta property="og:description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <meta property="og:description" content="Free backyard chicken cost calculator: estimate Budget and Premium setup costs and yearly costs for your flock size, with editable assumptions." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ownchickens.com/cost-calculator.html" />
     <meta property="og:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
@@ -16,7 +16,7 @@
     <meta property="og:image:height" content="600" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Backyard Chicken Setup Cost Calculator | Own Chickens" />
-    <meta name="twitter:description" content="Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions." />
+    <meta name="twitter:description" content="Free backyard chicken cost calculator: estimate Budget and Premium setup costs and yearly costs for your flock size, with editable assumptions." />
     <meta name="twitter:image" content="https://ownchickens.com/assets/backyard-coop-hero-1200.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -46,7 +46,7 @@
   "@type": "WebApplication",
   "name": "Backyard Chicken Setup Cost Calculator",
   "url": "https://ownchickens.com/cost-calculator.html",
-  "description": "Free backyard chicken cost calculator: estimate budget, middle, and premium setup costs and yearly costs for your flock size, with editable assumptions.",
+  "description": "Free backyard chicken cost calculator: estimate Budget and Premium setup costs and yearly costs for your flock size, with editable assumptions.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
   "isAccessibleForFree": true,
@@ -59,7 +59,7 @@
     </script>
       <script data-goatcounter="https://ownchickens.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
-  <body>
+  <body class="calc-page">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="index.html" aria-label="Own Chickens home">
@@ -83,7 +83,7 @@
         <div class="section-heading">
           <p class="eyebrow">Tool</p>
           <h1>Chicken setup cost calculator</h1>
-          <p>Estimate what a budget, middle, or premium backyard chicken setup might cost for your flock size, plus about what you will spend each year after.</p>
+          <p>Estimate what a Budget or Premium backyard chicken setup might cost for your flock size, plus about what you will spend each year after.</p>
           <p class="page-meta">Estimates only: typical range, check local prices. Assumptions last reviewed 2026-10-18.</p>
         </div>
       </section>
@@ -97,6 +97,10 @@
         </div>
         <div>
           <form class="tool-form" id="costForm">
+            <p class="cost-live" id="costLive" aria-live="polite" aria-atomic="true">
+              <span class="cost-live-label">First year</span>
+              <span class="cost-live-line">Budget about <strong id="liveBudget">…</strong> <span class="cost-live-dot" aria-hidden="true">·</span> Premium about <strong class="is-premium" id="livePremium">…</strong></span>
+            </p>
             <div>
               <label class="field-label" for="birds">How many hens?</label>
               <input id="birds" name="birds" type="number" min="1" max="30" value="4" inputmode="numeric" />
@@ -130,8 +134,9 @@
             <p class="eyebrow">Estimated ranges</p>
             <h2 id="results-title">What your setup might cost</h2>
             <p id="costNote" aria-live="polite"></p>
+            <p class="cost-between">Most people land somewhere in between. The middle is you getting creative: used gear, DIY builds, or mixing budget and premium pieces.</p>
           </div>
-          <div class="tier-results" id="costResults" aria-live="polite" style="margin-top:24px">
+          <div class="tier-results" id="costResults" style="margin-top:24px">
             <noscript><p>The calculator needs JavaScript. You can still read the assumptions in the Budget List and buying guides.</p></noscript>
           </div>
         </div>
@@ -146,7 +151,7 @@
         <div class="table-wrap" style="margin-top:20px">
           <table class="data-table">
             <caption>Cost assumptions in US dollars. Edits apply to this page only and reset when you reload.</caption>
-            <thead><tr><th scope="col">Item</th><th scope="col">Budget</th><th scope="col">Middle</th><th scope="col">Premium</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Budget</th><th scope="col">Premium</th></tr></thead>
             <tbody id="assumptionRows"></tbody>
           </table>
         </div>
@@ -170,9 +175,9 @@
             <h2>How to use these numbers</h2>
             <ul>
               <li><strong>Budget</strong> assumes you have more time than cash: a used or DIY coop, salvaged materials, DIY feeders and waterers, and opening the coop door yourself. See <a href="supplies.html#budget-list">The Budget List</a>.</li>
-              <li><strong>Middle</strong> assumes a kit coop or simple new-lumber build, basic store-bought gear, and an automatic door.</li>
               <li><strong>Premium</strong> assumes a heavy-duty coop and run, larger-capacity gear, and organic or specialty feed.</li>
-              <li>Whatever your tier, do not cheap out on predator-proofing, latches, and a safe heated waterer. Those protect the birds.</li>
+              <li>Most people land somewhere in between. That middle is you getting creative: used gear, a DIY build, or mixing budget and premium pieces.</li>
+              <li>Whatever you choose, do not cheap out on predator-proofing, latches, and a safe heated waterer. Those protect the birds.</li>
             </ul>
           </article>
           <article class="guide-card">
@@ -191,7 +196,7 @@
       <aside class="course-promo" aria-labelledby="course-promo-calculator">
         <p class="eyebrow">Year One Starter</p>
         <h2 id="course-promo-calculator">Turn these ranges into a first-year budget</h2>
-        <p>The calculator stays free. Module 2 of <cite>First 90 Days With Backyard Chickens</cite> walks the low, middle, and premium tiers plus a budget worksheet. Early-bird $39. Checkout is not live yet.</p>
+        <p>The calculator stays free. Module 2 of <cite>First 90 Days With Backyard Chickens</cite> walks Budget and Premium costs (most people land in between by getting creative) plus a budget worksheet. Early-bird $39. Checkout is not live yet.</p>
         <a class="button secondary-dark" href="course.html">See the Year One Starter</a>
       </aside>
 

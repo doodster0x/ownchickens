@@ -11,7 +11,6 @@
 
   const TIERS = [
     { key: "budget", name: "Budget", blurb: "Used, salvaged, and DIY. More of your time, less cash." },
-    { key: "middle", name: "Middle", blurb: "New basic gear and a kit or simple build." },
     { key: "premium", name: "Premium", blurb: "Heavier-duty gear and more automation." },
   ];
   const defaults = JSON.parse(JSON.stringify(data.items));
@@ -19,6 +18,7 @@
 
   const money = (n) => `$${(Math.round(n / 10) * 10).toLocaleString("en-US")}`;
   const range = (pair) => (pair[0] === pair[1] ? money(pair[0]) : `${money(pair[0])} to ${money(pair[1])}`);
+  const about = (pair) => money((pair[0] + pair[1]) / 2);
 
   function settings() {
     const birds = Math.max(1, Math.min(30, parseInt(form.birds.value, 10) || 1));
@@ -61,9 +61,11 @@
   function render() {
     const s = settings();
     const bags = ((s.birds * data.feedLbsPerBirdPerYear) / data.feedBagLbs).toFixed(1);
+    const byTier = {};
     results.innerHTML = TIERS.map((tier) => {
       const t = totals(tier.key, s);
-      return `<article class="tier-result${tier.key === "middle" ? " featured" : ""}">
+      byTier[tier.key] = t;
+      return `<article class="tier-result tier-${tier.key}">
         <h3>${tier.name}</h3>
         <p>${tier.blurb}</p>
         <span class="big">${range(t.firstYear)}</span>
@@ -71,6 +73,10 @@
         <p style="margin-top:10px">Setup: ${range(t.setup)}<br />Each year after: ${range(t.yearly)}</p>
       </article>`;
     }).join("");
+    const liveBudget = document.querySelector("#liveBudget");
+    const livePremium = document.querySelector("#livePremium");
+    if (liveBudget && byTier.budget) liveBudget.textContent = about(byTier.budget.firstYear);
+    if (livePremium && byTier.premium) livePremium.textContent = about(byTier.premium.firstYear);
     const note = document.querySelector("#costNote");
     if (note) {
       note.textContent = `${s.birds} hen${s.birds === 1 ? "" : "s"}, starting with ${s.start}, ${s.freezing ? "freezing winters" : "no hard freezes"}. Feed assumes about ${data.feedLbsPerBirdPerYear} lb per hen per year (about ${bags} bags of ${data.feedBagLbs} lb). ${data.label}`;
