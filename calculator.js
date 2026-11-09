@@ -17,8 +17,11 @@
   let items = JSON.parse(JSON.stringify(data.items));
 
   const money = (n) => `$${(Math.round(n / 10) * 10).toLocaleString("en-US")}`;
+  const moneyWhole = (n) => `$${Math.round(n).toLocaleString("en-US")}`;
   const range = (pair) => (pair[0] === pair[1] ? money(pair[0]) : `${money(pair[0])} to ${money(pair[1])}`);
   const about = (pair) => money((pair[0] + pair[1]) / 2);
+  // Monthly is the recurring midpoint ("each year after") / 12, rounded to whole dollars.
+  const perMonth = (pair) => moneyWhole((pair[0] + pair[1]) / 2 / 12);
 
   function settings() {
     const birds = Math.max(1, Math.min(30, parseInt(form.birds.value, 10) || 1));
@@ -75,8 +78,16 @@
     }).join("");
     const liveBudget = document.querySelector("#liveBudget");
     const livePremium = document.querySelector("#livePremium");
+    const liveBudgetYear = document.querySelector("#liveBudgetYear");
+    const livePremiumYear = document.querySelector("#livePremiumYear");
+    const liveBudgetMonth = document.querySelector("#liveBudgetMonth");
+    const livePremiumMonth = document.querySelector("#livePremiumMonth");
     if (liveBudget && byTier.budget) liveBudget.textContent = about(byTier.budget.firstYear);
     if (livePremium && byTier.premium) livePremium.textContent = about(byTier.premium.firstYear);
+    if (liveBudgetYear && byTier.budget) liveBudgetYear.textContent = about(byTier.budget.yearly);
+    if (livePremiumYear && byTier.premium) livePremiumYear.textContent = about(byTier.premium.yearly);
+    if (liveBudgetMonth && byTier.budget) liveBudgetMonth.textContent = perMonth(byTier.budget.yearly);
+    if (livePremiumMonth && byTier.premium) livePremiumMonth.textContent = perMonth(byTier.premium.yearly);
     const note = document.querySelector("#costNote");
     if (note) {
       note.textContent = `${s.birds} hen${s.birds === 1 ? "" : "s"}, starting with ${s.start}, ${s.freezing ? "freezing winters" : "no hard freezes"}. Feed assumes about ${data.feedLbsPerBirdPerYear} lb per hen per year (about ${bags} bags of ${data.feedBagLbs} lb). ${data.label}`;

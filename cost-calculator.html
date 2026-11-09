@@ -98,8 +98,16 @@
         <div>
           <form class="tool-form" id="costForm">
             <p class="cost-live" id="costLive" aria-live="polite" aria-atomic="true">
-              <span class="cost-live-label">First year</span>
-              <span class="cost-live-line">Budget about <strong id="liveBudget">…</strong> <span class="cost-live-dot" aria-hidden="true">·</span> Premium about <strong class="is-premium" id="livePremium">…</strong></span>
+              <span class="cost-live-tier">
+                <span class="cost-live-main">Budget: about <strong id="liveBudget">…</strong> first&nbsp;year</span>
+                <span class="cost-live-dot" aria-hidden="true">·</span>
+                <span class="cost-live-ongoing">~<span id="liveBudgetYear">…</span>/yr ongoing (~<span id="liveBudgetMonth">…</span>/mo)</span>
+              </span>
+              <span class="cost-live-tier">
+                <span class="cost-live-main">Premium: about <strong class="is-premium" id="livePremium">…</strong> first&nbsp;year</span>
+                <span class="cost-live-dot" aria-hidden="true">·</span>
+                <span class="cost-live-ongoing">~<span id="livePremiumYear">…</span>/yr ongoing (~<span id="livePremiumMonth">…</span>/mo)</span>
+              </span>
             </p>
             <div>
               <label class="field-label" for="birds">How many hens?</label>
