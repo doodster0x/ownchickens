@@ -73,7 +73,7 @@
         <p>${tier.blurb}</p>
         <span class="big">${range(t.firstYear)}</span>
         <p><strong>First year</strong>, including setup and about a year of feed and supplies.</p>
-        <p style="margin-top:10px">Setup: ${range(t.setup)}<br />Each year after: ${range(t.yearly)}</p>
+        <p style="margin-top:10px">Setup: ${range(t.setup)}<br />Each year after: ${range(t.yearly)} (about ${perMonth(t.yearly)}/mo)</p>
       </article>`;
     }).join("");
     const liveBudget = document.querySelector("#liveBudget");

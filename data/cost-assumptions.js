@@ -33,7 +33,7 @@ window.COST_ASSUMPTIONS = {
     { id: "firstAid", group: "setup", per: "flock", label: "First aid and small tools", help: "Gloves, wound spray for poultry, crate for isolation, headlamp.", budget: [15, 30], premium: [40, 80] },
     { id: "brooder", group: "setup", per: "flock", when: "chicks", label: "Brooder setup (chicks only)", help: "Tote or stock tank, heat plate or secured lamp, chick feeder and waterer.", budget: [30, 60], premium: [100, 200] },
     { id: "chicks", group: "setup", per: "bird", when: "chicks", label: "Day-old chicks, each", help: "Feed store or hatchery. Mail order may add shipping or minimum orders.", budget: [3, 8], premium: [4, 10] },
-    { id: "pullets", group: "setup", per: "bird", when: "pullets", label: "Started pullets, each", help: "Local breeder or farm; varies a lot by age and breed.", budget: [15, 35], premium: [20, 50] },
+    { id: "pullets", group: "setup", per: "bird", when: "pullets", label: "Point-of-lay pullets, each", help: "About 16 to 20 weeks old, from a local breeder, farm store, or hatchery; varies a lot by age and breed.", budget: [15, 35], premium: [20, 50] },
     { id: "feedBag", group: "yearly", per: "bag", label: "Layer feed, per 50 lb bag", help: "Conventional feed for Budget; organic or specialty for Premium.", budget: [15, 25], premium: [35, 55] },
     { id: "bedding", group: "yearly", per: "bird", label: "Bedding, per hen per year", help: "Pine shavings or straw. Free leaves can lower the budget tier.", budget: [5, 15], premium: [15, 30] },
     { id: "gritShell", group: "yearly", per: "flock", label: "Grit and oyster shell, per year", help: "Small bags last a small flock a long time.", budget: [10, 25], premium: [20, 40] },
