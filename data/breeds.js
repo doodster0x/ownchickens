@@ -16,7 +16,7 @@ window.OWN_CHICKENS_BREEDS = [
     "size": "Standard",
     "broody": "Rarely",
     "kids": 2,
-    "notes": "A classic, widely available workhorse layer that handles Midwest winters and summers."
+    "notes": "A classic, widely available workhorse layer that handles cold winters and hot summers."
   },
   {
     "id": "barred-rock",
