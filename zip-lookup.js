@@ -5,14 +5,25 @@
  * 2. Show verified city records from data/local-laws.json first.
  * 3. Otherwise say clearly that we have not verified the place, and list
  *    official places to check. Never invent rules.
+ * 4. When at least one verified city matches, add starter-flock ideas
+ *    (breeds from data/breeds.js, coop size from the housing guide).
+ *    No ideas when the ZIP is not in the verified database.
  */
 (function () {
-  const form = document.querySelector("#zipForm");
-  if (!form) return;
-  const input = document.querySelector("#zipLookupInput");
-  const errorEl = document.querySelector("#zipError");
-  const results = document.querySelector("#zipResults");
-  const CONFIG = window.OWN_CHICKENS_CONFIG || {};
+  // Direct product URL. Do not add an Associates tag or data-amazon-search;
+  // tagging is a separate task and setupAmazonLinks() would rewrite the latter.
+  const MEDEHOO_URL = "https://www.amazon.com/MEDEHOO-Chicken-Coop-Outdoor-Pull/dp/B0DPQK9Z6Y";
+  const COOP_SQFT = 4;
+  const RUN_SQFT = 10;
+  const STARTER_IDS = ["rhode-island-red", "barred-rock", "buff-orpington", "australorp"];
+
+  const hasDocument = typeof document !== "undefined";
+  const form = hasDocument ? document.querySelector("#zipForm") : null;
+  if (hasDocument && !form) return;
+  const input = hasDocument ? document.querySelector("#zipLookupInput") : null;
+  const errorEl = hasDocument ? document.querySelector("#zipError") : null;
+  const results = hasDocument ? document.querySelector("#zipResults") : null;
+  const CONFIG = (typeof window !== "undefined" && window.OWN_CHICKENS_CONFIG) || {};
 
   // State programs verified on official sites (all 50 US states, checked 2026-10-25).
   const STATES = {
@@ -335,12 +346,249 @@
     return links;
   }
 
+  // Latitude splits the continental pattern: cold winters north of ~40°N,
+  // hot summers south of ~35°N, both in between. Low-desert longitudes stay
+  // hot a little farther north. Missing coordinates stay "unknown".
+  function climateBand(lat, lon) {
+    const la = Number(lat);
+    const lo = Number(lon);
+    if (!Number.isFinite(la)) return "unknown";
+    const desert = Number.isFinite(lo) && lo <= -109 && lo >= -120 && la < 38 && la >= 35;
+    if (la < 35 || desert) return "hot";
+    if (la >= 40) return "cold";
+    return "mixed";
+  }
+
+  function breedList() {
+    const root = typeof window !== "undefined" ? window : globalThis;
+    return (root && root.OWN_CHICKENS_BREEDS) || [];
+  }
+
+  // Usual four beginners, filtered by the breed file's cold/heat scores
+  // (1 = needs extra care, 3 = handles it well). Hot and mixed areas drop
+  // heat = 1 (Buff Orpington). Cold areas keep every cold-hardy starter in
+  // the pool, then keep the three with the best cold score and, on a tie,
+  // the better heat score — so Orpington, which is heat-sensitive, is the
+  // one left off the card.
+  function pickStarters(breeds, band) {
+    const mode = band === "hot" ? "hot" : band === "cold" ? "cold" : "mixed";
+    const byId = new Map((breeds || []).map((b) => [b.id, b]));
+    const starters = STARTER_IDS.map((id) => byId.get(id)).filter(Boolean);
+    const pool = starters.filter((b) => {
+      const cold = Number(b.cold) || 0;
+      const heat = Number(b.heat) || 0;
+      if (mode === "hot" || mode === "mixed") return heat >= 2;
+      return cold >= 2;
+    });
+    const score = (b) => {
+      const cold = Number(b.cold) || 0;
+      const heat = Number(b.heat) || 0;
+      if (mode === "hot") return heat * 10 + cold;
+      if (mode === "cold") return cold * 10 + heat;
+      return cold + heat;
+    };
+    return pool
+      .map((b, i) => ({ b, i, s: score(b) }))
+      .sort((a, c) => c.s - a.s || a.i - c.i)
+      .slice(0, 3)
+      .map((row) => row.b);
+  }
+
+  function roostersProhibited(rule) {
+    const s = String(rule || "");
+    if (/not explicitly banned|confirm rooster|rooster allowed|allowed per lot|require written consent|permit fee/i.test(s)) return false;
+    return /prohibit|not allowed|\bbanned\b|hens only/i.test(s);
+  }
+
+  // First numeric flock ceiling in the opening clause. "2 to 6" uses the
+  // maximum. "Up to 4 (6 on larger parcels)" and school exceptions stay on
+  // the leading number. Per-acre rates, fee tiers, and space formulas are
+  // not a bird count. Square-foot and decimal figures are ignored.
+  function flockCap(limit) {
+    const text = String(limit || "");
+    if (/no numeric limit|no city cap|determined by|per acre|permit fee tiers/i.test(text)) return null;
+    if (/not allowed|\b0 chickens\b/i.test(text)) return 0;
+    const clause = text.split(/[;(]/)[0];
+    const range = clause.match(/^\s*(\d+)\s+to\s+(\d+)\b/i);
+    if (range) return Math.max(Number(range[1]), Number(range[2]));
+    const upTo = clause.match(/\bup to\s+(\d+)(?!\d|\.)/i);
+    if (!upTo) return null;
+    return Number(upTo[1]);
+  }
+
+  function climateSentence(band) {
+    if (band === "hot") return "These beginner breeds handle hot summers well.";
+    if (band === "cold") return "These beginner breeds handle cold winters well.";
+    if (band === "mixed") return "These beginner breeds handle seasonal cold and summer heat.";
+    return "These are hardy beginner breeds from the usual starter list.";
+  }
+
+  function layerPhrase(breed) {
+    const brown = /brown/i.test(breed.egg || "");
+    if (brown && breed.laying === "Excellent") return "an excellent brown-egg layer";
+    if (breed.laying === "Excellent") return "an excellent layer";
+    if (breed.laying === "Very good") return "a very good layer";
+    if (breed.laying === "Good") return "a good layer";
+    if (breed.laying === "Fair") return "a fair layer";
+    return "a steady layer";
+  }
+
+  function fitLine(breed, band) {
+    const mode = band === "hot" ? "hot" : band === "cold" ? "cold" : "mixed";
+    const layer = layerPhrase(breed);
+    const gentle = /gentle|calm|friendly/i.test(breed.temper || "");
+    const needsShade = Number(breed.heat) <= 1 || /shade/i.test(breed.notes || "");
+    if (mode === "hot") {
+      if (Number(breed.heat) >= 3) return `Handles heat well and is ${layer} — a reliable first hen.`;
+      if (needsShade && breed.laying === "Excellent") {
+        return `An excellent layer that needs shade in the heat${gentle ? " and is easy to handle" : ""}.`;
+      }
+      return `Handles heat with good housing${gentle ? ", stays calm," : ""} and is ${layer}.`;
+    }
+    if (mode === "mixed") {
+      if (Number(breed.cold) >= 3 && Number(breed.heat) >= 3) {
+        return `Handles cold and heat well and is ${layer} — a reliable first hen.`;
+      }
+      if (needsShade && /dark feathers/i.test(breed.notes || "")) {
+        return "An excellent layer that handles cold; dark feathers need shade in the heat.";
+      }
+      if (gentle) return `Cold-hardy and calm, and ${layer}. Plan on shade and airflow in summer.`;
+      return `Handles seasonal cold and summer heat with good housing and is ${layer}.`;
+    }
+    if (Number(breed.cold) >= 3 && Number(breed.heat) >= 3) {
+      return `Handles cold well and is ${layer} — a reliable first hen.`;
+    }
+    if (Number(breed.cold) >= 3 && breed.laying === "Very good" && gentle) {
+      return "Cold-hardy, gentle, and a very good layer; a solid bird for a family flock.";
+    }
+    if (Number(breed.cold) >= 3 && breed.laying === "Excellent" && gentle) {
+      return "An excellent layer that does well in cold weather and is easy to handle.";
+    }
+    if (Number(breed.cold) >= 3 && Number(breed.heat) <= 1) {
+      return "Cold-hardy and very gentle. Needs shade if summers turn hot.";
+    }
+    return breed.notes;
+  }
+
+  function introText(rec, band) {
+    const city = rec.city;
+    const limit = String(rec.chickenLimit || "").trim();
+    const roost = String(rec.roosterRule || "").trim();
+    const banned = roostersProhibited(roost);
+    const short = limit.length <= 64 && /^(up to\s+\d+|\d+\s+to\s+\d+)/i.test(limit);
+    let lead;
+    if (banned && short) {
+      lead = `${city} allows ${limit.charAt(0).toLowerCase()}${limit.slice(1)} and does not allow roosters.`;
+    } else if (banned) {
+      lead = `${city}: ${limit}. Roosters are not allowed.`;
+    } else {
+      const roostSentence = roost ? (/[.!?]$/.test(roost) ? roost : `${roost}.`) : "";
+      lead = `${city}: ${limit}. ${roostSentence}`.trim();
+    }
+    const hens = banned ? " Start with sexed hens or point-of-lay pullets so you stay within the rooster ban." : "";
+    return `${lead} ${climateSentence(band)}${hens}`;
+  }
+
+  function medehooLink() {
+    return `<a href="${MEDEHOO_URL}" target="_blank" rel="noopener">MEDEHOO outdoor chicken coop</a>`;
+  }
+
+  function housingGuideSentence() {
+    return ' See the <a href="housing.html">housing guide</a> for placement and setup.';
+  }
+
+  function coopHtml(rec, cap) {
+    const guide = housingGuideSentence();
+    if (cap == null) {
+      return {
+        amazon: true,
+        title: "A coop sized for 4 to 6 hens",
+        body: `There isn't a single numeric flock cap in the verified rule. Plan about ${COOP_SQFT} square feet of coop floor and about ${RUN_SQFT} square feet of outdoor run per standard-size hen. One prefab option is this ${medehooLink()}, a 4 to 6 hen starter.${guide}`,
+      };
+    }
+    const coop = cap * COOP_SQFT;
+    const run = cap * RUN_SQFT;
+    const hens = cap === 1 ? "hen" : "hens";
+    const dims = `For ${cap} standard-size ${hens}, plan about ${coop} square feet of coop floor and about ${run} square feet of outdoor run (about ${COOP_SQFT} square feet inside and ${RUN_SQFT} square feet of run per hen).`;
+    const title = cap > 6 ? `A coop sized for up to ${cap} hens` : `A coop sized for ${cap} ${hens}`;
+    if (cap < 4) {
+      return { amazon: false, title, body: `${dims}${guide}` };
+    }
+    const link = medehooLink();
+    const extra = cap <= 6
+      ? `This ${link} is sold for 4 to 6 hens, so keep only ${cap} ${cap === 1 ? "bird" : "birds"} to stay within the city's cap.`
+      : `One prefab option is this ${link}, sized for 4 to 6 hens, which stays under ${esc(rec.city)}'s limit of ${cap}. Do not keep more birds than the city allows.`;
+    return { amazon: true, title, body: `${dims} ${extra}${guide}` };
+  }
+
+  // Same wording as housing.html. "This page" is the homepage when the card is shown here.
+  const DISCLOSURE_HTML = `<p class="disclosure"><strong>Disclosure:</strong> Some links on this page may be affiliate links, including Amazon links. If you buy through them, Own Chickens may earn a small commission at no extra cost to you. As an Amazon Associate we would earn from qualifying purchases. <a href="privacy.html#affiliate-disclosure">Full disclosure</a>.</p>`;
+
+  function placeFor(places, rec) {
+    const list = places || [];
+    const named = list.find((p) => p && rec && p.state === rec.state && norm(p.city) === norm(rec.city));
+    return named || list[0] || {};
+  }
+
+  function primaryRecord(recs, place) {
+    if (!recs || !recs.length) return null;
+    if (place && place.city) {
+      const wanted = norm(place.city);
+      const named = recs.find((rec) => rec.state === place.state && [rec.city, ...(rec.aliases || [])].map(norm).includes(wanted));
+      if (named) return named;
+    }
+    return recs[0];
+  }
+
+  function starterHtml(rec, place, matchCount) {
+    const band = climateBand(place && place.lat, place && place.lon);
+    const cap = flockCap(rec.chickenLimit);
+    const city = rec.city;
+    if (cap === 0) {
+      const roost = roostersProhibited(rec.roosterRule)
+        ? "Roosters are prohibited too."
+        : `${rec.roosterRule}.`;
+      return `
+      <article class="zip-card zip-starter" aria-labelledby="zipStarterTitle">
+        <p class="zip-badge">Starter ideas for this ZIP</p>
+        <h3 id="zipStarterTitle">No starter flock inside ${esc(city)}</h3>
+        <p>${esc(city)} does not allow backyard chickens inside city limits, so there isn't a starter flock to plan. ${esc(roost)} If your address is outside the city, county rules may be different.</p>
+      </article>`;
+    }
+    const breeds = pickStarters(breedList(), band);
+    const breedItems = breeds
+      .map((b) => `<li><strong>${esc(b.name)}</strong><span>${esc(fitLine(b, band))}</span></li>`)
+      .join("");
+    const coop = coopHtml(rec, cap);
+    const multi = matchCount > 1
+      ? `<p class="zip-starter-which">This ZIP matches more than one verified city. These ideas follow ${esc(city)}.</p>`
+      : "";
+    return `
+      <article class="zip-card zip-starter" aria-labelledby="zipStarterTitle">
+        <p class="zip-badge">Starter ideas for this ZIP</p>
+        <h3 id="zipStarterTitle">Good first birds and a coop for ${esc(city)}</h3>
+        <p>${esc(introText(rec, band))}</p>
+        ${breedItems ? `<ul class="zip-starter-breeds">${breedItems}</ul>` : ""}
+        <div class="zip-starter-coop">
+          <strong>${esc(coop.title)}</strong>
+          <p>${coop.body}</p>
+        </div>
+        <p class="zip-starter-links"><a href="breeds.html">See all breeds</a><a href="housing.html">Housing guide</a></p>
+        ${multi}
+        ${coop.amazon ? DISCLOSURE_HTML : ""}
+      </article>`;
+  }
+
   function render(zip, places, county, recs) {
     const p = places[0];
     const place = `${p.city}${county ? `, ${county}` : ""}, ${p.state}`;
     let html = `<h2 class="zip-results-title" id="zipResultsTitle">Chicken rules for ${esc(zip)} <span>${esc(place)}</span></h2>`;
     if (recs.length) {
-      html += recs.map(recordHtml).join("");
+      const primary = primaryRecord(recs, p);
+      recs.forEach((rec) => {
+        html += recordHtml(rec);
+        if (rec === primary) html += starterHtml(rec, placeFor(places, rec), recs.length);
+      });
       html += `<p class="zip-note">ZIP codes can cross city limits. Confirm your address is inside the city before relying on this.</p>`;
     } else {
       html += `<article class="zip-card zip-unverified">
@@ -411,6 +659,22 @@
       window.goatcounter.count({ path: "zip-lookup", title: "ZIP lookup", event: true });
     }
   }
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+      MEDEHOO_URL,
+      flockCap,
+      climateBand,
+      pickStarters,
+      roostersProhibited,
+      fitLine,
+      coopHtml,
+      starterHtml,
+      primaryRecord,
+      introText,
+    };
+  }
+  if (!form) return;
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
