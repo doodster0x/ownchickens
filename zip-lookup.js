@@ -7,6 +7,9 @@
  *    official places to check. Never invent rules.
  * 4. When at least one verified city matches, add starter-flock ideas
  *    (breeds from data/breeds.js, coop size from the housing guide).
+ *    If the ZIP matches more than one verified city, the ideas follow the
+ *    most restrictive match: a ban if any city bans chickens, otherwise the
+ *    lowest numeric flock cap. The card still says which city that is.
  *    No ideas when the ZIP is not in the verified database.
  */
 (function () {
@@ -402,18 +405,21 @@
 
   // First numeric flock ceiling in the opening clause. "2 to 6" uses the
   // maximum. "Up to 4 (6 on larger parcels)" and school exceptions stay on
-  // the leading number. Per-acre rates, fee tiers, and space formulas are
-  // not a bird count. Square-foot and decimal figures are ignored.
+  // the leading number. "Up to 6 on smaller lots, and 2 per acre on larger
+  // lots" keeps 6. A per-acre rate with no household ceiling, fee tiers, and
+  // space formulas are not a bird count. Square-foot and decimal figures
+  // are ignored.
   function flockCap(limit) {
     const text = String(limit || "");
-    if (/no numeric limit|no city cap|determined by|per acre|permit fee tiers/i.test(text)) return null;
     if (/not allowed|\b0 chickens\b/i.test(text)) return 0;
+    if (/no numeric limit|no city cap|determined by|permit fee tiers/i.test(text)) return null;
     const clause = text.split(/[;(]/)[0];
     const range = clause.match(/^\s*(\d+)\s+to\s+(\d+)\b/i);
     if (range) return Math.max(Number(range[1]), Number(range[2]));
     const upTo = clause.match(/\bup to\s+(\d+)(?!\d|\.)/i);
-    if (!upTo) return null;
-    return Number(upTo[1]);
+    if (upTo) return Number(upTo[1]);
+    if (/per acre/i.test(text)) return null;
+    return null;
   }
 
   function climateSentence(band) {
@@ -483,7 +489,8 @@
       lead = `${city}: ${limit}. Roosters are not allowed.`;
     } else {
       const roostSentence = roost ? (/[.!?]$/.test(roost) ? roost : `${roost}.`) : "";
-      lead = `${city}: ${limit}. ${roostSentence}`.trim();
+      const limitSentence = /[.!?]$/.test(limit) ? limit : `${limit}.`;
+      lead = `${city}: ${limitSentence} ${roostSentence}`.trim();
     }
     const hens = banned ? " Start with sexed hens or point-of-lay pullets so you stay within the rooster ban." : "";
     return `${lead} ${climateSentence(band)}${hens}`;
@@ -540,6 +547,31 @@
     return recs[0];
   }
 
+  // Which city's starter ideas to show. A ban beats every number. Otherwise
+  // the lowest numeric cap wins, even when the ZIP source names a looser
+  // city. Cities with no single bird count (per acre, fee tiers, no cap)
+  // do not outrank a real number. Equal caps keep the named city.
+  function restrictiveRecord(recs, place) {
+    if (!recs || !recs.length) return null;
+    if (recs.length === 1) return recs[0];
+    const bans = recs.filter((rec) => flockCap(rec.chickenLimit) === 0);
+    if (bans.length) return primaryRecord(bans, place) || bans[0];
+    const numeric = [];
+    recs.forEach((rec) => {
+      const cap = flockCap(rec.chickenLimit);
+      if (cap != null) numeric.push({ rec, cap });
+    });
+    if (!numeric.length) return primaryRecord(recs, place);
+    const lowest = Math.min(...numeric.map((row) => row.cap));
+    const tied = numeric.filter((row) => row.cap === lowest).map((row) => row.rec);
+    return primaryRecord(tied, place) || tied[0];
+  }
+
+  function multiNote(city, matchCount) {
+    if (!(matchCount > 1)) return "";
+    return `<p class="zip-starter-which">This ZIP matches more than one verified city. These ideas follow ${esc(city)}.</p>`;
+  }
+
   function starterHtml(rec, place, matchCount) {
     const band = climateBand(place && place.lat, place && place.lon);
     const cap = flockCap(rec.chickenLimit);
@@ -548,11 +580,20 @@
       const roost = roostersProhibited(rec.roosterRule)
         ? "Roosters are prohibited too."
         : `${rec.roosterRule}.`;
-      return `
+      if (!(matchCount > 1)) {
+        return `
       <article class="zip-card zip-starter" aria-labelledby="zipStarterTitle">
         <p class="zip-badge">Starter ideas for this ZIP</p>
         <h3 id="zipStarterTitle">No starter flock inside ${esc(city)}</h3>
         <p>${esc(city)} does not allow backyard chickens inside city limits, so there isn't a starter flock to plan. ${esc(roost)} If your address is outside the city, county rules may be different.</p>
+      </article>`;
+      }
+      return `
+      <article class="zip-card zip-starter" aria-labelledby="zipStarterTitle">
+        <p class="zip-badge">Starter ideas for this ZIP</p>
+        <h3 id="zipStarterTitle">No starter flock inside ${esc(city)}</h3>
+        <p>One of the cities this ZIP matches does not allow backyard chickens. ${esc(city)} does not allow them. Check which city you are in before buying birds.</p>
+        ${multiNote(city, matchCount)}
       </article>`;
     }
     const breeds = pickStarters(breedList(), band);
@@ -560,9 +601,7 @@
       .map((b) => `<li><strong>${esc(b.name)}</strong><span>${esc(fitLine(b, band))}</span></li>`)
       .join("");
     const coop = coopHtml(rec, cap);
-    const multi = matchCount > 1
-      ? `<p class="zip-starter-which">This ZIP matches more than one verified city. These ideas follow ${esc(city)}.</p>`
-      : "";
+    const multi = multiNote(city, matchCount);
     return `
       <article class="zip-card zip-starter" aria-labelledby="zipStarterTitle">
         <p class="zip-badge">Starter ideas for this ZIP</p>
@@ -584,7 +623,7 @@
     const place = `${p.city}${county ? `, ${county}` : ""}, ${p.state}`;
     let html = `<h2 class="zip-results-title" id="zipResultsTitle">Chicken rules for ${esc(zip)} <span>${esc(place)}</span></h2>`;
     if (recs.length) {
-      const primary = primaryRecord(recs, p);
+      const primary = restrictiveRecord(recs, p);
       recs.forEach((rec) => {
         html += recordHtml(rec);
         if (rec === primary) html += starterHtml(rec, placeFor(places, rec), recs.length);
@@ -671,6 +710,7 @@
       coopHtml,
       starterHtml,
       primaryRecord,
+      restrictiveRecord,
       introText,
     };
   }
