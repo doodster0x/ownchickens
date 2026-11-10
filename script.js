@@ -370,12 +370,45 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
+/* City law pages: "Report a correction" opens the Google Form, prefilled
+ * with data-correction (city) and the page's canonical URL. Built on click
+ * so every page uses the same fields. A configured corrections.email still
+ * switches the button to mailto. */
+
+function encodePrefill(value) {
+  return encodeURIComponent(value).replace(/%20/g, "+").replace(/%2C/gi, ",").replace(/%3A/gi, ":").replace(/%2F/gi, "/");
+}
+
+function correctionFormUrl(city, pageUrl) {
+  const corrections = CONFIG.corrections || {};
+  const base = corrections.formUrl || "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform";
+  const cityField = corrections.cityField || "entry.2005206954";
+  const pageField = corrections.pageField || "entry.921637805";
+  return `${base}?usp=pp_url&${cityField}=${encodePrefill(city)}&${pageField}=${encodePrefill(pageUrl)}`;
+}
+
+function livePageUrl() {
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const href = canonical && canonical.getAttribute("href");
+  if (href) return href;
+  return window.location.href.split("#")[0];
+}
+
 function setupCorrectionLinks() {
   const email = ((CONFIG.corrections || {}).email || "").trim();
-  if (!email) return;
   document.querySelectorAll("a[data-correction]").forEach((link) => {
-    link.href = `mailto:${email}?subject=${encodeURIComponent(`Law correction: ${link.dataset.correction}`)}`;
-    link.removeAttribute("target");
+    const apply = () => {
+      if (email) {
+        link.href = `mailto:${email}?subject=${encodeURIComponent(`Law correction: ${link.dataset.correction}`)}`;
+        link.removeAttribute("target");
+        return;
+      }
+      link.href = correctionFormUrl(link.dataset.correction || "", livePageUrl());
+      link.target = "_blank";
+      if (!link.rel) link.rel = "noopener";
+    };
+    apply();
+    link.addEventListener("click", apply);
   });
 }
 

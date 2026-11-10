@@ -50,10 +50,15 @@ window.OWN_CHICKENS_CONFIG = {
   },
 
   corrections: {
-    // "Report a correction" links open a prefilled GitHub issue by default.
+    // City law pages: "Report a correction" opens this Google Form. script.js
+    // prefills cityField from data-correction and pageField from the canonical URL.
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform",
+    cityField: "entry.2005206954",
+    pageField: "entry.921637805",
     // TODO(optional): set a monitored inbox, e.g. "rules@ownchickens.com", to
-    // also offer an email option on law pages.
+    // use email instead of the form on city law pages.
     email: "",
+    // Homepage ZIP lookup and the laws.html finder still open a GitHub issue.
     issuesUrl: "https://github.com/doodster0x/ownchickens/issues/new",
   },
 };

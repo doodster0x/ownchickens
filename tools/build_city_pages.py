@@ -14,19 +14,31 @@ import json
 import re
 import os
 import sys
-from urllib.parse import quote
+from urllib.parse import quote_plus
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import layout  # noqa: E402
 from layout import SITE, breadcrumb, esc, signup  # noqa: E402
 
-ISSUES = "https://github.com/doodster0x/ownchickens/issues/new"
+# Public Google Form. script.js rebuilds the same URL on click from
+# data-correction plus the page canonical URL (see site-config.js corrections).
+FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform"
+CITY_FIELD = "entry.2005206954"
+PAGE_FIELD = "entry.921637805"
+
+
+def encode_prefill(value: str) -> str:
+    """Encode a form prefill value. Spaces become +, and : / , stay readable."""
+    return quote_plus(value, safe=",:/")
 
 
 def correction_url(rec: dict) -> str:
-    title = f"Law correction: {rec['city']}, {rec['state']}"
-    body = f"Page: {SITE}/{rec['page']}\n\nWhat is out of date or wrong?\n\nOfficial source link:\n\nDate you checked:\n"
-    return f"{ISSUES}?title={quote(title)}&body={quote(body)}"
+    place = f"{rec['city']}, {rec['state']}"
+    page = f"{SITE}/{rec['page']}"
+    return (
+        f"{FORM}?usp=pp_url&{CITY_FIELD}={encode_prefill(place)}"
+        f"&{PAGE_FIELD}={encode_prefill(page)}"
+    )
 
 
 def city_page(rec: dict, all_recs: list[dict]) -> str:
