@@ -370,10 +370,11 @@ document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
 
-/* City law pages: "Report a correction" opens the Google Form, prefilled
- * with data-correction (city) and the page's canonical URL. Built on click
- * so every page uses the same fields. A configured corrections.email still
- * switches the button to mailto. */
+/* "Report a correction" opens the Google Form, prefilled with data-correction
+ * (a city like "Madison, WI", or the page name when the link is not for one
+ * city) and the page's canonical URL. Built on click so every page uses the
+ * same fields. zip-lookup.js calls correctionFormUrl for verified ZIP results.
+ * A configured corrections.email still switches the button to mailto. */
 
 function encodePrefill(value) {
   return encodeURIComponent(value).replace(/%20/g, "+").replace(/%2C/gi, ",").replace(/%3A/gi, ":").replace(/%2F/gi, "/");

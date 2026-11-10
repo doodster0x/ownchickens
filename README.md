@@ -51,7 +51,7 @@ GoatCounter (`https://ownchickens.goatcounter.com/count`) is a privacy-friendly,
 
 ### Corrections
 
-The "Report a correction" button on each city law page opens a Google Form prefilled with the city (`data-correction`) and that page's canonical URL. `script.js` builds the link on click from `corrections.formUrl`. Optionally set `corrections.email` to a monitored inbox to use email instead. The homepage ZIP lookup and the laws.html finder still open a GitHub issue via `corrections.issuesUrl`.
+The "Report a correction" control on each city law page, on `laws.html`, and under each verified city in the ZIP lookup results opens a Google Form prefilled with the city (or the page name, when the link is not for one city) and that page's canonical URL. City pages and `laws.html` set `data-correction`; `script.js` builds the URL from `corrections.formUrl`. ZIP results call the same `correctionFormUrl` helper. Optionally set `corrections.email` to a monitored inbox to use email instead. An unverified ZIP result's "Suggest this city" link still opens a GitHub issue via `corrections.issuesUrl`.
 
 ## ZIP lookup (home page)
 
