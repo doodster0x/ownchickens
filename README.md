@@ -75,9 +75,11 @@ Re-check sources and update the dates at least yearly. Fees often change each Ja
 ## Editing workflow
 
 1. Edit page content directly in the HTML.
-2. To change the nav (Guides, Laws, Breeds, Costs + "Check your ZIP"), the slim footer or guide sub-nav, edit `tools/layout.py` and run `python3 tools/sync_layout.py`. This rewrites the header and footer on every page and makes sure `site-config.js` loads first.
+2. Shared navigation lives in `tools/layout.py`. After editing it, run `python3 tools/sync_layout.py`. That rewrites the header, footer, and All Guides sidebars, and makes sure `site-config.js` loads first.
+   - Header: Guides, Laws, Costs, and Check your ZIP (`MAIN_NAV` and `NAV_CTA`). Footer: `FOOTER_LINKS`.
+   - All Guides sidebar: `GUIDE_NAV` is the required top-to-bottom order: All guides, Get Your Flock, Housing, Feeding, Daily Care, Breeds, Predators, Health, Biosecurity. New guide pages must use this same order. If the order ever changes, update `GUIDE_NAV` and every page that has this sidebar in the same change, never one page alone.
 3. After adding or removing pages, run `python3 tools/build_sitemap.py`. Pages marked `noindex` are skipped.
-4. Before pushing, run `python3 tools/check_site.py`. It checks tag balance, duplicate ids, internal links and anchors, image alt text, meta/OG/canonical tags, JSON-LD, FAQPage content, data files, law records and sitemap coverage.
+4. Before pushing, run `python3 tools/check_site.py`. It checks tag balance, duplicate ids, internal links and anchors, image alt text, meta/OG/canonical tags, JSON-LD, FAQPage content, data files, law records, sitemap coverage, and that every All Guides sidebar matches `GUIDE_NAV`.
 
 New pages should copy an existing page's head: a unique title and description, canonical, OG/Twitter tags, a breadcrumb plus Article/BlogPosting JSON-LD, and a FAQPage only when the FAQ is visible on the page.
 

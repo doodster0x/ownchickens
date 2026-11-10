@@ -3,10 +3,10 @@
 The site is plain static HTML. These helpers exist so the shared chrome
 (navigation, footer, signup box) stays identical on every page.
 
-  python3 tools/sync_layout.py      # rewrite header/footer on every page
+  python3 tools/sync_layout.py      # rewrite header, footer, and All Guides sidebars
   python3 tools/build_city_pages.py # regenerate laws/<city>.html from data
   python3 tools/build_sitemap.py    # regenerate sitemap.xml
-  python3 tools/check_site.py       # link, JSON, and JSON-LD checks
+  python3 tools/check_site.py       # link, JSON, JSON-LD, and sidebar-order checks
 
 Links whose target file does not exist yet are skipped automatically, so
 navigation never points at a missing page.
@@ -17,6 +17,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 
 SITE = "https://ownchickens.com"
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,16 +31,21 @@ MAIN_NAV = [
 ]
 NAV_CTA = ("index.html#zip-lookup", "Check your ZIP")
 
+# Required All Guides sidebar order, top to bottom. This list is the order.
+# New guide pages must use this same order. If the order ever changes, update
+# GUIDE_NAV and every page that has this sidebar in the same change, never
+# one page alone. python3 tools/sync_layout.py rewrites those sidebars from
+# this list, and python3 tools/check_site.py rejects a mismatch.
 GUIDE_NAV = [
     ("guides.html", "All guides"),
-    ("breeds.html", "Breeds"),
+    ("flock.html", "Get Your Flock"),
     ("housing.html", "Housing"),
-    ("predators.html", "Predators"),
     ("feeding.html", "Feeding"),
     ("care.html", "Daily Care"),
+    ("breeds.html", "Breeds"),
+    ("predators.html", "Predators"),
     ("health.html", "Health"),
     ("biosecurity.html", "Biosecurity"),
-    ("flock.html", "Get Your Flock"),
 ]
 
 FOOTER_LINKS = [
@@ -131,7 +137,51 @@ REVIEW_NAV = [
 ]
 
 
+# A nav.guide-nav is the All Guides sidebar when it links to guides.html
+# with the label "All guides". On-this-page, buying-guide, and blog navs do not.
+GUIDE_NAV_BLOCK = re.compile(
+    r'^([ \t]*)<nav class="guide-nav"([^>]*)>(.*?)</nav>',
+    re.M | re.S,
+)
+_ANCHOR = re.compile(r"<a\b([^>]*)>(.*?)</a>", re.S)
+_HREF_ATTR = re.compile(r'\bhref="([^"]*)"')
+
+
+def normalize_site_href(page_rel: str, href: str) -> str:
+    """Resolve an in-page href to a site-root relative path, ignoring fragments."""
+    path = href.split("#", 1)[0].split("?", 1)[0]
+    if not path:
+        return page_rel
+    if path.startswith("/"):
+        target = path.lstrip("/")
+    else:
+        target = os.path.normpath(os.path.join(os.path.dirname(page_rel), path)).replace(os.sep, "/")
+    if target in ("", "."):
+        target = "index.html"
+    return target
+
+
+def all_guides_sidebar_links(inner_html: str, page_rel: str) -> list[tuple[str, str, bool]] | None:
+    """Links in an All Guides sidebar as (root href, label, aria-current).
+
+    Returns None when this nav is some other guide-nav (a page outline,
+    buying guides, blog posts, or a short related-links list).
+    """
+    links: list[tuple[str, str, bool]] = []
+    for attrs, text in _ANCHOR.findall(inner_html):
+        href_m = _HREF_ATTR.search(attrs)
+        if not href_m:
+            continue
+        label = " ".join(text.split())
+        href = normalize_site_href(page_rel, href_m.group(1))
+        links.append((href, label, 'aria-current="page"' in attrs))
+    if any(href == "guides.html" and label == "All guides" for href, label, _current in links):
+        return links
+    return None
+
+
 def guide_nav(current: str, prefix: str = "", label: str = "Guide pages", items=None) -> str:
+    """Render a guide sidebar. The All Guides sidebar always uses GUIDE_NAV."""
     links = "".join(
         f"\n          {_link(prefix, href, text, current)}"
         for href, text in (items or GUIDE_NAV)
@@ -189,8 +239,6 @@ def breadcrumb(items: list[tuple[str, str]]) -> dict:
 
 
 def faq_jsonld(faqs: list[tuple[str, str]]) -> dict:
-    import re
-
     def strip(text: str) -> str:
         return html.unescape(re.sub(r"<[^>]+>", "", text)).strip()
 

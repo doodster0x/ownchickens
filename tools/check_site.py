@@ -15,7 +15,7 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import layout  # noqa: E402
-from sync_layout import html_files  # noqa: E402
+from sync_layout import current_key, html_files  # noqa: E402
 
 ROOT = layout.ROOT_DIR
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
@@ -137,6 +137,31 @@ def expected_canonical(rel: str) -> str:
     return f"{layout.SITE}/{rel}"
 
 
+def check_all_guides_sidebars(pages: list[str]) -> None:
+    """Every All Guides sidebar must match GUIDE_NAV, including which link is current."""
+    required = ", ".join(label for _href, label in layout.GUIDE_NAV)
+    expected = [(href, label) for href, label in layout.GUIDE_NAV]
+    for rel in pages:
+        with open(os.path.join(ROOT, rel), encoding="utf-8") as fh:
+            text = fh.read()
+        current = current_key(rel)
+        for match in layout.GUIDE_NAV_BLOCK.finditer(text):
+            links = layout.all_guides_sidebar_links(match.group(3), rel)
+            if links is None:
+                continue
+            actual = [(href, label) for href, label, _current in links]
+            if actual != expected:
+                got = ", ".join(label for _href, label in actual)
+                errors.append(
+                    f"{rel}: All Guides sidebar order is {got}; required order is {required}"
+                )
+            for href, label, is_current in links:
+                if is_current and href != current:
+                    errors.append(f"{rel}: All Guides sidebar marks {label} as the current page")
+                elif href == current and not is_current:
+                    errors.append(f"{rel}: All Guides sidebar does not mark {label} as the current page")
+
+
 def main() -> int:
     pages = sorted(html_files())
     parsed: dict[str, PageParser] = {}
@@ -238,6 +263,8 @@ def main() -> int:
     for rel, p in parsed.items():
         if p.meta.get("robots") != "noindex" and expected_canonical(rel) not in locs:
             errors.append(f"sitemap.xml: missing {expected_canonical(rel)}")
+
+    check_all_guides_sidebars(pages)
 
     for w in warnings:
         print("WARN ", w)
