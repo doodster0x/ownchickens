@@ -26,7 +26,6 @@ OG_IMAGE = f"{SITE}/assets/backyard-coop-hero-1200.jpg"
 MAIN_NAV = [
     ("guides.html", "Guides"),
     ("laws.html", "Laws"),
-    ("breeds.html", "Breeds"),
     ("cost-calculator.html", "Costs"),
 ]
 NAV_CTA = ("index.html#zip-lookup", "Check your ZIP")
