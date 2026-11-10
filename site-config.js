@@ -50,15 +50,17 @@ window.OWN_CHICKENS_CONFIG = {
   },
 
   corrections: {
-    // City law pages: "Report a correction" opens this Google Form. script.js
-    // prefills cityField from data-correction and pageField from the canonical URL.
+    // "Report a correction" opens this Google Form on city law pages, laws.html,
+    // and each verified city in the ZIP lookup results. script.js prefills
+    // cityField from data-correction and pageField from the canonical URL.
+    // zip-lookup.js calls the same correctionFormUrl helper.
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform",
     cityField: "entry.2005206954",
     pageField: "entry.921637805",
     // TODO(optional): set a monitored inbox, e.g. "rules@ownchickens.com", to
-    // use email instead of the form on city law pages.
+    // use email instead of the form.
     email: "",
-    // Homepage ZIP lookup and the laws.html finder still open a GitHub issue.
+    // Unverified ZIP results ("Suggest this city") still open a GitHub issue.
     issuesUrl: "https://github.com/doodster0x/ownchickens/issues/new",
   },
 };

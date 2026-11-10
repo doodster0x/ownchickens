@@ -293,6 +293,33 @@
     return `${base}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
   }
 
+  // Same Google Form as city law pages (script.js correctionFormUrl).
+  // City is "City, ST" when the link is for one city result; otherwise the page name.
+  // A configured corrections.email still uses mailto, matching setupCorrectionLinks.
+  function reportCorrectionHref(label) {
+    const c = CONFIG.corrections || {};
+    const email = (c.email || "").trim();
+    if (email) return `mailto:${email}?subject=${encodeURIComponent(`Law correction: ${label}`)}`;
+    if (typeof correctionFormUrl === "function" && typeof livePageUrl === "function") {
+      return correctionFormUrl(label, livePageUrl());
+    }
+    const base = c.formUrl || "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform";
+    const cityField = c.cityField || "entry.2005206954";
+    const pageField = c.pageField || "entry.921637805";
+    const enc = typeof encodePrefill === "function"
+      ? encodePrefill
+      : (value) => encodeURIComponent(value).replace(/%20/g, "+").replace(/%2C/gi, ",").replace(/%3A/gi, ":").replace(/%2F/gi, "/");
+    let pageUrl = "";
+    if (typeof document !== "undefined") {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      pageUrl = (canonical && canonical.getAttribute("href")) || "";
+    }
+    if (!pageUrl && typeof location !== "undefined" && location.href) {
+      pageUrl = String(location.href).split("#")[0];
+    }
+    return `${base}?usp=pp_url&${cityField}=${enc(label)}&${pageField}=${enc(pageUrl)}`;
+  }
+
   const linkItem = (l) =>
     `<li><a href="${esc(l.href)}"${l.internal ? "" : ' target="_blank" rel="noopener"'}><strong>${esc(l.label)}</strong>${l.detail ? `<span>${esc(l.detail)}</span>` : ""}</a></li>`;
 
@@ -316,6 +343,7 @@
         <h4>Key rules</h4>
         ${list(rec.rules)}
         ${rec.prerequisites && rec.prerequisites.length ? `<h4>Before you apply</h4>${list(rec.prerequisites)}` : ""}
+        <p class="zip-note">Something out of date? <a href="${esc(reportCorrectionHref(`${rec.city}, ${rec.state}`))}" data-correction="${esc(`${rec.city}, ${rec.state}`)}" target="_blank" rel="noopener">Report a correction</a>.</p>
       </article>`;
   }
 
@@ -599,7 +627,6 @@
       </article>`;
     }
     html += `<p class="zip-note"><strong>Outside city or village limits?</strong> Unincorporated areas follow county or township rules (often zoning), not the nearby city's ordinance.</p>`;
-    if (recs.length) html += `<p class="zip-note">Something out of date? <a href="${esc(suggestHref(`${p.city}, ${p.state} correction`))}" target="_blank" rel="noopener">Report a correction</a>.</p>`;
     html += `<section class="zip-next" aria-label="Next steps"><h3>Next steps for new chicken keepers</h3><ul>
       <li><a href="guides.html">Beginner guides</a></li><li><a href="breeds.html">Pick a breed</a></li>
       <li><a href="cost-calculator.html">Estimate costs</a></li><li><a href="checklist.html">Starter checklist</a></li></ul></section>`;
