@@ -47,7 +47,7 @@ Every Amazon link uses `data-amazon-search="..."`. When `affiliates.amazonTag` i
 
 ### Analytics (GoatCounter)
 
-GoatCounter (`https://ownchickens.goatcounter.com/count`) is a privacy-friendly, cookie-free counter. Its script tag is in the `<head>` of every page: new pages get it from `tools/layout.py`, and `python3 tools/sync_layout.py` adds it to any page missing it. `analytics.provider` in `site-config.js` stays empty so visits are not counted twice; the loader is only for swapping to another provider. `privacy.html` describes GoatCounter and MailerLite.
+GoatCounter (`https://ownchickens.goatcounter.com/count`) is a privacy-friendly, cookie-free counter. Its script tag is in the `<head>` of every page: new pages get it from `tools/layout.py`, and `python3 tools/sync_layout.py` adds it to any page missing it. `404.html` is the exception. GitHub Pages serves that file at the missing URL, so the sync script sets `window.goatcounter` to count those hits as `/404` with the requested path in the title. That keeps a missing URL out of the stats for a real page added later. `analytics.provider` in `site-config.js` stays empty so visits are not counted twice; the loader is only for swapping to another provider. `privacy.html` describes GoatCounter and MailerLite.
 
 ### Corrections
 
