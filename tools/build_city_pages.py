@@ -41,18 +41,51 @@ def correction_url(rec: dict) -> str:
     )
 
 
+_URL = re.compile(r"https?://[^\s<>\"']+")
+
+
+def card_fact(text: str) -> str:
+    """One sentence for a city card. The card adds the period.
+
+    Stripping a period that is already in the data avoids a doubled period.
+    Existing records do not end these fields with a period, so their cards stay the same.
+    """
+    return esc(text.strip().rstrip("."))
+
+
+def render_item(item: str) -> str:
+    """Escape a list item. URLs already written into the text become source links.
+
+    Items with no URL stay byte-for-byte the same as esc(item), so existing
+    city pages do not change unless their data does.
+    """
+    if "://" not in item:
+        return esc(item)
+    parts: list[str] = []
+    pos = 0
+    for match in _URL.finditer(item):
+        parts.append(esc(item[pos:match.start()]))
+        raw = match.group(0)
+        url = raw.rstrip(".,);")
+        parts.append(f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a>')
+        parts.append(esc(raw[len(url):]))
+        pos = match.end()
+    parts.append(esc(item[pos:]))
+    return "".join(parts)
+
+
 def city_page(rec: dict, all_recs: list[dict]) -> str:
     path = rec["page"]
     place = f"{rec['city']}, {rec['state']}"
     title = f"{place} Backyard Chicken Laws: Limits, Roosters, Permits | Own Chickens"
     desc = f"{rec['summary']} Official sources linked; last checked {rec['sourceLastChecked']}."
-    lis = lambda items: "".join(f"\n                <li>{esc(i)}</li>" for i in items)
+    lis = lambda items: "".join(f"\n                <li>{render_item(i)}</li>" for i in items)
     links = "".join(
         f'\n                <li><a href="{esc(l["href"])}" target="_blank" rel="noopener">{esc(l["label"])}</a><br /><small>{esc(l["detail"])}</small></li>'
         for l in rec["links"]
     )
     others = "".join(
-        f'\n          <a class="link-card" href="{esc(o["id"])}.html"><span>{esc(o["state"])}</span><strong>{esc(o["city"])}</strong><small>{esc(o["chickenLimit"])}. {esc(o["roosterRule"])}.</small></a>'
+        f'\n          <a class="link-card" href="{esc(o["id"])}.html"><span>{esc(o["state"])}</span><strong>{esc(o["city"])}</strong><small>{card_fact(o["chickenLimit"])}. {card_fact(o["roosterRule"])}.</small></a>'
         for o in all_recs
         if o["id"] != rec["id"]
     )
@@ -186,8 +219,8 @@ def refresh_laws_cards(records) -> None:
         n = len(cities)
         items = "".join(
             f'\n              <li data-city="{esc(r["city"].lower())}"><a class="link-card" href="{r["page"]}"><span>{r["state"]} &middot; checked {r["sourceLastChecked"]}</span>'
-            f'<strong>{esc(r["city"])}</strong><small>{esc(r["chickenLimit"])}. {esc(r["roosterRule"])}. '
-            f'{esc(r["permitRequired"].split(";")[0].split("(")[0].strip())}.</small></a></li>'
+            f'<strong>{esc(r["city"])}</strong><small>{card_fact(r["chickenLimit"])}. {card_fact(r["roosterRule"])}. '
+            f'{card_fact(r["permitRequired"].split(";")[0].split("(")[0])}.</small></a></li>'
             for r in cities
         )
         parts.append(
