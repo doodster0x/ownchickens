@@ -35,7 +35,8 @@ window.OWN_CHICKENS_CONFIG = {
   analytics: {
     // GoatCounter (privacy-friendly, no cookies) is added directly to the
     // <head> of every page (see tools/sync_layout.py), so nothing is needed
-    // here. Leave provider empty to avoid counting visits twice. This loader
+    // here. 404.html counts as /404 instead of the missing URL. Leave provider
+    // empty to avoid counting visits twice. This loader
     // remains for trying another provider instead (remove the GoatCounter
     // tag first):
     //   Plausible:   provider "plausible",   scriptSrc "https://plausible.io/js/script.js"
