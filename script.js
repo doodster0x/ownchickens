@@ -86,13 +86,12 @@ function addLink(link) {
 
 function correctionHref(record) {
   const corrections = CONFIG.corrections || {};
-  const title = `Law correction: ${record ? `${record.city}, ${record.state}` : "local rules"}`;
-  if (corrections.email) {
-    return `mailto:${corrections.email}?subject=${encodeURIComponent(title)}`;
+  const label = record ? `${record.city}, ${record.state}` : "local rules";
+  const email = (corrections.email || "").trim();
+  if (email) {
+    return `mailto:${email}?subject=${encodeURIComponent(`Law correction: ${label}`)}`;
   }
-  const base = corrections.issuesUrl || "https://github.com/doodster0x/ownchickens/issues/new";
-  const body = "What is out of date or wrong?\n\nOfficial source link:\n\nDate you checked:\n";
-  return `${base}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  return correctionFormUrl(label, livePageUrl());
 }
 
 function renderRecord(record, city, zip) {

@@ -51,9 +51,11 @@ window.OWN_CHICKENS_CONFIG = {
   },
 
   corrections: {
-    // "Report a correction" opens this Google Form on city law pages, laws.html,
-    // and each verified city in the ZIP lookup results. script.js prefills
-    // cityField from data-correction and pageField from the canonical URL.
+    // "Report a correction" and "Suggest this city for verification" open this
+    // Google Form (not a Sheet, and not GitHub). script.js prefills cityField
+    // from data-correction and pageField from the canonical URL. An unverified
+    // ZIP prefills cityField with "Suggest for verification: City, ST (ZIP #####)"
+    // and pageField with the current page URL, including ?zip= when the lookup set it.
     // zip-lookup.js calls the same correctionFormUrl helper.
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform",
     cityField: "entry.2005206954",
@@ -61,7 +63,5 @@ window.OWN_CHICKENS_CONFIG = {
     // TODO(optional): set a monitored inbox, e.g. "rules@ownchickens.com", to
     // use email instead of the form.
     email: "",
-    // Unverified ZIP results ("Suggest this city") still open a GitHub issue.
-    issuesUrl: "https://github.com/doodster0x/ownchickens/issues/new",
   },
 };
