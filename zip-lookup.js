@@ -287,13 +287,31 @@
     return found;
   }
 
-  function suggestHref(label) {
+  // The lookup writes ?zip= onto the current page. Report that URL, not the
+  // canonical tag, which omits the query.
+  function currentPageUrl() {
+    if (typeof location !== "undefined" && location.href) {
+      return String(location.href).split("#")[0];
+    }
+    return "";
+  }
+
+  // Same Google Form and encodePrefill helper as Report a correction
+  // (script.js correctionFormUrl). City field is the suggest label, including ZIP.
+  function suggestHref(city, state, zip) {
+    const label = `Suggest for verification: ${city}, ${state} (ZIP ${zip})`;
     const c = CONFIG.corrections || {};
-    const title = `Suggest a city: ${label}`;
-    if (c.email) return `mailto:${c.email}?subject=${encodeURIComponent(title)}`;
-    const base = c.issuesUrl || "https://github.com/doodster0x/ownchickens/issues/new";
-    const body = "City / town / county:\n\nOfficial ordinance or city page link (if you know it):\n\nAnything else:\n";
-    return `${base}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    const email = (c.email || "").trim();
+    if (email) return `mailto:${email}?subject=${encodeURIComponent(label)}`;
+    const pageUrl = currentPageUrl();
+    if (typeof correctionFormUrl === "function") return correctionFormUrl(label, pageUrl);
+    const base = c.formUrl || "https://docs.google.com/forms/d/e/1FAIpQLSfeKAgc_Ygk5JD1HukCmLEK2rX2bShZrj4eB3xPDtbqC4N3iA/viewform";
+    const cityField = c.cityField || "entry.2005206954";
+    const pageField = c.pageField || "entry.921637805";
+    const enc = typeof encodePrefill === "function"
+      ? encodePrefill
+      : (value) => encodeURIComponent(value).replace(/%20/g, "+").replace(/%2C/gi, ",").replace(/%3A/gi, ":").replace(/%2F/gi, "/");
+    return `${base}?usp=pp_url&${cityField}=${enc(label)}&${pageField}=${enc(pageUrl)}`;
   }
 
   // Same Google Form as city law pages (script.js correctionFormUrl).
@@ -662,7 +680,7 @@
         <h3>We haven't verified rules for ${esc(p.city)}, ${esc(p.state)} yet</h3>
         <p>We only show rules we've checked against official sources, so we won't guess. These are the official places to check:</p>
         <ul class="zip-links">${fallbackLinks(p, county).map(linkItem).join("")}</ul>
-        <p><a class="button secondary-dark" href="${esc(suggestHref(`${p.city}, ${p.state} (${zip})`))}" target="_blank" rel="noopener">Suggest ${esc(p.city)} for verification</a></p>
+        <p><a class="button secondary-dark" href="${esc(suggestHref(p.city, p.state, zip))}" target="_blank" rel="noopener">Suggest ${esc(p.city)} for verification</a></p>
       </article>`;
     }
     html += `<p class="zip-note"><strong>Outside city or village limits?</strong> Unincorporated areas follow county or township rules (often zoning), not the nearby city's ordinance.</p>`;

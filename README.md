@@ -51,7 +51,13 @@ GoatCounter (`https://ownchickens.goatcounter.com/count`) is a privacy-friendly,
 
 ### Corrections
 
-The "Report a correction" control on each city law page, on `laws.html`, and under each verified city in the ZIP lookup results opens a Google Form prefilled with the city (or the page name, when the link is not for one city) and that page's canonical URL. City pages and `laws.html` set `data-correction`; `script.js` builds the URL from `corrections.formUrl`. ZIP results call the same `correctionFormUrl` helper. Optionally set `corrections.email` to a monitored inbox to use email instead. An unverified ZIP result's "Suggest this city" link still opens a GitHub issue via `corrections.issuesUrl`.
+The "Report a correction" control on each city law page, on `laws.html`, on `privacy.html`, and under each verified city in the ZIP lookup results opens a Google Form prefilled with the city (or the page name, when the link is not for one city) and that page's canonical URL. City pages, `laws.html`, and `privacy.html` set `data-correction`; `script.js` builds the URL from `corrections.formUrl` (`correctionFormUrl`). ZIP results call that same helper. An unverified ZIP's "Suggest {city} for verification" button calls it too, with the city field set to `Suggest for verification: City, ST (ZIP #####)` and the page field set to the current page URL, including `?zip=` when the lookup added it. Optionally set `corrections.email` to a monitored inbox to use email instead. Visitors are not sent to GitHub.
+
+## City suggestions and corrections workflow
+
+The Suggest-for-verification button and the Report a correction links open the existing Google Form, not a spreadsheet and not a GitHub issue. The form is prefilled with the city (and ZIP, for a suggestion) and the page URL.
+
+Submissions land in the Google Sheet that is linked to that form. The Chicken website bot checks those responses periodically, researches each suggested city against official source URLs, and opens a branch plus a pull request for each verified city. It does not push to `main`. A pull request is merged only after Griffin approves it.
 
 ## ZIP lookup (home page)
 
