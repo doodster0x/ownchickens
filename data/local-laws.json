@@ -3304,5 +3304,563 @@
     "sourceLastChecked": "2026-11-10",
     "page": "laws/woodbury-mn.html",
     "verified": "2026-11-10"
+  },
+  {
+    "id": "cottage-grove-wi",
+    "city": "Cottage Grove",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53527"
+    ],
+    "zipPrefixes": [
+      "53527"
+    ],
+    "aliases": [
+      "cottage grove",
+      "village of cottage grove"
+    ],
+    "summary": "Village of Cottage Grove allows up to 4 female chickens as an accessory use at a single-family residence in the SR-4 and SR-6 districts. Roosters and on-site slaughter are not permitted. The coop must be at least 4 feet from any property boundary and 25 feet from a principal structure on an adjacent lot. The quoted ordinance does not create a separate chicken license.",
+    "chickenLimit": "Up to 4 female chickens in the SR-4 and SR-6 districts (Sec. 325-49(H)(26))",
+    "roosterRule": "Roosters are not permitted (Sec. 325-49(H)(26))",
+    "permitRequired": "No village chicken license is stated in the quoted Sec. 325-49(H)(26). Keeping chickens is a permitted accessory use at a single-family residence in SR-4 and SR-6. Ordinance 01-2025, adopted January 20, 2025, also allows the use at a group daycare center in the Planned Business and Planned Industrial districts.",
+    "prerequisites": [
+      "Confirm the property is in the SR-4 or SR-6 single-family district, or is a group daycare center in the Planned Business or Planned Industrial district under Ordinance 01-2025.",
+      "Register the premises with Wisconsin DATCP. State premises registration applies to poultry even though the village section does not restate it.",
+      "Check HOA rules, covenants, and leases. The village accessory-use rules do not override private restrictions."
+    ],
+    "rules": [
+      "Sec. 325-49(H)(26), as quoted in the village planning memo of July 10, 2024, allows no more than four female chickens.",
+      "Roosters are not permitted. Slaughtering chickens on the property is not permitted.",
+      "Chickens must have a coop or covered enclosure no larger than 120 square feet and no taller than 12 feet. It must be at least 4 feet from any property boundary and at least 25 feet from a principal structure on an adjacent lot.",
+      "Chickens may not roam free. They must stay in a fenced outdoor enclosure. The fence must be at least 6 feet high and meet the village fence rules in Sec. 325-88.",
+      "The enclosure must be clean, dry, and odor-free, and must not disturb the use of adjacent lots."
+    ],
+    "links": [
+      {
+        "label": "Village of Cottage Grove planning memo quoting Sec. 325-49(H)(26) (PDF)",
+        "detail": "Official July 10, 2024 staff memo reprinting the adopted chicken rules: 4 hens, no roosters, no slaughter, and the 4-foot and 25-foot setbacks.",
+        "href": "https://www.vi.cottagegrove.wi.gov/AgendaCenter/ViewFile/Item/15033?fileID=29227"
+      },
+      {
+        "label": "Village of Cottage Grove Ordinance 01-2025 (PDF)",
+        "detail": "Adopted January 20, 2025. Extends keeping of chickens to group daycare centers in the Planned Business and Planned Industrial districts. It does not change the numeric hen, rooster, or setback rules quoted for Sec. 325-49(H)(26).",
+        "href": "https://www.vi.cottagegrove.wi.gov/AgendaCenter/ViewFile/Item/16193?fileID=31067"
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration step required before or while keeping poultry in Wisconsin.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/cottage-grove-wi.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "shorewood-hills-wi",
+    "city": "Shorewood Hills",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53705"
+    ],
+    "zipPrefixes": [
+      "53705"
+    ],
+    "aliases": [
+      "shorewood hills",
+      "village of shorewood hills"
+    ],
+    "summary": "Village of Shorewood Hills allows up to 4 chickens with a village permit. Roosters and on-site slaughter are prohibited. The enclosure must be at least 25 feet from a residential structure on another lot and at least 3 feet from a side or rear lot line, and it may not be in a front yard. ZIP 53705 is also used by Madison.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "No roosters may be kept",
+    "permitRequired": "Village permit required. The village chicken-licensing page lists a $40 fee for a 3-year permit, plus Wisconsin DATCP premises registration.",
+    "prerequisites": [
+      "Complete the village Permit to Keep Chickens application.",
+      "Provide current Wisconsin DATCP livestock premises registration.",
+      "Pay the $40 fee for a 3-year permit."
+    ],
+    "rules": [
+      "No more than four chickens may be kept at any one time. No roosters may be kept. Chickens may not be slaughtered on the premises.",
+      "The enclosure must be at least 25 feet from any residential structure on another lot, set back at least 3 feet from any side or rear yard, and is prohibited in any front yard (Village Code Sec. 10-1-100(g)(6), as stated on the village licensing page).",
+      "Coops must be raised off the ground or placed on a hard surface such as concrete, patio block, or gravel.",
+      "Coops must be cleaned of droppings, uneaten feed, feathers, and other waste daily, or as often as needed so the coop and yard do not become a health, odor, or other nuisance."
+    ],
+    "links": [
+      {
+        "label": "Village of Shorewood Hills licensing chickens page",
+        "detail": "Official village page stating the 4-chicken limit, rooster and slaughter bans, 25-foot and 3-foot setbacks, and the $40 3-year permit.",
+        "href": "https://shorewoodhillswi.gov/index.asp?DE=FB5A9C50-D552-4FFA-A02F-68B33C47474F&SEC=FA5CF4BB-2DDF-4B89-A241-CF223C946F21"
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration step required before or while keeping poultry in Wisconsin.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/shorewood-hills-wi.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "oconomowoc-wi",
+    "city": "Oconomowoc",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53066"
+    ],
+    "zipPrefixes": [
+      "53066"
+    ],
+    "aliases": [
+      "oconomowoc",
+      "city of oconomowoc"
+    ],
+    "summary": "City of Oconomowoc allows up to 4 hen chickens in the RR, TR, SR, and IP zoning districts with a chicken permit. Roosters are not permitted. The coop and run must be in the rear yard and at least 17.5 feet from any residential lot line. The city application lists a $100 one-time fee.",
+    "chickenLimit": "Up to 4 hen chickens in the RR, TR, SR, and IP districts (Sec. 17.109(5))",
+    "roosterRule": "Roosters are not permitted in the RR, TR, SR, IP, and UR districts (Sec. 17.109(5))",
+    "permitRequired": "Chicken permit required before building a coop or fence or placing chickens on the property. Ordinance 21-0997 says the fee is set by the Common Council. The city application lists a $100 one-time non-refundable fee.",
+    "prerequisites": [
+      "Apply for and receive the chicken permit before construction or placing chickens on the property.",
+      "Submit Wisconsin DATCP premises registration. The application requires the premises ID number.",
+      "If the applicant is not the owner, the owner must consent in writing.",
+      "Submit a coop and yard plan showing setbacks."
+    ],
+    "rules": [
+      "Ordinance 21-0997 creates Sec. 17.109(5). A maximum of four hen chickens is allowed per property in the RR, TR, SR, and IP districts. Chickens are not permitted at duplex or multifamily dwellings.",
+      "There is no hen limit in the UR Urban Reserve district, and the ordinance does not apply there.",
+      "No chicken coop or run shall be closer than 17.5 feet to any residential lot line. The coop and run may be located only in the rear yard.",
+      "Chickens must stay in the coop and run. Free ranging is prohibited. Run fencing must be at least 48 inches high, or higher, and/or covered with netting.",
+      "Feed must be kept in a rodent-free container. A second violation can revoke the permit, and the chickens, coop, and fencing must then be removed within 30 days."
+    ],
+    "links": [
+      {
+        "label": "City of Oconomowoc Ordinance 21-0997, Sec. 17.109(5) (PDF)",
+        "detail": "Adopted ordinance creating the keeping-of-chickens rules, including the 4-hen cap, rooster ban, permit, and 17.5-foot rear-yard setback.",
+        "href": "https://www.oconomowoc-wi.gov/DocumentCenter/View/7329/Ordinance-Create-171095-Keeping-of-Chickens-21-O997"
+      },
+      {
+        "label": "City of Oconomowoc keeping of chickens application (PDF)",
+        "detail": "Official application listing the $100 one-time fee, DATCP premises ID, and coop plan requirements.",
+        "href": "https://www.oconomowoc-wi.gov/DocumentCenter/View/7330/Keeping-of-Chickens---APP_080321?bidId="
+      },
+      {
+        "label": "Wisconsin livestock premises registration",
+        "detail": "State registration step required before or while keeping poultry in Wisconsin.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/oconomowoc-wi.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "elgin-il",
+    "city": "Elgin",
+    "state": "IL",
+    "stateName": "Illinois",
+    "zipCodes": [
+      "60120",
+      "60121",
+      "60123",
+      "60124"
+    ],
+    "zipPrefixes": [
+      "601"
+    ],
+    "aliases": [
+      "elgin",
+      "city of elgin"
+    ],
+    "summary": "City of Elgin allows up to 4 chickens with a city chicken license. Roosters and slaughter are prohibited. A building permit and final inspection are required before the license is issued. Coops must be at least 25 feet from neighbors and not visible from the street.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Roosters prohibited",
+    "permitRequired": "City chicken license required before purchasing chickens. A building permit and final coop inspection are required first. The city page lists an $85 permit application fee and a one-time $35 license fee. Citywide licenses are capped at 100.",
+    "prerequisites": [
+      "Work with Community Development to confirm the property meets the minimum requirements before buying chickens.",
+      "Obtain a building permit, build the coop, and pass a final inspection before the chicken license is issued.",
+      "If the coop will have electricity, obtain an electrical permit and inspection. The city page lists an $85 electrical permit application fee."
+    ],
+    "rules": [
+      "The city backyard-chicken page states a maximum of four chickens. Roosters are prohibited. Slaughtering chickens is prohibited.",
+      "Chickens must always be contained in a coop or enclosure. Screened chicken tractors are permitted. Baby chicks may be kept indoors until fully feathered, up to 8 weeks.",
+      "Chicken coops must be at least 25 feet from neighbors and must not be visible from the street.",
+      "Coops can be up to 50 square feet. Chicken runs or enclosures can be up to 100 square feet."
+    ],
+    "links": [
+      {
+        "label": "City of Elgin backyard chicken keeping page",
+        "detail": "Official city page with the 4-chicken limit, rooster and slaughter bans, license and permit fees, and the 25-foot setback.",
+        "href": "https://elginil.gov/2673/Backyard-Chicken-Keeping"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/elgin-il.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "bensenville-il",
+    "city": "Bensenville",
+    "state": "IL",
+    "stateName": "Illinois",
+    "zipCodes": [
+      "60106"
+    ],
+    "zipPrefixes": [
+      "60106"
+    ],
+    "aliases": [
+      "bensenville",
+      "village of bensenville"
+    ],
+    "summary": "Village of Bensenville allows up to 4 hens at single-family homes with a coop license. Roosters are not allowed. Coops and runs must be in the rear yard and at least 10 feet from all property lines. The village page lists a $25 license fee.",
+    "chickenLimit": "Up to 4 hens",
+    "roosterRule": "No roosters allowed",
+    "permitRequired": "Coop license required. The village hen page lists a $25 fee and requires coop construction plans, a site plan, and Illinois Department of Agriculture premises registration.",
+    "prerequisites": [
+      "Confirm the home is a single-family residence and check the zoning map.",
+      "Register the property with the Illinois Department of Agriculture. The village page says that registration is free.",
+      "Submit the coop license application with construction plans and a site plan showing the coop location, and pay the $25 fee."
+    ],
+    "rules": [
+      "The village hen page allows up to 4 hens and does not allow roosters.",
+      "Coops and runs may be located in the rear yard and must be at least 10 feet from all property lines.",
+      "The coop must provide at least 4 square feet per hen. The run must be attached to the coop and covered on all sides, including the top.",
+      "Hens must not leave an enclosed space. The village cites Municipal Code Section 4-6."
+    ],
+    "links": [
+      {
+        "label": "Village of Bensenville hen ordinance page",
+        "detail": "Official village page stating the 4-hen limit, rooster ban, $25 coop license, and 10-foot rear-yard setback.",
+        "href": "https://www.bensenville.gov/731/Hen-Ordinance"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/bensenville-il.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "naperville-il",
+    "city": "Naperville",
+    "state": "IL",
+    "stateName": "Illinois",
+    "zipCodes": [
+      "60540",
+      "60563",
+      "60564",
+      "60565",
+      "60566",
+      "60567"
+    ],
+    "zipPrefixes": [
+      "605"
+    ],
+    "aliases": [
+      "naperville",
+      "city of naperville"
+    ],
+    "summary": "City of Naperville allows up to 8 fowl per property. Roosters are prohibited. A city permit is required before building or changing a coop. A fowl enclosure must be at least 30 feet from any occupied residence other than the owner's.",
+    "chickenLimit": "Up to 8 fowl per property (Sec. 10-4-6)",
+    "roosterRule": "Roosters shall be prohibited (Sec. 10-4-6)",
+    "permitRequired": "A city permit is required before constructing, adding to, or modifying a pen, coop, or other enclosure used to house fowl (Sec. 10-4-6). The city animal-services page says those permits are issued through the Transportation, Engineering and Development group.",
+    "prerequisites": [
+      "Obtain the enclosure permit from Transportation, Engineering and Development before building or changing a coop.",
+      "Check the zoning ordinance for any district limit beyond Sec. 10-4-6. The animal code allows fowl except where that chapter or the zoning ordinance says otherwise.",
+      "Check HOA rules and leases. The city permit does not override private restrictions."
+    ],
+    "rules": [
+      "Sec. 10-4-6, as amended by Ordinance 12-013 on February 7, 2012, allows a maximum of eight fowl on any property. Roosters are prohibited.",
+      "All fowl must be kept in a pen, coop, building, or other enclosure strong enough to keep them on the owner's property.",
+      "No fowl enclosure, other than one for homing pigeons, may be within 30 feet of any occupied residence other than the owner's.",
+      "An enclosure that is not fully enclosed must be screened to 6 feet, with at least 75 percent opacity, either around the lot or around the enclosure.",
+      "The enclosure must be kept clean. Feed must be stored in rodent-proof containers until it is put out."
+    ],
+    "links": [
+      {
+        "label": "Naperville Code Sec. 10-4-6, Fowl and Livestock (Municode)",
+        "detail": "Official code section: maximum of 8 fowl, roosters prohibited, enclosure permit, and 30-foot setback from another occupied residence.",
+        "href": "https://library.municode.com/il/naperville/codes/code_of_ordinances?nodeId=TIT10PORE_CH4ANCO"
+      },
+      {
+        "label": "City of Naperville pet licensing and fowl permits",
+        "detail": "Official city page stating that a permit is required before building or changing a fowl enclosure, issued through Transportation, Engineering and Development.",
+        "href": "https://www.naperville.il.us/services/naperville-police-department/programs-and-services/animal-control/animal-services/pet-licensing-and-permits"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/naperville-il.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "eden-prairie-mn",
+    "city": "Eden Prairie",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55344",
+      "55346",
+      "55347"
+    ],
+    "zipPrefixes": [
+      "553"
+    ],
+    "aliases": [
+      "eden prairie",
+      "city of eden prairie"
+    ],
+    "summary": "City of Eden Prairie allows up to 4 chickens after a Police Department registration is approved. Roosters are not allowed. Chicken structures may be in the back yard only, at least 10 feet from any property line and 50 feet from any neighboring home.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "No roosters",
+    "permitRequired": "City registration required before keeping chickens. Applications are submitted to and approved by the Police Department. The opened city FAQ does not state the current fee.",
+    "prerequisites": [
+      "Apply for chicken-keeping registration and wait for Police Department approval before getting chickens.",
+      "Confirm the property can meet the backyard and setback rules. The city FAQ points to City Code Sec. 9.74 for the full registration rules.",
+      "Check HOA rules. City approval does not override private restrictions."
+    ],
+    "rules": [
+      "The Police Department FAQ says a maximum of 4 chickens is allowed after approval, and roosters are not allowed.",
+      "Chicken-keeping structures are allowed only in back yards.",
+      "Structures must be at least 10 feet from any property line and 50 feet from any neighboring home.",
+      "The FAQ identifies Sec. 9.74 of the Eden Prairie City Code as the detailed registration section."
+    ],
+    "links": [
+      {
+        "label": "City of Eden Prairie Police Department FAQ: keeping chickens",
+        "detail": "Official city FAQ stating the 4-chicken limit, no roosters, Police Department registration, and the 10-foot and 50-foot setbacks.",
+        "href": "https://www.edenprairie.org/city-government/departments/police-department/police-department-faq/-selcat-42"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/eden-prairie-mn.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "coon-rapids-mn",
+    "city": "Coon Rapids",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55433",
+      "55448"
+    ],
+    "zipPrefixes": [
+      "55433",
+      "55448"
+    ],
+    "aliases": [
+      "coon rapids",
+      "city of coon rapids"
+    ],
+    "summary": "City of Coon Rapids allows up to 6 female chickens with a domesticated-bird permit. Roosters are prohibited. The coop and run must be in the rear yard, at least 10 feet from side or rear lot lines, 30 feet from a neighbor's primary residence, and 50 feet from a well. ZIP codes 55433 and 55448 are also listed for Minneapolis.",
+    "chickenLimit": "Up to 6 female chickens; other allowed birds count toward a 6-bird total",
+    "roosterRule": "No roosters",
+    "permitRequired": "City domesticated-bird permit required before building a coop or buying birds. The city brochure says a permit fee applies. The opened brochure and application do not state the dollar amount.",
+    "prerequisites": [
+      "Submit the domesticated-bird permit application, supplement, and site plan, and pay the fee, before building or buying birds.",
+      "Pass the city's site inspection before construction, and a final inspection before the permit is issued and birds are purchased.",
+      "Show every portable coop location on the approved site plan."
+    ],
+    "rules": [
+      "The city brochure says no more than six female chickens and no roosters. The permit application also allows any combination of chickens, ducks, quail, pigeons, or doves if the total does not exceed six birds.",
+      "The coop and run must be in the rear yard only, at least 30 feet from an adjacent property's primary residence, at least 50 feet from any well, and at least 10 feet from side or rear lot lines.",
+      "The total area of the coop and run may not exceed 80 square feet. Both must be fully enclosed. Chickens over 6 weeks old cannot be kept inside a dwelling or garage.",
+      "Chickens may not roam free unless the yard is completely fenced. Waste must be collected at least weekly. Slaughter and processing, if done, must be inside a fully enclosed structure and not visible from neighboring properties or public rights-of-way."
+    ],
+    "links": [
+      {
+        "label": "City of Coon Rapids raising backyard chickens brochure (PDF)",
+        "detail": "Official brochure stating the 6-hen limit, rooster ban, permit, and coop setbacks.",
+        "href": "https://www.coonrapidsmn.gov/DocumentCenter/View/13529/Raising-Backyard-Chickens-brochure-PDF"
+      },
+      {
+        "label": "City of Coon Rapids domesticated bird permit application (PDF)",
+        "detail": "Official application restating the 6-bird cap, rooster ban, and minimum setbacks under City Code Chapter 6-700.",
+        "href": "https://www.coonrapidsmn.gov/DocumentCenter/View/3615/Bird-and-Chicken-Permit-Application-PDF"
+      },
+      {
+        "label": "City of Coon Rapids chickens page",
+        "detail": "Official page for the domesticated-bird permit, including the 6-bird combination rule.",
+        "href": "https://www.coonrapidsmn.gov/1070/Chickens"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/coon-rapids-mn.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "blaine-mn",
+    "city": "Blaine",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55434",
+      "55449"
+    ],
+    "zipPrefixes": [
+      "55434",
+      "55449"
+    ],
+    "aliases": [
+      "blaine",
+      "city of blaine"
+    ],
+    "summary": "City of Blaine allows up to 6 hens in the RE, R-1, R-1AA, R-1A, and R-1B districts with a one-time city registration. Roosters are not allowed. Coops must be in the rear yard, at least 5 feet from side or rear lot lines and 30 feet from an adjacent home. The city page lists a $65 application fee. ZIP codes 55434 and 55449 are also listed for Minneapolis.",
+    "chickenLimit": "Up to 6 hens in the RE, R-1, R-1AA, R-1A, and R-1B districts",
+    "roosterRule": "No roosters are allowed",
+    "permitRequired": "One-time city registration required before placing chickens. The city chicken-permit page lists a $65 application fee due when the application is submitted.",
+    "prerequisites": [
+      "Confirm the property is in RE, R-1, R-1AA, R-1A, or R-1B.",
+      "Submit a site and building plan showing the coop, pen or run, dimensions, and distances to property lines and neighboring homes.",
+      "If the home is in an HOA, include the association's written approval. The city page says many associations prohibit chickens or set stricter rules."
+    ],
+    "rules": [
+      "The city chicken-permit page allows not more than six hens. No roosters are allowed.",
+      "Shelters or coops must be in the rear yard only, at least 5 feet from side or rear lot lines, and at least 30 feet from an adjacent home.",
+      "The coop and covered run together may not exceed 60 square feet.",
+      "Runs must be fenced unless the entire rear yard is fenced. Chickens are not allowed to run free.",
+      "Slaughtering and processing must be done off site. If chicken keeping stops for more than 12 months, the structure must be removed and the site restored."
+    ],
+    "links": [
+      {
+        "label": "City of Blaine chicken permit page",
+        "detail": "Official page stating the 6-hen limit, rooster ban, $65 registration, and 5-foot and 30-foot setbacks.",
+        "href": "https://www.blainemn.gov/2997/Chicken-Permit"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/blaine-mn.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "worthington-oh",
+    "city": "Worthington",
+    "state": "OH",
+    "stateName": "Ohio",
+    "zipCodes": [
+      "43085"
+    ],
+    "zipPrefixes": [
+      "43085"
+    ],
+    "aliases": [
+      "worthington",
+      "city of worthington"
+    ],
+    "summary": "City of Worthington allows up to 8 domestic fowl in the R and S-1 districts with a Columbus Public Health permit. Roosters are not permitted. The coop must be in the rear yard and at least 3 feet from the side and rear lot lines. ZIP 43085 is also listed for Columbus.",
+    "chickenLimit": "Up to 8 domestic fowl in the R and S-1 districts",
+    "roosterRule": "No roosters are permitted",
+    "permitRequired": "Columbus Public Health permit required. The city domestic-fowl page lists a $50 plan-review application and a $100 four-year permit. Fees are waived if the applicant or an immediate family member receives WIC or SNAP.",
+    "prerequisites": [
+      "Apply for the permit through Columbus Public Health before keeping domestic fowl. Worthington contracts with Columbus Public Health for this program.",
+      "Confirm the property is in an R district or the S-1 district.",
+      "Have existing coops follow Columbus Public Health requirements as well as the Worthington setback."
+    ],
+    "rules": [
+      "The city domestic-fowl page, citing Ordinance No. 29-2024 and Ordinance No. 02-2025, allows up to eight domestic fowl. No roosters are permitted.",
+      "The coop must be in the rear yard and at least 3 feet from the side and rear lot lines.",
+      "A coop must be predator-proof, easily cleaned, well vented, and large enough for the birds to move freely. The coop and run must have an impervious floor and be under cover.",
+      "Coops and runs approved by Columbus Public Health do not count toward accessory-building area and are not subject to Architectural Review Board approval in the Architectural Review District."
+    ],
+    "links": [
+      {
+        "label": "City of Worthington domestic fowl page",
+        "detail": "Official page stating the 8-fowl limit, rooster ban, 3-foot rear-yard setback, and Columbus Public Health permit fees.",
+        "href": "https://www.worthington.org/2345/Domestic-Fowl"
+      },
+      {
+        "label": "Worthington Ordinance No. 29-2024 (PDF)",
+        "detail": "Official ordinance amending accessory-use and yard rules so a permitted domestic-fowl coop may sit in the rear yard at least 3 feet from side and rear lot lines.",
+        "href": "https://www.worthington.org/Archive/ViewFile/Item/6034"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/worthington-oh.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "bexley-oh",
+    "city": "Bexley",
+    "state": "OH",
+    "stateName": "Ohio",
+    "zipCodes": [
+      "43209"
+    ],
+    "zipPrefixes": [
+      "43209"
+    ],
+    "aliases": [
+      "bexley",
+      "city of bexley"
+    ],
+    "summary": "City of Bexley allows up to 5 chickens with a one-time city permit. Roosters are not allowed. Chickens must be kept in a secure enclosure that is shielded from the street the property fronts. Dogs, cats, and chickens together cannot exceed 5 animals. ZIP 43209 is also listed for Columbus. The city page does not state a footage setback.",
+    "chickenLimit": "Up to 5 chickens (dogs, cats, and chickens together cannot exceed 5 animals)",
+    "roosterRule": "No person may own, keep, or harbor a rooster",
+    "permitRequired": "One-time city permit required before acquiring chickens. A Bexley animal control officer inspects within 60 days after the chickens are acquired. The opened city page does not list a fee.",
+    "prerequisites": [
+      "Obtain the one-time permit from the City of Bexley before acquiring chickens.",
+      "Plan a secure enclosure that is shielded from the street the property fronts, and a coop that can be kept clean and in good repair.",
+      "Count dogs and cats toward the 5-animal total before deciding how many chickens to keep."
+    ],
+    "rules": [
+      "The city animal control page, citing Bexley Code Sec. 618.24, allows a maximum of 5 chickens. Roosters are not allowed.",
+      "Chickens must be kept in a secure enclosure shielded from the street the property fronts. The opened city page does not state a distance setback from lot lines or neighboring houses.",
+      "A chicken coop must be provided and kept clean and in good repair.",
+      "Eggs produced by those chickens may not be sold. Other animal-care rules in Chapter 618 also apply."
+    ],
+    "links": [
+      {
+        "label": "City of Bexley animal control page, chicken rules",
+        "detail": "Official city page stating the 5-chicken limit, rooster ban, one-time permit, and the street-shielded enclosure rule under Code Sec. 618.24.",
+        "href": "https://bexley.org/animalcontrol/"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/bexley-oh.html",
+    "verified": "2026-11-16"
+  },
+  {
+    "id": "ankeny-ia",
+    "city": "Ankeny",
+    "state": "IA",
+    "stateName": "Iowa",
+    "zipCodes": [
+      "50021",
+      "50023"
+    ],
+    "zipPrefixes": [
+      "500"
+    ],
+    "aliases": [
+      "ankeny",
+      "city of ankeny"
+    ],
+    "summary": "City of Ankeny allows up to 6 hens on a single-family lot of at least one-quarter acre with a city permit. Roosters are prohibited. Henhouses, chicken tractors, and pens must be at least 25 feet from any property line. The city page lists a $100 permit fee and a $50 annual renewal.",
+    "chickenLimit": "Up to 6 female chickens (hens) on a single-family lot of at least 1/4 acre",
+    "roosterRule": "Absolutely no roosters",
+    "permitRequired": "City urban-chicken permit required. The city chickens page lists a $100 fee, effective for one year, and a $50 renewal fee. An approved backyard-chicken class certificate is required before applying.",
+    "prerequisites": [
+      "Complete the approved urban-chicken class and keep the certificate. The city page names the Iowa State University Getting Started with Backyard Chickens eCourse.",
+      "Confirm the home is single-family and the lot is at least 10,890 square feet. The city page says to confirm lot size with the Polk County Assessor.",
+      "Review neighborhood covenants before applying. The city page says HOA rules control when they prohibit chickens.",
+      "Apply online and pay the $100 fee. Renew annually."
+    ],
+    "rules": [
+      "The city urban-chickens page, describing Ordinance 2156, Chapter 58, allows a maximum of six female chickens per residence. Roosters are prohibited.",
+      "Henhouses, chicken tractors, and chicken pens must be at least 25 feet from any property line.",
+      "Chickens must stay in an enclosure or fenced area at all times. Enclosures must be maintained and impermeable to predators.",
+      "Odors and noise may not negatively affect neighboring properties. Waste storage and removal rules apply. The permit does not allow breeding or selling eggs or chickens."
+    ],
+    "links": [
+      {
+        "label": "City of Ankeny urban chickens page",
+        "detail": "Official city page stating the 6-hen limit, rooster ban, $100 permit and $50 renewal, class requirement, and 25-foot property-line setback under Ordinance 2156.",
+        "href": "https://www.ankenyiowa.gov/chickens"
+      }
+    ],
+    "sourceLastChecked": "2026-11-16",
+    "page": "laws/ankeny-ia.html",
+    "verified": "2026-11-16"
   }
 ]
