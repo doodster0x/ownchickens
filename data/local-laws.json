@@ -3862,5 +3862,481 @@
     "sourceLastChecked": "2026-11-16",
     "page": "laws/ankeny-ia.html",
     "verified": "2026-11-16"
+  },
+  {
+    "id": "muskego-wi",
+    "city": "Muskego",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53150"
+    ],
+    "zipPrefixes": [
+      "53150"
+    ],
+    "aliases": [
+      "muskego",
+      "city of muskego"
+    ],
+    "summary": "City of Muskego allows up to 4 chickens on a single-family lot under 120,000 square feet with a zoning permit. Roosters are prohibited. The enclosure must be at least 25 feet from neighboring dwellings, 10 feet from property lines, and 50 feet from the ordinary high water mark, and it cannot be in a front yard. Lots over 120,000 square feet need no chicken permit and are limited to 20 chickens per acre.",
+    "chickenLimit": "Up to 4 chickens on a single-family lot under 120,000 square feet (20 per acre, with no permit, on larger lots)",
+    "roosterRule": "No roosters",
+    "permitRequired": "Zoning permit required before keeping chickens on a lot under 120,000 square feet. The city permit form lists a $25 base fee. No chicken permit is required on lots over 120,000 square feet.",
+    "prerequisites": [
+      "Apply for the backyard-chicken zoning permit before keeping chickens on a lot under 120,000 square feet.",
+      "If you rent, include the property owner's written approval.",
+      "Register the premises with the Wisconsin DATCP Livestock Premises Registration program. The permit form says this is required for any lot size."
+    ],
+    "rules": [
+      "The city zoning-permit form, citing Ch. 400-42 C.(2)(f)[2], allows a maximum of 4 chickens on a single-family property under 120,000 square feet. Chickens are not allowed on commercial, industrial, or multi-family property under that rule. No roosters.",
+      "Chickens must be kept in a secure outdoor enclosure of no more than 50 square feet. The enclosure must be at least 25 feet from neighboring dwellings, at least 10 feet from all property lines, and at least 50 feet from the ordinary high water mark of a navigable waterway.",
+      "Chickens may not be kept in a front yard. A home on more than one roadway has more than one front yard.",
+      "On lots over 120,000 square feet, Ch. 400-42 C.(2)(f)[4] allows 20 chickens per acre and no chicken permit is required.",
+      "Starting without a permit can triple the fee. The city may revoke permission if the ordinance is not followed, and an approved permit allows city inspections."
+    ],
+    "links": [
+      {
+        "label": "City of Muskego backyard chicken zoning permit (PDF)",
+        "detail": "Official permit form stating the 4-chicken limit, rooster ban, $25 fee, 25-foot and 10-foot setbacks, and the 20-per-acre rule for lots over 120,000 square feet.",
+        "href": "https://www.muskego.wi.gov/Migration/Documents/Departments/Community%20Development/Planning%20Zoning/Applications/Chicken%20Permit.pdf"
+      },
+      {
+        "label": "Wisconsin DATCP livestock premises registration",
+        "detail": "State premises registration the Muskego permit form says is required for anyone keeping chickens.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/muskego-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "mequon-wi",
+    "city": "Mequon",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53092",
+      "53097"
+    ],
+    "zipPrefixes": [
+      "53092",
+      "53097"
+    ],
+    "aliases": [
+      "mequon",
+      "city of mequon"
+    ],
+    "summary": "City of Mequon allows 4 chickens on a lot of at least 0.75 acres, plus 1 chicken for each additional acre, with a chicken permit. Roosters are prohibited. Enclosures must be in the rear yard and at least 50 feet from any property line unless the adjoining owner consents in writing. ZIP 53092 is also used by Thiensville, which has its own 4-hen rule.",
+    "chickenLimit": "Up to 4 chickens on lots of 0.75 acres or greater, plus 1 additional chicken for each additional acre",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Chicken permit required. The city permit form lists a $65 initial fee and a $20 annual renewal. The permit expires December 1 and must be renewed by December 31.",
+    "prerequisites": [
+      "Confirm the lot is at least 0.75 acres. Four chickens are the base allowance, with one more chicken for each acre beyond that.",
+      "If a homeowners association applies, get its written consent before the first permit. The form says association consent is not required for a later annual permit.",
+      "Plan a rear-yard enclosure at least 50 feet from every property line, or get written consent from the adjoining owner for a closer setback (not along a street)."
+    ],
+    "rules": [
+      "The city chicken-permit form, citing Section 58.533(b), allows 4 chickens on lots of 0.75 acres or greater and 1 additional chicken for each additional acre. Roosters are prohibited.",
+      "On residentially zoned property, chickens must be kept in a secure enclosure that meets Section 58-519. Enclosures must be in the rear yard, closer to the principal dwelling than to the neighboring lot lines, and at least 50 feet from any property line. A closer setback from an adjoining lot line, other than a street line, is allowed with that owner's written consent.",
+      "An enclosure may not exceed 40 square feet or 6 feet in height.",
+      "Feed must be stored in rodent-proof containers. Feces must be removed daily and stored in a tightly covered metal container set back at least 50 feet from the property line. The form also requires the premises to stay free of vermin and odor or noise nuisances."
+    ],
+    "links": [
+      {
+        "label": "City of Mequon chicken permit form (PDF)",
+        "detail": "Official permit stating the 4-chicken base limit, the extra chicken per acre, the rooster ban, the $65 and $20 fees, and the 50-foot rear-yard setback under Sections 58.533(b) and 58-519.",
+        "href": "https://www.cityofmequonwi.gov/media/27536"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/mequon-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "thiensville-wi",
+    "city": "Thiensville",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53092"
+    ],
+    "zipPrefixes": [
+      "53092"
+    ],
+    "aliases": [
+      "thiensville",
+      "village of thiensville"
+    ],
+    "summary": "Village of Thiensville allows a maximum of 4 hens in the R-1 and R-2 districts with a permit. Roosters and other crowing fowl are prohibited. The enclosure must be at least 50 feet from neighboring homes and 20 feet from property lines, and it cannot be in a front or side yard. ZIP 53092 is also used by Mequon.",
+    "chickenLimit": "Up to 4 hens in the R-1 and R-2 districts",
+    "roosterRule": "No roosters or crowing fowl",
+    "permitRequired": "Permit required before keeping chickens. The village page lists a $50 initial fee and a $25 annual renewal. One permit per parcel.",
+    "prerequisites": [
+      "Confirm the parcel is in the R-1 or R-2 single-family district. Other farm animals remain prohibited.",
+      "Register the premises with the Wisconsin DATCP Livestock Premises Registration program. The village page requires the registration number.",
+      "Apply and pay before acquiring chickens. Submit the form and payment at Village Hall."
+    ],
+    "rules": [
+      "The village backyard-chickens page, summarizing Ordinance No. 2025-02, allows one permit per parcel and a maximum of 4 hens. Roosters and crowing fowl are not permitted.",
+      "Chickens must be kept in an enclosure at all times. The total enclosure may not exceed 40 square feet or 6 feet in height. The page requires at least 3 cubic feet per chicken in the coop, 7 cubic feet in the run, and one nesting box per two hens.",
+      "The enclosure must be at least 50 feet from neighboring homes and 20 feet from property lines. Enclosures are not allowed in front or side yards.",
+      "On-site slaughter, egg or chicken sales, and free roaming are not allowed. Two violations can lead to revocation, and three violations in 12 months revoke the permit automatically."
+    ],
+    "links": [
+      {
+        "label": "Village of Thiensville backyard chickens page",
+        "detail": "Official summary of Ordinance No. 2025-02: 4-hen limit, rooster ban, $50 and $25 fees, and the 50-foot and 20-foot setbacks.",
+        "href": "https://www.village.thiensville.wi.us/504/Backyard-Chickens"
+      },
+      {
+        "label": "Wisconsin DATCP livestock premises registration",
+        "detail": "State premises registration the Thiensville page requires before a chicken permit.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/thiensville-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "pewaukee-wi",
+    "city": "Village of Pewaukee",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53072"
+    ],
+    "zipPrefixes": [
+      "53072"
+    ],
+    "aliases": [
+      "pewaukee",
+      "village of pewaukee"
+    ],
+    "summary": "Village of Pewaukee allows up to 4 chickens on a single-family lot of at least 1/4 acre with a permit. Roosters are not allowed. Enclosures must be in the rear yard and at least 50 feet from any residential structure on an adjacent lot. ZIP 53072 and the name Pewaukee are also used by the City of Pewaukee, whose ordinance was not opened.",
+    "chickenLimit": "Up to 4 chickens on a single-family lot of at least 1/4 acre",
+    "roosterRule": "Roosters are not allowed",
+    "permitRequired": "Chicken-keeping permit required. The village brochure lists a $25 permit fee plus a copy of the livestock premises registration.",
+    "prerequisites": [
+      "Confirm the lot is a single-family residential premise of at least 1/4 acre.",
+      "Register the premises with the Wisconsin DATCP Livestock Premises Registration program and bring a copy with the application.",
+      "Submit the permit application, site plan, and $25 fee at Village Hall. These rules are the Village of Pewaukee ordinance, not the City of Pewaukee."
+    ],
+    "rules": [
+      "The village chicken-coop brochure, citing Ordinance 2020-06, allows up to 4 chickens with a permit on a single-family residential premise of at least 1/4 acre. Roosters are not allowed. Slaughter is prohibited.",
+      "Chickens must be kept in a covered coop or a fenced yard at all times. Coops and yards together must provide at least 16 square feet per chicken. A home or garage may not be the coop.",
+      "Enclosures may not be closer than 50 feet to any residential structure on an adjacent lot, and they may be located only in the rear yard.",
+      "Coops must be of sound construction, moisture resistant, and raised off the ground or placed on a hard surface. Droppings, uneaten feed, feathers, and other waste must be cleaned daily."
+    ],
+    "links": [
+      {
+        "label": "Village of Pewaukee chicken coop ordinance brochure (PDF)",
+        "detail": "Official brochure for Ordinance 2020-06 stating the 4-chicken limit, rooster ban, $25 fee, and 50-foot rear-yard setback.",
+        "href": "https://www.villageofpewaukee.com/Documents/Departments/Village%20Clerk/Forms,%20Permits%20and%20Applications/chicken-keeping-brochure.pdf"
+      },
+      {
+        "label": "Village of Pewaukee chicken keeping permit application (PDF)",
+        "detail": "Official application stating a maximum of 4 hens and a 50-foot minimum to the nearest habitable structure on an adjoining property.",
+        "href": "https://www.villageofpewaukee.com/Documents/Departments/Village%20Clerk/Forms,%20Permits%20and%20Applications/chicken-keeping-permit-application.pdf"
+      },
+      {
+        "label": "Wisconsin DATCP livestock premises registration",
+        "detail": "State premises registration the village brochure requires with the permit application.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/pewaukee-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "elm-grove-wi",
+    "city": "Elm Grove",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53122"
+    ],
+    "zipPrefixes": [
+      "53122"
+    ],
+    "aliases": [
+      "elm grove",
+      "village of elm grove"
+    ],
+    "summary": "Village of Elm Grove allows up to 4 chickens on a single-family lot with a permit. Roosters are prohibited. The coop and run must be at least 30 feet from a residential structure, deck, or patio on another lot, and they are prohibited in front and side yards. The ordinance sets the permit fee by village-board action and does not print a dollar amount.",
+    "chickenLimit": "Up to 4 chickens on a single-family lot",
+    "roosterRule": "No person shall keep any rooster",
+    "permitRequired": "Permit required. The ordinance sets a non-refundable fee by village-board action and does not print the dollar amount. Abutting owners are notified, and a written objection sends the application to the Plan Commission.",
+    "prerequisites": [
+      "File a written application with a scaled lot drawing, coop and run plans, a care and cleaning plan, and proof of Wisconsin DATCP registration.",
+      "The coop is treated as a structure and needs a building permit. The Building Board reviews the plans before the permit is issued.",
+      "Expect notice to abutting owners. A written objection within 30 days sends the application to a Plan Commission hearing."
+    ],
+    "rules": [
+      "Section 95-21 of the village code allows up to 4 chickens, with a permit, on a single-family residential premises. No person shall keep any rooster.",
+      "The nearest point of the coop and the run must be at least 30 feet from any residential structure, deck, or patio on another lot. The coop and run are prohibited in front and side yards.",
+      "No part of the coop or run may be closer to a side lot line than the principal structure is. Without Plan Commission approval, the coop or run may not be closer to an adjoining principal structure than to the permit holder's own principal structure.",
+      "The covered coop must be at least 16 square feet and no more than 24 square feet. The fenced run may not exceed 64 square feet. Chickens must stay in those areas at all times. Slaughter is allowed for the permit holder's personal use only."
+    ],
+    "links": [
+      {
+        "label": "Village of Elm Grove Section 95-21, keeping of chickens (PDF)",
+        "detail": "Official ordinance text: 4-chicken limit, rooster ban, permit, and the 30-foot setback from a neighboring residence, deck, or patio.",
+        "href": "https://elmgrovewi.org/DocumentCenter/View/3269/95-21-Keeping-of-Chickens"
+      },
+      {
+        "label": "Elm Grove application for keeping of chickens",
+        "detail": "Official application form for the chicken permit, including the site-plan and Building Board review.",
+        "href": "https://www.elmgrovewi.org/FormCenter/Zoning-and-Planning-5/Application-for-Keeping-of-Chickens-53"
+      },
+      {
+        "label": "Wisconsin DATCP livestock premises registration",
+        "detail": "State premises registration the Elm Grove ordinance requires with the permit application.",
+        "href": "https://datcp.wi.gov/Pages/Programs_Services/PremisesRegistration.aspx"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/elm-grove-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "shorewood-wi",
+    "city": "Shorewood",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "zipCodes": [
+      "53211"
+    ],
+    "zipPrefixes": [
+      "53211"
+    ],
+    "aliases": [
+      "shorewood",
+      "village of shorewood"
+    ],
+    "summary": "Village of Shorewood allows up to 4 chickens on a residential parcel with a permit under Ordinance 3061. Roosters are prohibited. A coop may not be closer than 25 feet to a residential structure on an adjoining or diagonally abutting lot, unless that owner consents, and it may not be in the front yard or street side yard. ZIP 53211 is also listed for Milwaukee, which has its own 4-chicken permit.",
+    "chickenLimit": "Up to 4 chickens on a residential parcel",
+    "roosterRule": "No roosters shall be kept",
+    "permitRequired": "Permit required from the Planning and Development Department. The village page and flyer list $100 for a new permit and $50 for a renewal. Renewals are due by April 1. Neighbors must be notified before a new permit.",
+    "prerequisites": [
+      "Submit the application, the fee, and a scaled drawing of property lines, structures, and the proposed coop and yard.",
+      "Before a new permit, notify residents of adjoining and diagonally abutting properties, including across an alley. Written objections go to the Planning and Development Department within 14 days.",
+      "If you rent, include the property owner's written consent. After the coop is installed, the village inspects it."
+    ],
+    "rules": [
+      "The village chicken flyer, describing the March 1, 2024 rules under Ordinance 3061, allows up to 4 chickens on a residential parcel with a valid permit. No roosters shall be kept, and no chicken shall be slaughtered.",
+      "A chicken coop may not be located closer than 25 feet to any residential structure on an adjoining or diagonally abutting lot, unless the owner of that lot consents. No coop may be in the front yard or the street side yard.",
+      "The flyer says the coop must provide at least 4 square feet per chicken, and chickens must be kept in the coop or a fenced enclosure or yard at all times.",
+      "Eggs may not be sold. Unusual illness or death must be reported to the Health Department. Only one permit may be issued for a residential parcel, and it is not transferable."
+    ],
+    "links": [
+      {
+        "label": "Village of Shorewood chicken keeping page",
+        "detail": "Official page for Ordinance 3061, including the $100 initial fee, $50 renewal, neighbor notice, and inspection.",
+        "href": "https://www.villageofshorewood.org/1224/Chicken-Keeping-Information-Resources"
+      },
+      {
+        "label": "Village of Shorewood backyard chickens flyer (PDF)",
+        "detail": "Official flyer stating the 4-chicken limit, rooster ban, and 25-foot setback from a residential structure on an adjoining or diagonally abutting lot.",
+        "href": "https://www.villageofshorewood.org/DocumentCenter/View/11195/Chickens-flyer-030124"
+      },
+      {
+        "label": "Shorewood Ordinance 3061 (PDF)",
+        "detail": "Adopting ordinance creating Section 192-18. The scanned PDF did not yield extractable text; the hen limit and setback above are taken from the village flyer.",
+        "href": "https://www.villageofshorewood.org/DocumentCenter/View/11078/Ordinance-3061---An-Ordinance-To-Allow-The-Keeping-Of-Chickens"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/shorewood-wi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "muskegon-mi",
+    "city": "Muskegon",
+    "state": "MI",
+    "stateName": "Michigan",
+    "zipCodes": [
+      "49440",
+      "49441",
+      "49442",
+      "49443",
+      "49444",
+      "49445"
+    ],
+    "zipPrefixes": [
+      "49440",
+      "49441",
+      "49442",
+      "49443",
+      "49444",
+      "49445"
+    ],
+    "aliases": [
+      "muskegon",
+      "city of muskegon"
+    ],
+    "summary": "City of Muskegon allows up to 6 female chickens on a residential parcel of at least 3,000 square feet in listed residential districts, with a development permit. Roosters may not be kept. The city chicken page requires the coop to be at least 5 feet from the side and rear lot lines, 6 feet from the house, and 25 feet from neighboring homes.",
+    "chickenLimit": "Up to 6 female chickens on a residential parcel of at least 3,000 square feet",
+    "roosterRule": "Roosters may not be kept in the city",
+    "permitRequired": "Development permit required from the Planning Department, with a site plan showing the coop size and labeled setbacks. The opened city page does not list a fee.",
+    "prerequisites": [
+      "Confirm the parcel is at least 3,000 square feet and is in a listed residential district: single-family, RT two-family, or the form-based urban residential or lakeside residential districts.",
+      "Apply for a development permit and include a site plan with the coop location, size, and measured setbacks."
+    ],
+    "rules": [
+      "Ordinance 2498, Section 6-17(f), allows up to 6 female chickens on a tax parcel of at least 3,000 square feet in the listed residential districts. Roosters may not be kept in the city.",
+      "Chickens must be kept in a coop inside a fenced or covered enclosure. The enclosure may not cover more than 50 percent of the rear yard, and it must match the development permit.",
+      "The city chicken-keeping page adds the zoning distances: the coop cannot be taller than 10 feet, must be at least 5 feet from the side and rear property lines, at least 6 feet from the house, and 25 feet from neighboring homes.",
+      "Ground feeding is prohibited. Unused food must be secured after every feeding, and the coop must be kept resistant to predators."
+    ],
+    "links": [
+      {
+        "label": "City of Muskegon chicken keeping page",
+        "detail": "Official page stating the 6-hen limit, development permit, and the 5-foot, 6-foot, and 25-foot coop distances.",
+        "href": "https://muskegon-mi.gov/city-services/development-services/planning/zoning/chicken-keeping/"
+      },
+      {
+        "label": "Muskegon Ordinance 2498, Section 6-17 (PDF)",
+        "detail": "Official ordinance, adopted February 13, 2024, allowing up to 6 female chickens and prohibiting roosters.",
+        "href": "https://muskegon-mi.gov/documents/view/46/4823/"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/muskegon-mi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "wyoming-mi",
+    "city": "Wyoming",
+    "state": "MI",
+    "stateName": "Michigan",
+    "zipCodes": [
+      "49509",
+      "49519"
+    ],
+    "zipPrefixes": [
+      "49509",
+      "49519"
+    ],
+    "aliases": [
+      "wyoming",
+      "city of wyoming",
+      "wyoming mi"
+    ],
+    "summary": "City of Wyoming allows a maximum of 4 chickens with a no-fee permit. Roosters are prohibited, and chickens must stay in a coop and covered run. The permit packet requires the coop and run to be at least 10 feet from the house and accessory structures, 3 feet from side lot lines, and 3 feet from the back lot line. ZIP 49509 is also listed for Grand Rapids.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Chicken permit required. The city inspections page and the permit packet both say there is no fee. Adjacent neighbors may comment for two weeks, and the building official makes the decision.",
+    "prerequisites": [
+      "Submit the application, a picture of the coop and covered run, a picture of the backyard, and a site plan with distances to lot lines and structures.",
+      "If you rent, include a signed letter from the property owner.",
+      "After approval, schedule an inspection within two weeks so an officer can confirm the coop matches the approved site plan."
+    ],
+    "rules": [
+      "The city inspections page, citing City Code section PM 301.4, allows chickens only under conditions the code official prescribes. A permit is required, and there is no fee. The maximum number of chickens is 4. Roosters are prohibited.",
+      "Chickens must stay in the coop and covered run. Free-range chickens are prohibited.",
+      "The chicken permit packet requires a combined coop and run of at least 60 square feet, at least 10 feet from the house, at least 10 feet from accessory structures, at least 3 feet from side property lines, and at least 3 feet from the back property line.",
+      "The city notifies adjacent neighbors. After a two-week comment period, the building official decides whether to allow the permit."
+    ],
+    "links": [
+      {
+        "label": "City of Wyoming inspections page, chicken permit section",
+        "detail": "Official page stating the 4-chicken maximum, rooster ban, no-fee permit, and the neighbor-comment process under PM 301.4.",
+        "href": "https://www.wyomingmi.gov/About-Wyoming/City-Departments/Inspections"
+      },
+      {
+        "label": "Wyoming chicken permit packet (PDF)",
+        "detail": "Official packet stating the 4-chicken limit, the 60-square-foot minimum, and the 10-foot and 3-foot distances.",
+        "href": "https://www.wyomingmi.gov/Portals/0/Chicken%20Permit%20Packet%20UPDATED.pdf"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/wyoming-mi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "kentwood-mi",
+    "city": "Kentwood",
+    "state": "MI",
+    "stateName": "Michigan",
+    "zipCodes": [
+      "49508"
+    ],
+    "zipPrefixes": [
+      "49508"
+    ],
+    "aliases": [
+      "kentwood",
+      "city of kentwood"
+    ],
+    "summary": "City of Kentwood allows up to 6 poultry or fowl on a single- or two-family lot under 1 acre, and 6 per acre up to 20 on a larger lot, with a poultry application. Roosters are not allowed. For 6 or fewer birds, the shelter and run must be at least 20 feet from an adjacent residence or business and at least 10 feet from a lot line. ZIP 49508 is also listed for Grand Rapids, whose small-lot cap is 4 hens.",
+    "chickenLimit": "Up to 6 poultry or fowl on a single- or two-family lot under 1 acre (6 per acre, maximum 20, on lots of 1 acre or more)",
+    "roosterRule": "No roosters",
+    "permitRequired": "Poultry and other fowl application required, with a site sketch. The city form does not list a fee.",
+    "prerequisites": [
+      "Submit the poultry application and a site sketch showing structures, the coop and run, setbacks, and the size and height of the coop and run.",
+      "Count the lot size before deciding on a flock. The form uses a different setback once the flock is more than 6 birds."
+    ],
+    "rules": [
+      "The city poultry application allows up to 6 poultry or fowl on single- and two-family lots under 1 acre. Lots of 1 acre or more are allowed 6 per acre, up to a maximum of 20. No roosters, no outdoor slaughter, and no commercial sales.",
+      "Birds must be kept in a fully enclosed shelter and a fully fenced run in the rear yard at all times.",
+      "For 6 or fewer birds, the shelter or run must be at least 20 feet from any adjacent residence or business and no closer than 10 feet to any lot line. For more than 6, those distances are 35 feet from an adjacent residence or business and 20 feet from a lot line.",
+      "Shelter area must be at least 1 square foot and no more than 4 square feet per bird, up to 240 square feet, and no taller than 6 feet. The run may not exceed 64 square feet for 6 or fewer birds."
+    ],
+    "links": [
+      {
+        "label": "City of Kentwood application for poultry and other fowl (PDF)",
+        "detail": "Official application stating the 6-bird household limit, the 20-bird acreage cap, the rooster ban, and the 20-foot and 10-foot setbacks.",
+        "href": "https://www.kentwood.us/document_center/city%20departments/Planning/Documents%20%26%20Forms/Chicken%20Keeping%20Application_Fillable.pdf"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/kentwood-mi.html",
+    "verified": "2026-11-21"
+  },
+  {
+    "id": "leclaire-ia",
+    "city": "LeClaire",
+    "state": "IA",
+    "stateName": "Iowa",
+    "zipCodes": [
+      "52753"
+    ],
+    "zipPrefixes": [
+      "52753"
+    ],
+    "aliases": [
+      "leclaire",
+      "le claire",
+      "city of leclaire",
+      "city of le claire"
+    ],
+    "summary": "City of LeClaire allows up to 4 hens per tract in single-family or rural residential zones, and no more than 8 animals total. Only female chickens are allowed. Henhouses, tractors, and pens must be at least 10 feet from a property line and 25 feet from any adjacent building. A zoning or construction permit may be required for the structure. The city fact sheet gives April 25, 2025 as the start date.",
+    "chickenLimit": "Up to 4 hens per tract of land (no more than 8 animals total)",
+    "roosterRule": "Only female chickens (hens) are allowed",
+    "permitRequired": "No separate chicken license is stated. A zoning or construction permit for an accessory structure may be required for the henhouse.",
+    "prerequisites": [
+      "Confirm the property is in a single-family or rural residential zone and has a single-family dwelling.",
+      "Check whether the henhouse needs a zoning or construction permit as an accessory structure.",
+      "Check homeowners-association rules. The city fact sheet says an HOA may be stricter."
+    ],
+    "rules": [
+      "The city urban-chicken fact sheet allows no more than 4 chickens per tract and no more than 8 total animals. Only female chickens are allowed. The use must be non-commercial, and chickens cannot be slaughtered.",
+      "Henhouses, chicken tractors, and pens must be at least 10 feet from a property line and 25 feet from any adjacent building. They may be located only in the rear yard, with some exceptions.",
+      "Chickens must be kept in an enclosure or fenced area at all times and secured in a henhouse or chicken tractor during non-daylight hours. They may not roam off the tract.",
+      "The fact sheet lists April 25, 2025 as the anticipated start date for legal urban chickens."
+    ],
+    "links": [
+      {
+        "label": "City of LeClaire urban chicken fact sheet (PDF)",
+        "detail": "Official 2025 fact sheet stating the 4-hen limit, hens-only rule, and the 10-foot and 25-foot setbacks.",
+        "href": "https://www.leclaireiowa.gov/DocumentCenter/View/5910/Urban-Chickens-Fact-Sheet-2025"
+      }
+    ],
+    "sourceLastChecked": "2026-11-21",
+    "page": "laws/leclaire-ia.html",
+    "verified": "2026-11-21"
   }
 ]
