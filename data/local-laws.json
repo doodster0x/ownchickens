@@ -4338,5 +4338,445 @@
     "sourceLastChecked": "2026-11-21",
     "page": "laws/leclaire-ia.html",
     "verified": "2026-11-21"
+  },
+  {
+    "id": "waukee-ia",
+    "city": "Waukee",
+    "state": "IA",
+    "stateName": "Iowa",
+    "zipCodes": [
+      "50263"
+    ],
+    "zipPrefixes": [
+      "50263"
+    ],
+    "aliases": [
+      "waukee",
+      "city of waukee"
+    ],
+    "summary": "City of Waukee allows up to 6 hens on a tract of one-half acre or less, and 6 more hens for each additional half acre, up to 30, with an annual urban-chicken permit. Roosters are not allowed. A henhouse or chicken tractor must be at least 6 feet from the residence, 10 feet from the property line, and 25 feet from any neighboring structure.",
+    "chickenLimit": "Up to 6 hens on a tract of one-half acre or less, plus 6 hens for each additional half acre, up to 30",
+    "roosterRule": "Roosters are not allowed",
+    "permitRequired": "Annual urban-chicken permit required. The city page lists a $25 fee and a required Iowa State University Extension online class.",
+    "prerequisites": [
+      "Complete the Iowa State University Extension urban-chicken class named on the city page.",
+      "Apply online and pay the $25 annual fee.",
+      "Keep the hens at the applicant-occupied address."
+    ],
+    "rules": [
+      "The city urban-chickens page, citing Chapter 57, allows a maximum of 6 female chickens on a tract of one-half acre or less. A larger tract may add 6 hens for each additional half acre, up to 30. Roosters are not allowed.",
+      "Hens must be kept in an enclosed area and, at night, in a henhouse or chicken tractor.",
+      "A henhouse or chicken tractor must be at least 6 feet from the residence, 10 feet from the property line, and 25 feet from any neighboring structure or occupancy.",
+      "The use must be non-commercial."
+    ],
+    "links": [
+      {
+        "label": "City of Waukee urban chickens page",
+        "detail": "Official page stating the 6-hen household limit, the acreage step-up to 30, the rooster ban, the $25 permit, and the 6-foot, 10-foot, and 25-foot setbacks.",
+        "href": "https://www.waukee.org/1076/Urban-Chickens"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/waukee-ia.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "clive-ia",
+    "city": "Clive",
+    "state": "IA",
+    "stateName": "Iowa",
+    "zipCodes": [
+      "50325"
+    ],
+    "zipPrefixes": [
+      "50325"
+    ],
+    "aliases": [
+      "clive",
+      "city of clive"
+    ],
+    "summary": "City of Clive allows no more than 12 poultry, pigeons, or other fowl on a parcel under 1.5 acres. The opened sections do not ban roosters by name and do not create a separate chicken license. On a parcel under 5 acres, a poultry enclosure must be at least 150 feet from any human habitation and 50 feet from the property line.",
+    "chickenLimit": "Up to 12 fowl on a parcel under 1.5 acres",
+    "roosterRule": "The opened sections do not ban roosters by name. A rooster counts toward the 12-fowl cap.",
+    "permitRequired": "No separate chicken license is stated in the opened sections. Section 5-7-5 makes it unlawful to keep livestock except with written council consent or in compliance with the zoning regulations.",
+    "prerequisites": [
+      "Count every bird. Poultry, pigeons, and other fowl share one cap of 12 on a parcel under 1.5 acres.",
+      "Place any poultry enclosure at least 150 feet from a human habitation and 50 feet from the property line when the parcel is under 5 acres.",
+      "Ask the city whether backyard hens are treated as livestock under Section 5-7-5 before buying birds."
+    ],
+    "rules": [
+      "Section 5-7-12 allows no more than 12 poultry, pigeons, or other fowl, in any combination, on a parcel under 1.5 acres. The opened section does not state a separate cap for a larger parcel.",
+      "Section 5-7-14 says that on a parcel under 5 acres, no structure or enclosure for housing or feeding poultry or other fowl, except pigeons, may be within 150 feet of any human habitation or within 50 feet of the property line.",
+      "Section 5-7-6 prohibits chickens and other fowl from running at large.",
+      "Section 5-7-5 prohibits livestock except with written council consent or in compliance with zoning. The opened page does not define whether hens are livestock."
+    ],
+    "links": [
+      {
+        "label": "Clive Code Chapter 7, Animal Protection and Control (American Legal)",
+        "detail": "Official code sections 5-7-5, 5-7-6, 5-7-12, and 5-7-14: the 12-fowl cap and the 150-foot and 50-foot enclosure rules.",
+        "href": "https://codelibrary.amlegal.com/codes/cliveia/latest/clive_ia/0-0-0-1953"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/clive-ia.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "downers-grove-il",
+    "city": "Downers Grove",
+    "state": "IL",
+    "stateName": "Illinois",
+    "zipCodes": [
+      "60515",
+      "60516"
+    ],
+    "zipPrefixes": [
+      "60515",
+      "60516"
+    ],
+    "aliases": [
+      "downers grove",
+      "village of downers grove"
+    ],
+    "summary": "Village of Downers Grove allows up to 4 hens. Roosters are prohibited. A coop at least 50 feet from every adjacent property line needs no hen permit. A closer coop needs a permit, neighbor consent, a rear-yard location, and a setback of at least 7 feet. Ordinance 5384 was adopted May 6, 2014.",
+    "chickenLimit": "Up to 4 hens",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Permit required only when the hen structure is within 50 feet of a property line. The ordinance places the fee in the village user-fee schedule. The May 6, 2014 staff report listed $84. Permits are for single-family detached homes and expire after 5 years.",
+    "prerequisites": [
+      "If the coop will be within 50 feet of an adjacent property line, file the permit, a current plat of survey, and written consent from each adjacent owner and tenant.",
+      "Get any required building permit before the hen permit is issued.",
+      "A coop that stays at least 50 feet from every adjacent property line does not need this hen permit."
+    ],
+    "rules": [
+      "Ordinance 5384, adopted May 6, 2014, says no person shall keep more than 4 hens in a residential area. Roosters are prohibited. Hens must be confined in a pen, coop, building, or other enclosure at all times.",
+      "No hen structure may be within 50 feet of a property line unless the owner gets a permit under the chapter.",
+      "A permitted structure must be in the rear yard and at least 7 feet from all property lines of an adjacent property. Adjacent means every parcel that touches the applicant's property.",
+      "Feed must be kept in rodent-proof containers. The permit does not run with the land and expires 5 years after issuance."
+    ],
+    "links": [
+      {
+        "label": "Downers Grove Ordinance 5384, animal and hen regulations (PDF)",
+        "detail": "Official May 6, 2014 ordinance text: 4-hen limit, rooster ban, 50-foot rule, and the 7-foot rear-yard permit setback.",
+        "href": "https://agendadocs.downers.us/public/docs/agendas/2014/05-06-14/AGENDA_PDFS/ACTIVE/ORD00_05442_ANIMAL_AND_HEN_REGULATIONS.pdf"
+      },
+      {
+        "label": "May 6, 2014 Village Council minutes (PDF)",
+        "detail": "Official minutes recording adoption of Ordinance 5384.",
+        "href": "https://www.downers.us/public/docs/agendas/2014/05-13-14/Council_Minutes_05-06-14.pdf"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/downers-grove-il.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "lakeville-mn",
+    "city": "Lakeville",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55044"
+    ],
+    "zipPrefixes": [
+      "55044"
+    ],
+    "aliases": [
+      "lakeville",
+      "city of lakeville"
+    ],
+    "summary": "City of Lakeville requires an administrative permit to keep chickens on a single-family residential lot. The published zoning code allows 3 chickens and prohibits roosters. The city's September 2026 permit packet says the maximum is 6. Both sources require a rear-yard coop and run at least 20 feet from any lot line. The packet lists a $100 application fee.",
+    "chickenLimit": "Up to 3 chickens in the zoning code (the September 2026 city permit packet says 6)",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Administrative permit required. The September 2026 application lists a $100 fee. The permit does not transfer to a new owner or another property.",
+    "prerequisites": [
+      "The chicken owner must occupy the single-family property.",
+      "Submit a scaled sketch of the coop and run, plus construction specifications, with the administrative permit.",
+      "Check the homeowners association. The city packet says the applicant must confirm whether the association allows chickens.",
+      "Read both sources before buying birds. The code library text says 3 chickens and the September 2026 packet says 6."
+    ],
+    "rules": [
+      "Lakeville zoning code section on keeping chickens, as posted on American Legal, allows a maximum of 3 chickens and prohibits roosters. The city's September 2026 administrative-permit packet says the maximum is 6 chickens and also prohibits roosters.",
+      "Both sources require the coop and run in the rear yard only, at least 20 feet from any lot line, and outside a drainage and utility easement.",
+      "The coop needs at least 2 square feet of interior floor per chicken and may not exceed 32 square feet. The enclosed run needs at least 5 and no more than 20 square feet per chicken.",
+      "Chickens must be inside the coop from sunset to sunrise. Slaughter and breeding are prohibited. The packet allows limited on-site egg sales."
+    ],
+    "links": [
+      {
+        "label": "Lakeville chicken administrative permit packet (PDF)",
+        "detail": "City packet dated January 2026, with a September 2026 supplement, stating a 6-chicken maximum, a rooster ban, a $100 fee, and the 20-foot rear-yard setback.",
+        "href": "https://www.lakevillemn.gov/DocumentCenter/View/18441/Chicken-Administrative-Permit-and-Supplemental-Information"
+      },
+      {
+        "label": "Lakeville Code, keeping of chickens (American Legal)",
+        "detail": "Published zoning text that still says a maximum of 3 chickens, prohibits roosters, and requires the 20-foot rear-yard setback.",
+        "href": "https://codelibrary.amlegal.com/codes/lakevillemn/latest/lakeville_mn/0-0-0-8175"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/lakeville-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "shakopee-mn",
+    "city": "Shakopee",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55379"
+    ],
+    "zipPrefixes": [
+      "55379"
+    ],
+    "aliases": [
+      "shakopee",
+      "city of shakopee"
+    ],
+    "summary": "City of Shakopee allows up to 5 hens. Roosters are not allowed. The city page does not require a chicken permit or neighbor notice. Coops and runs must be in the backyard, at least 10 feet from the property line and 50 feet from a residential structure on an adjacent lot, and screened by a fence or landscape buffer at least 4 feet tall.",
+    "chickenLimit": "Up to 5 hens",
+    "roosterRule": "No roosters are allowed",
+    "permitRequired": "No chicken permit or neighbor notice is required. The city page says residents with chickens do not need to notify neighboring homeowners.",
+    "prerequisites": [
+      "Plan a backyard coop and run that can sit 10 feet from the property line and 50 feet from a neighboring house.",
+      "Screen the coop and run with a solid fence or landscape buffer at least 4 feet tall."
+    ],
+    "rules": [
+      "The city pets and animals page, citing City Code 130.04(H), allows up to 5 hen chickens. All five must be hens. Roosters are not allowed.",
+      "Chickens may not be outside the confinement, including inside the home or garage.",
+      "Coops and runs must be in the backyard, at least 10 feet from the property line, and at least 50 feet from any residential structure on an adjacent lot.",
+      "A coop may not exceed 10 square feet per chicken or 6 feet in height, and it must be elevated 12 to 24 inches. A run may not exceed 20 square feet per chicken. Feed must be stored in rodent-proof containers."
+    ],
+    "links": [
+      {
+        "label": "City of Shakopee pets and animals page",
+        "detail": "Official page stating the 5-hen limit, rooster ban, no neighbor-notice requirement, and the 10-foot and 50-foot setbacks under City Code 130.04(H).",
+        "href": "https://www.shakopeemn.gov/residents/pets_animals.php"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/shakopee-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "maplewood-mn",
+    "city": "Maplewood",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55109"
+    ],
+    "zipPrefixes": [
+      "55109"
+    ],
+    "aliases": [
+      "maplewood",
+      "city of maplewood"
+    ],
+    "summary": "City of Maplewood allows up to 10 poultry in any zoning district with a two-year permit. Roosters are prohibited. The coop must be in the rear or side yard and at least 5 feet from the rear or side property line. An initial permit needs consent from 60 percent of adjacent owners. ZIP 55109 is also listed for Saint Paul, whose cap is 15 hens.",
+    "chickenLimit": "Up to 10 poultry",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Two-year poultry permit required. The 2026 fee schedule lists $100 for the initial application and $50 for renewal. The city poultry page still says $75 initial and $50 renewal.",
+    "prerequisites": [
+      "Apply online and include a site plan showing the coop, distances to property lines and structures, and coop and run dimensions.",
+      "The city mails adjacent owners. Consent from 60 percent is required, and no reply counts as consent. A property at least 150 feet from any house or business is an alternative under the ordinance.",
+      "Pass the coop inspection before the permit and leg bands are issued."
+    ],
+    "rules": [
+      "Ordinance 979, Section 10-479, allows up to 10 poultry on any lot with a permit. Roosters are prohibited. Slaughter on the property is prohibited.",
+      "The coop must be in the rear or side yard and at least 5 feet from the rear or side property lines. Interior floor space must be at least 4 square feet per bird.",
+      "A run is required. It must provide 10 square feet per bird if a fenced exercise yard is also available, or 16 square feet per bird if it is not.",
+      "Section 10-480 requires written consent from at least 60 percent of adjacent owners or occupants, unless the property lines are at least 150 feet from any house or business."
+    ],
+    "links": [
+      {
+        "label": "City of Maplewood poultry ordinance page",
+        "detail": "Official page stating the 10-poultry limit, the two-year permit, 60 percent neighbor consent, and rear- or side-yard housing.",
+        "href": "https://maplewoodmn.gov/1012/Poultry-Ordinance"
+      },
+      {
+        "label": "Maplewood Ordinance 979 (PDF)",
+        "detail": "Official ordinance: 10-poultry limit, rooster ban, and the 5-foot side and rear setback.",
+        "href": "https://maplewoodmn.gov/DocumentCenter/View/20635"
+      },
+      {
+        "label": "Maplewood 2026 fee schedule (PDF)",
+        "detail": "Official fee schedule listing a poultry permit at $100 initial and $50 renewal.",
+        "href": "https://www.maplewoodmn.gov/DocumentCenter/View/22820/Fee-Schedule-PDF"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/maplewood-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "eagan-mn",
+    "city": "Eagan",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55122"
+    ],
+    "zipPrefixes": [
+      "55122"
+    ],
+    "aliases": [
+      "eagan",
+      "city of eagan"
+    ],
+    "summary": "City of Eagan allows up to 5 chickens with a chicken permit. Roosters are prohibited. The coop and run must be at least 25 feet from any inhabitable building, at least 10 feet from the rear lot line, and at least 5 feet from the side lot lines. Estate-zoned lots need 10 feet from both the rear and side lines. ZIP 55122 is also listed for Saint Paul.",
+    "chickenLimit": "Up to 5 chickens",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "Chicken permit required. The city handout does not print the fee. Animal Control inspects the coop and run before the permit is granted.",
+    "prerequisites": [
+      "The chicken owner must occupy the property named on the permit.",
+      "Submit a site plan showing lot lines, structures, the coop and run, fencing, and distances to lot lines and other buildings.",
+      "Build the coop and run, then pass the Animal Control inspection before the permit is issued."
+    ],
+    "rules": [
+      "The city chicken-permit handout allows no more than 5 chickens on the permitted premises. Roosters are prohibited. Slaughter is prohibited on residentially zoned property, and eggs may not be sold.",
+      "No part of the coop or run may be within 25 feet of the outer perimeter of any inhabitable building.",
+      "The coop and run must be at least 10 feet from the rear lot line and at least 5 feet from the side lot lines. On Estate-zoned property those setbacks are 10 feet from the rear and side lines. The coop and run may not be in the front yard.",
+      "The coop needs at least 2 square feet of interior floor per chicken. The run needs at least 5 square feet per chicken and must be fully enclosed and attached to the coop."
+    ],
+    "links": [
+      {
+        "label": "City of Eagan chicken permit handout (PDF)",
+        "detail": "Official handout stating the 5-chicken limit, rooster ban, permit, 25-foot building setback, and the 10-foot and 5-foot lot-line setbacks.",
+        "href": "https://cityofeagan.com/images/Administration/CityClerk/Handout_ChickenPermits4.25.20.pdf"
+      },
+      {
+        "label": "City of Eagan licenses and permits page",
+        "detail": "Official page linking the chicken permit application and the handout.",
+        "href": "https://cityofeagan.com/licenses-permits"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/eagan-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "mendota-heights-mn",
+    "city": "Mendota Heights",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55118"
+    ],
+    "zipPrefixes": [
+      "55118"
+    ],
+    "aliases": [
+      "mendota heights",
+      "city of mendota heights"
+    ],
+    "summary": "City of Mendota Heights allows up to 6 chickens with an administrative permit. Roosters are prohibited. The coop and run must be in the rear or side yard and at least 10 feet from the side and rear lot lines. ZIP 55118 is also listed for Saint Paul. City Hall is at 1101 Victoria Curve, Mendota Heights, MN 55118.",
+    "chickenLimit": "Up to 6 chickens",
+    "roosterRule": "The keeping of roosters is prohibited",
+    "permitRequired": "Administrative permit required for the coop and run. The opened section does not print the fee.",
+    "prerequisites": [
+      "Apply for the administrative permit with the coop and run location, size, and setbacks.",
+      "Keep the flock at or below 6 chickens and do not keep a rooster."
+    ],
+    "rules": [
+      "Section 12-4A-8 allows a maximum of 6 chickens on the lot covered by the administrative permit. The keeping of roosters is prohibited.",
+      "The coop and run must be set back at least 10 feet from the side and rear lot lines. They must be in the rear or side yard and are not allowed in the front yard.",
+      "The coop needs at least 2 square feet of interior floor per chicken. The run needs at least 5 square feet per chicken. Together they may not exceed 144 square feet or 10 feet in height.",
+      "The run must be fully enclosed on the sides and top. Slaughter is prohibited on residentially zoned property, and eggs may not be sold."
+    ],
+    "links": [
+      {
+        "label": "Mendota Heights Code Section 12-4A-8 (American Legal)",
+        "detail": "Official accessory-structure standards for chicken coops: 6-chicken limit, rooster ban, administrative permit, and the 10-foot side and rear setback.",
+        "href": "https://codelibrary.amlegal.com/codes/mendotahtsmn/latest/mendotaheights_mn/0-0-0-18891"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/mendota-heights-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "farmington-mn",
+    "city": "Farmington",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55024"
+    ],
+    "zipPrefixes": [
+      "55024"
+    ],
+    "aliases": [
+      "farmington",
+      "city of farmington",
+      "farmington mn"
+    ],
+    "summary": "City of Farmington allows up to 4 hens on a single-family lot under 2.5 acres with an administrative permit. Roosters are prohibited on a residentially zoned lot of that size. The coop and run must be out of the front and side yards, at least 25 feet from a principal structure on an adjacent lot, and at least 10 feet from all property lines. The code sets the fee by council action and does not print the amount.",
+    "chickenLimit": "Up to 4 hens on a single-family lot under 2.5 acres",
+    "roosterRule": "No roosters on a residentially zoned lot under 2.5 acres",
+    "permitRequired": "Administrative permit required for lots under 2.5 acres. Adjacent owners are notified. The permit renews every 2 years. The fee is set by the City Council and is not printed in the opened section.",
+    "prerequisites": [
+      "Confirm the lot is a single-family dwelling under 2.5 acres. Larger lots are covered by a different section.",
+      "Submit the number of hens, a site plan, and building elevations with the administrative permit.",
+      "The chicken owner must live on the property. The permit ends if that owner moves."
+    ],
+    "rules": [
+      "Section 10-6-29 allows no more than 4 hen chickens on a single-family residential property under 2.5 acres. Roosters are prohibited on a residentially zoned property of that size.",
+      "Hens must stay in a coop or run and may not be in the home or garage. Chickens are not allowed on a property with two or more dwellings.",
+      "The coop and run may not be in the front or side yard or in a drainage or utility easement. They must be at least 25 feet from any principal structure on an adjacent lot and at least 10 feet from all property lines.",
+      "A coop may not exceed 10 square feet per chicken or 8 feet in height. A run may not exceed 20 square feet per chicken. The coop and run must be screened by a solid fence or landscaped buffer at least 4 feet tall."
+    ],
+    "links": [
+      {
+        "label": "Farmington Code Section 10-6-29, chickens on urban residential lots (American Legal)",
+        "detail": "Official code: 4-hen limit, rooster ban, administrative permit, and the 25-foot and 10-foot setbacks.",
+        "href": "https://codelibrary.amlegal.com/codes/farmingtonmn/latest/farmington_mn/0-0-0-7810"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/farmington-mn.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "inver-grove-heights-mn",
+    "city": "Inver Grove Heights",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "zipCodes": [
+      "55076",
+      "55077"
+    ],
+    "zipPrefixes": [
+      "55076",
+      "55077"
+    ],
+    "aliases": [
+      "inver grove heights",
+      "inver grove",
+      "city of inver grove heights"
+    ],
+    "summary": "City of Inver Grove Heights allows up to 6 hens on property zoned R-1A, R-1B, R-1C, or R-2 with a city license. Roosters are prohibited. The coop and run must be out of the front and side yards, at least 25 feet from a principal structure on an adjacent lot, and at least 10 feet from all property lines. The license fee is in the city fee schedule.",
+    "chickenLimit": "Up to 6 hens in the R-1A, R-1B, R-1C, or R-2 districts",
+    "roosterRule": "No roosters or adult male chickens",
+    "permitRequired": "City license required before keeping chickens in the listed residential districts. The fee is the amount in the city fee schedule. The opened section does not print the dollar amount. An initial license includes notice to neighboring owners.",
+    "prerequisites": [
+      "Confirm the property is zoned R-1A, R-1B, R-1C, or R-2. The chicken owner must live in the dwelling.",
+      "Apply to the City Clerk with a site plan or survey and a drawing or picture of the coop, and pay the scheduled fee.",
+      "Plan for neighbor notice on the first license."
+    ],
+    "rules": [
+      "Section 5-4-2 allows no more than 6 hen chickens on property in the listed residential districts. Roosters and adult male chickens are prohibited. Slaughter and breeding are prohibited on those properties.",
+      "Hens must be confined in a coop or run at all times and may not be kept inside a dwelling.",
+      "The coop and run may not be in the front or side yard or in a drainage or utility easement. They must be at least 25 feet from any principal structure on an adjacent lot and 10 feet from all property lines.",
+      "Only one coop and run is allowed per lot. Feed must be stored in a leakproof container with a tight cover."
+    ],
+    "links": [
+      {
+        "label": "Inver Grove Heights Code Section 5-4-2 (American Legal)",
+        "detail": "Official code for chickens on urban residential lots: 6-hen limit, rooster ban, license, and the 25-foot and 10-foot setbacks.",
+        "href": "https://codelibrary.amlegal.com/codes/invergrovehtsmn/latest/invergrovehts_mn/0-0-0-2947"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/inver-grove-heights-mn.html",
+    "verified": "2026-11-22"
   }
 ]
