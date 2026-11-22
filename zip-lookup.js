@@ -47,8 +47,9 @@
       ext: { label: "University of Arkansas System Division of Agriculture Cooperative Extension", href: "https://www.uaex.uada.edu/counties/" },
     },
     CA: {
-      ag: { label: "California Department of Food and Agriculture: Avian Health Program", href: "https://www.cdfa.ca.gov/ahfss/Animal_Health/Avian_Health_Program.html", detail: "State backyard poultry health, biosecurity and sick-bird hotline." },
-      ext: { label: "UC Cooperative Extension county offices", href: "https://www.ucanr.edu/counties" },
+      ag: { label: "California Department of Food and Agriculture: Avian Health Program", href: "https://www.cdfa.ca.gov/ahfss/Animal_Health/Avian_Health_Program.html", detail: "State poultry health rules, biosecurity, and sick-bird reporting." },
+      ag2: { label: "CDFA Animal Health Branch: National Poultry Improvement Plan", href: "https://www.cdfa.ca.gov/AHFSS/Animal_Health/Cooperative_Programs.html", detail: "California's official listing of the NPIP disease-control program for poultry." },
+      ext: { label: "UC Cooperative Extension poultry resources (UC ANR)", href: "https://www.ucanr.edu/site/uc-cooperative-extension-poultry/" },
     },
     CO: {
       ag: { label: "Colorado Department of Agriculture: Animal Health", href: "https://ag.colorado.gov/animals", detail: "State livestock and poultry health programs and avian flu updates." },
