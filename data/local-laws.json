@@ -4778,5 +4778,554 @@
     "sourceLastChecked": "2026-11-22",
     "page": "laws/inver-grove-heights-mn.html",
     "verified": "2026-11-22"
+  },
+  {
+    "id": "roseville-ca",
+    "city": "Roseville",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "95661",
+      "95678",
+      "95747"
+    ],
+    "zipPrefixes": [
+      "95661",
+      "95678",
+      "95747"
+    ],
+    "aliases": [
+      "roseville",
+      "city of roseville",
+      "roseville ca"
+    ],
+    "summary": "City of Roseville allows up to 10 ducks, chickens, or pigeons, singly or in combination, and that count includes roosters. The enclosure must be sanitary and may not be within 20 feet of any building or property line. The city animal-control page does not require a chicken permit. The animal-noise rule also applies.",
+    "chickenLimit": "Up to 10 chickens, ducks, or pigeons, singly or in combination",
+    "roosterRule": "Roosters are allowed and count toward the limit of 10",
+    "permitRequired": "No chicken permit is stated on the city animal-control page.",
+    "prerequisites": [
+      "Keep the flock, including any roosters, at or below 10 birds in total with ducks and pigeons.",
+      "Place the enclosure at least 20 feet from every building and every property line."
+    ],
+    "rules": [
+      "The city animal-control page allows up to 10 ducks, chickens (rooster and/or hen), or pigeons, singly or in combination.",
+      "Domestic fowl must be kept in a sanitary enclosure. The enclosure may not be located within 20 feet of any building or property line.",
+      "The animal-noise section applies to domestic fowl. Noise that continues for 20 minutes, or intermittently for an hour or more, can be enforced."
+    ],
+    "links": [
+      {
+        "label": "City of Roseville animal control page",
+        "detail": "Official page stating the 10-bird limit, that roosters count, and the 20-foot enclosure rule.",
+        "href": "https://www.roseville.ca.gov/police/animal_control/index.php"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/roseville-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "folsom-ca",
+    "city": "Folsom",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "95630",
+      "95763"
+    ],
+    "zipPrefixes": [
+      "95630",
+      "95763"
+    ],
+    "aliases": [
+      "folsom",
+      "city of folsom"
+    ],
+    "summary": "City of Folsom allows no more than 6 chickens as pets outside agricultural and agricultural-combining districts. Roosters may not be kept in any zoning district. Those chickens must be at least 5 feet from any property line and at least 20 feet from neighboring dwellings. The opened section does not require a chicken permit.",
+    "chickenLimit": "Up to 6 chickens outside agricultural districts",
+    "roosterRule": "Roosters shall not be kept in any zoning district",
+    "permitRequired": "No chicken permit is stated in the opened section.",
+    "prerequisites": [
+      "Confirm the lot is not relying on an agricultural district for a larger flock. The 6-chicken pet rule is for other zoning districts.",
+      "Place the birds at least 5 feet from every property line and 20 feet from a neighboring dwelling."
+    ],
+    "rules": [
+      "Section 7.04.080 allows not more than 6 chickens as pets in any zoning district other than agricultural and agricultural-combining districts. Ducks, pigeons, and rabbits share a separate cap of 2 in combination.",
+      "Roosters shall not be kept within any zoning district of the city.",
+      "The chickens must be kept or maintained at least 5 feet from any property line and at least 20 feet from neighboring dwellings.",
+      "Coops must be kept clean under Section 7.04.070. Zoning rules still apply."
+    ],
+    "links": [
+      {
+        "label": "Folsom Code Section 7.04.080 (eCode360)",
+        "detail": "Official code: 6-chicken pet limit, citywide rooster ban, and the 5-foot and 20-foot distances.",
+        "href": "https://ecode360.com/51019640"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/folsom-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "davis-ca",
+    "city": "Davis",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "95616",
+      "95617"
+    ],
+    "zipPrefixes": [
+      "95616",
+      "95617"
+    ],
+    "aliases": [
+      "davis",
+      "city of davis",
+      "davis ca"
+    ],
+    "summary": "City of Davis allows no more than 6 chicken hens. Roosters are prohibited. No part of the pen or structure may be less than 40 feet from any residence other than the owner's. A police permit can allow keeping without that distance limit. The fee for that permit is set by the city council.",
+    "chickenLimit": "Up to 6 chicken hens",
+    "roosterRule": "Roosters are prohibited",
+    "permitRequired": "No permit is required for up to 6 hens kept at least 40 feet from another residence. Section 5.01.030 allows a police permit, with a fee set by the city council, to keep chickens without that distance limit.",
+    "prerequisites": [
+      "Plan a pen that sits at least 40 feet from every residence other than your own.",
+      "If the pen cannot meet that distance, apply to the chief of police. The code requires a detailed statement and a fee set by the council."
+    ],
+    "rules": [
+      "Section 5.01.010 prohibits roosters and other poultry except as the chapter specifically allows.",
+      "Section 5.01.020 allows not more than 6 chicken hens, or a combination of chicken hens and pigeons that does not exceed 6. They must be kept in a clean and sanitary pen or structure.",
+      "No part of that pen or structure may be less than 40 feet from any residence other than a residence owned and occupied by the person keeping the animals.",
+      "The keeping must not create a health or nuisance problem. Animals and fowl must be kept in a sanitary condition."
+    ],
+    "links": [
+      {
+        "label": "Davis Code Sections 5.01.010 through 5.01.040 (eCode360)",
+        "detail": "Official code: 6-hen limit, rooster prohibition, 40-foot distance from another residence, and the police permit for a closer pen.",
+        "href": "https://ecode360.com/44632901"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/davis-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "mountain-view-ca",
+    "city": "Mountain View",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "94035",
+      "94039",
+      "94040",
+      "94041",
+      "94042",
+      "94043"
+    ],
+    "zipPrefixes": [
+      "94035",
+      "94039",
+      "94040",
+      "94041",
+      "94042",
+      "94043"
+    ],
+    "aliases": [
+      "mountain view",
+      "city of mountain view"
+    ],
+    "summary": "City of Mountain View allows no more than 4 chickens, rabbits, and similar animals in combination. A rooster over 4 months old is prohibited except on a conforming commercial premises. A fowl structure inside the 10-foot property-line setback needs a permit from the administrator. The administrator may allow up to 25 animals after notice to neighbors within 50 feet.",
+    "chickenLimit": "Up to 4 chickens, rabbits, or other listed animals in combination (the administrator may allow up to 25)",
+    "roosterRule": "No rooster over 4 months old, except on a conforming commercial premises",
+    "permitRequired": "A permit is required to keep fowl in a structure within the 10-foot property-line setback. More than 4 animals, up to 25, needs administrator approval after mailed notice to residential parcels within 50 feet. The opened sections do not print a fee.",
+    "prerequisites": [
+      "Count chickens together with rabbits and the other animals listed in Section 5.43. The base cap is 4.",
+      "Keep the coop outside the 10-foot property-line setback, or get the administrator's permit for a closer structure.",
+      "Do not keep a rooster over 4 months old on a residential premises."
+    ],
+    "rules": [
+      "Section 5.43 allows not more than 4 animals in all, including chickens and other listed fowl, on any premises, unless the premises are commercial and conform to zoning. Fish do not count.",
+      "Section 5.40 prohibits a rooster over 4 months old except on a conforming commercial premises.",
+      "Section 5.39 says no person shall keep chickens or other listed fowl in any structure within the 10-foot setback from the owner's property line without a permit.",
+      "The administrator may allow more than 4 animals, but no more than 25, after considering lot size, noise, odor, and distance from adjoining residences, and after notice to residential parcels within 50 feet."
+    ],
+    "links": [
+      {
+        "label": "Mountain View Code Chapter 5, Animals (Municode)",
+        "detail": "Official sections 5.39, 5.40, and 5.43: the 4-animal cap, the rooster rule, and the 10-foot setback permit.",
+        "href": "https://library.municode.com/ca/mountain_view/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/mountain-view-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "san-leandro-ca",
+    "city": "San Leandro",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "94577",
+      "94578",
+      "94579"
+    ],
+    "zipPrefixes": [
+      "94577",
+      "94578",
+      "94579"
+    ],
+    "aliases": [
+      "san leandro",
+      "city of san leandro"
+    ],
+    "summary": "City of San Leandro allows up to 4 chickens on a parcel of at least 4,500 square feet without an animal permit. An animal permit is required on a smaller parcel or for 5 to 10 chickens. No parcel may have more than 10, and no roosters may be kept. Coops must be in the fenced rear yard, at least 5 feet from a side or rear lot line where the neighboring primary use is residential, and 20 feet from an adjacent dwelling.",
+    "chickenLimit": "Up to 4 chickens on a parcel of at least 4,500 square feet (an animal permit allows up to 10)",
+    "roosterRule": "No roosters are to be kept on the property",
+    "permitRequired": "No animal permit is required for up to 4 chickens on a parcel of at least 4,500 square feet. An animal permit is required on a smaller parcel and for 5 to 10 chickens. The opened sections do not print the fee.",
+    "prerequisites": [
+      "Measure the parcel. At least 4,500 square feet allows 4 chickens without the animal permit.",
+      "If the lot is smaller, or you want 5 to 10 chickens, apply for an animal permit.",
+      "Put the coop in the fenced rear yard, at least 5 feet from the side and rear lot lines and 20 feet from an adjacent dwelling."
+    ],
+    "rules": [
+      "Section 4-11-1200 allows up to 4 chickens on a parcel of 4,500 square feet or larger. A smaller parcel needs an animal permit. An animal permit can allow up to 10 chickens, and no parcel may have more than 10. No roosters are to be kept.",
+      "Section 4-11-1205 requires chickens to be kept outside in the rear yard, in a fenced area, with a coop. They may not roam outside that fenced rear yard.",
+      "The total area of all coops may not exceed 60 square feet, and no coop or combination of coops may exceed 7 feet in height.",
+      "No coop shall be located less than 5 feet from any side or rear lot line on which the primary use is residential, or less than 20 feet from an adjacent dwelling."
+    ],
+    "links": [
+      {
+        "label": "San Leandro Code Article 12, Chickens (eCode360)",
+        "detail": "Official sections 4-11-1200 and 4-11-1205: the 4- and 10-chicken limits, rooster ban, and the 5-foot and 20-foot setbacks.",
+        "href": "https://ecode360.com/44069481"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/san-leandro-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "fremont-ca",
+    "city": "Fremont",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "94536",
+      "94537",
+      "94538",
+      "94539",
+      "94555"
+    ],
+    "zipPrefixes": [
+      "94536",
+      "94537",
+      "94538",
+      "94539",
+      "94555"
+    ],
+    "aliases": [
+      "fremont",
+      "city of fremont",
+      "fremont ca"
+    ],
+    "summary": "City of Fremont allows up to 6 female chickens, counted with rabbits, pigeons, and doves, on a residential lot over 6,000 square feet. Roosters may not be kept. Chickens are not allowed on a residential lot of 6,000 square feet or less. A Chapter 6.40 permit is required to exceed the base number. The enclosure table sets 10, 35, or 50 feet by flock size and lot size. The section text says the distance is from another person's residence, and the table heading says it is from any property line.",
+    "chickenLimit": "Up to 6 female chickens on a residential lot over 6,000 square feet (a Chapter 6.40 permit can allow more)",
+    "roosterRule": "Roosters may not be kept on residential property",
+    "permitRequired": "No permit is required for the base limit of 6 on a lot over 6,000 square feet. A permit under Chapter 6.40 is required to keep more. The opened chapter does not print that fee.",
+    "prerequisites": [
+      "Confirm the residential lot is larger than 6,000 square feet. Smaller lots may not keep chickens.",
+      "Count female chickens together with rabbits, pigeons, and doves. Only two of those species may be kept on one lot.",
+      "Use the enclosure table for the distance that matches the number of chickens and the lot size."
+    ],
+    "rules": [
+      "Section 6.10.040 allows a combined total of 6 female chickens, rabbits, pigeons, and doves on residential property of more than 6,000 square feet, unless a Chapter 6.40 permit is issued. A residential lot of less than 6,000 square feet may not keep chickens.",
+      "Section 6.10.030 says a pet owner may not keep any roosters on residential property.",
+      "Section 6.10.130 requires at least 10 square feet of permeable land per chicken. The sentence says the enclosure must be a minimum distance from any other person's residence. The table heading says the distance is from any property line: 10 feet for 1 to 5 chickens on a lot of 6,001 to 9,999 square feet, 35 feet for 6 to 10 chickens on a lot of 10,000 to 21,779 square feet, and 50 feet for 11 to 15 chickens on a lot of 21,780 square feet or more.",
+      "Section 6.10.070 says no enclosure or shelter may be in the front yard."
+    ],
+    "links": [
+      {
+        "label": "Fremont Code Chapter 6.10, Animal Ownership",
+        "detail": "Official code: the 6-hen base limit, rooster ban, permit for a larger flock, and the 10-foot, 35-foot, and 50-foot enclosure table.",
+        "href": "https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/fremont-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "los-alamitos-ca",
+    "city": "Los Alamitos",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "90720",
+      "90721"
+    ],
+    "zipPrefixes": [
+      "90720",
+      "90721"
+    ],
+    "aliases": [
+      "los alamitos",
+      "city of los alamitos"
+    ],
+    "summary": "City of Los Alamitos allows a maximum of 4 hens on a residential parcel. Roosters are prohibited. Hens must stay in an enclosure at all times, at least 20 feet from any dwelling unit on an adjacent parcel, and not in the front yard. The opened section does not require a chicken permit.",
+    "chickenLimit": "Up to 4 hens on a residential parcel",
+    "roosterRule": "Roosters are prohibited on a residential parcel",
+    "permitRequired": "No chicken permit is stated in the opened section.",
+    "prerequisites": [
+      "Keep no more than 4 hens, and no rooster.",
+      "Place the enclosure at least 20 feet from a dwelling on an adjacent parcel, and keep it out of the front yard."
+    ],
+    "rules": [
+      "Section 6.20.180 allows a maximum of 4 female chickens on a residential parcel. Male chickens, or roosters, are prohibited.",
+      "Hens must be confined in a pen, coop, cage, run, or other enclosure at all times. The enclosure must include nesting boxes with at least 3 square feet per hen.",
+      "The enclosure must be at least 20 feet from any dwelling unit on an adjacent parcel. Hens may not be kept in the front yard.",
+      "Manure and feathers must be removed daily and stored in an airtight container. Feed must be stored so other animals and rodents cannot reach it."
+    ],
+    "links": [
+      {
+        "label": "Los Alamitos Code Section 6.20.180 (eCode360)",
+        "detail": "Official section: 4-hen limit, rooster ban, and the 20-foot distance from a dwelling on an adjacent parcel.",
+        "href": "https://ecode360.com/42852979"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/los-alamitos-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "west-hollywood-ca",
+    "city": "West Hollywood",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "90069"
+    ],
+    "zipPrefixes": [
+      "90069"
+    ],
+    "aliases": [
+      "west hollywood",
+      "city of west hollywood"
+    ],
+    "summary": "City of West Hollywood allows up to 4 chickens at a residence. A male chicken over 4 weeks old is not permitted. The coop must be at least 20 feet from any residential structure on the same parcel and at least 35 feet from any residential structure on an adjacent parcel. The opened chapter does not require a chicken permit.",
+    "chickenLimit": "Up to 4 chickens",
+    "roosterRule": "Male chickens over 4 weeks old are not permitted",
+    "permitRequired": "No chicken permit is stated in the opened chapter.",
+    "prerequisites": [
+      "Keep the flock at or below 4, and remove any male chick before it is 4 weeks old.",
+      "Place the coop at least 20 feet from a residence on the same parcel and 35 feet from a residence on an adjacent parcel."
+    ],
+    "rules": [
+      "Section 9.54.030 allows up to 4 chickens at any residence.",
+      "The coop must be kept at least 20 feet from any residential structure on the same parcel and at least 35 feet from any residential structure on an adjacent parcel.",
+      "Chickens must have shelter from the elements, a clean shelter, adequate exercise space, and clean water at all times.",
+      "Chickens may not leave the property except while being transported in a suitable container. A male chicken over 4 weeks old is not permitted."
+    ],
+    "links": [
+      {
+        "label": "West Hollywood Code Chapter 9.54 (eCode360)",
+        "detail": "Official section 9.54.030: the 4-chicken limit, the ban on males over 4 weeks, and the 20-foot and 35-foot coop distances.",
+        "href": "https://ecode360.com/43908321"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/west-hollywood-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "glendale-ca",
+    "city": "Glendale",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "91201",
+      "91202",
+      "91203",
+      "91204",
+      "91205",
+      "91206",
+      "91207",
+      "91208",
+      "91209",
+      "91210",
+      "91221",
+      "91222",
+      "91225",
+      "91226"
+    ],
+    "zipPrefixes": [
+      "91201",
+      "91202",
+      "91203",
+      "91204",
+      "91205",
+      "91206",
+      "91207",
+      "91208",
+      "91209",
+      "91210",
+      "91221",
+      "91222",
+      "91225",
+      "91226"
+    ],
+    "aliases": [
+      "glendale",
+      "city of glendale",
+      "glendale ca"
+    ],
+    "summary": "City of Glendale allows chickens and prohibits roosters. Only a combined total of 2 rabbits, chickens, ducks, or pigeons may be kept within 50 feet of a residence. A larger number must be at least 50 feet from any residence, and no more than 12 of those animals may be kept within 300 feet of someone else's residence. Chickens must be kept in a flyproof pen. The opened sections do not require a chicken permit.",
+    "chickenLimit": "Up to 12 chickens if kept at least 50 feet from another person's residence (only 2 may be within 50 feet of a residence)",
+    "roosterRule": "Roosters are not allowed",
+    "permitRequired": "No chicken permit is stated in the opened sections.",
+    "prerequisites": [
+      "Do not keep a rooster. Section 6.04.130 leaves roosters off the list of animals that may be kept.",
+      "If the coop is within 50 feet of a residence, keep the combined total of rabbits, chickens, ducks, and pigeons at 2.",
+      "To keep more than 2, place them at least 50 feet from any residence and no more than 12 within 300 feet of another person's residence."
+    ],
+    "rules": [
+      "Section 6.04.130 allows birds and fowl except roosters, guinea fowl, peafowl, and ostrich types.",
+      "Section 6.04.030 allows a combined total of no more than 2 rabbits, chickens other than roosters, ducks, or pigeons within 50 feet of a residence or other building used for human habitation. Other animals must be at least 50 feet from such a building, and at least 150 feet from a school, hospital, or similar institution.",
+      "Section 6.04.050 allows no more than 12 rabbits, chickens, and listed fowl, in any combination, within 300 feet of a residence other than the keeper's.",
+      "Section 6.04.040 requires chickens other than roosters to be kept in a flyproof pen."
+    ],
+    "links": [
+      {
+        "label": "Glendale Code Chapter 6.04 (eCode360)",
+        "detail": "Official sections 6.04.030, 6.04.040, 6.04.050, and 6.04.130: the rooster ban and the 50-foot and 300-foot limits.",
+        "href": "https://ecode360.com/43344657"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/glendale-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "burbank-ca",
+    "city": "Burbank",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "91501",
+      "91502",
+      "91503",
+      "91504",
+      "91505",
+      "91506",
+      "91507",
+      "91508",
+      "91510",
+      "91521",
+      "91522",
+      "91523",
+      "91526"
+    ],
+    "zipPrefixes": [
+      "91501",
+      "91502",
+      "91503",
+      "91504",
+      "91505",
+      "91506",
+      "91507",
+      "91508",
+      "91510",
+      "91521",
+      "91522",
+      "91523",
+      "91526"
+    ],
+    "aliases": [
+      "burbank",
+      "city of burbank",
+      "burbank ca"
+    ],
+    "summary": "City of Burbank allows up to 25 live birds or domestic fowl on residential property without a permit. Crowing roosters are prohibited unless a permit is obtained. Animals other than a short list that does not include chickens must be at least 35 feet from an inhabited structure, school, or hospital. A permit for more than 25 birds needs Planning Commission approval, and the code lists a $25 application fee for that permit.",
+    "chickenLimit": "Up to 25 birds or domestic fowl on residential property",
+    "roosterRule": "Crowing roosters are prohibited unless a permit is obtained",
+    "permitRequired": "No permit is required for up to 25 birds without a crowing rooster. A permit from the Animal Shelter Superintendent is required for a crowing rooster or for more than 25 birds. The code lists a $25 application fee for the over-25 permit, which also needs Planning Commission approval.",
+    "prerequisites": [
+      "Keep the flock at or below 25 birds if you do not want the Planning Commission permit.",
+      "Do not keep a crowing rooster unless that permit is issued.",
+      "Place chickens at least 35 feet from an inhabited structure, school, or hospital."
+    ],
+    "rules": [
+      "Section 5-1-304 prohibits crowing roosters and prohibits more than 25 live birds or domestic fowl, or any combination, on residential property, unless a permit is obtained and kept in effect.",
+      "Section 5-1-303 prohibits keeping an animal within 35 feet of any inhabited structure, school, or hospital, except for a listed group that includes horses, dogs, cats, and some pet birds. Chickens are not in that exception.",
+      "The over-25 permit is not issued until the Planning Commission approves it after a public hearing. The code says each applicant shall deposit a $25 application fee.",
+      "The commission may deny the permit if it would be detrimental to public health and safety or would unreasonably interfere with neighboring property."
+    ],
+    "links": [
+      {
+        "label": "Burbank Code Article 3, Restrictions on Keeping Animals (eCode360)",
+        "detail": "Official sections 5-1-303 and 5-1-304: the 25-bird limit, the crowing-rooster permit, the 35-foot distance, and the $25 over-25 application fee.",
+        "href": "https://ecode360.com/50606631"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/burbank-ca.html",
+    "verified": "2026-11-22"
+  },
+  {
+    "id": "escondido-ca",
+    "city": "Escondido",
+    "state": "CA",
+    "stateName": "California",
+    "zipCodes": [
+      "92025",
+      "92026",
+      "92027",
+      "92029",
+      "92030",
+      "92033",
+      "92046"
+    ],
+    "zipPrefixes": [
+      "92025",
+      "92026",
+      "92027",
+      "92029",
+      "92030",
+      "92033",
+      "92046"
+    ],
+    "aliases": [
+      "escondido",
+      "city of escondido"
+    ],
+    "summary": "City of Escondido allows up to 6 hens in the R-1 zone and up to 25 in the R-A and R-E zones. The R-1 table does not list roosters. The R-A zone allows 1 to 2, and the R-E zone allows 1 with a conditional use permit. Animal enclosures must be 15 feet from the front lot line in R-1, 15 feet from the side, 10 feet from the rear, and 20 feet from any residence. The standard numbers are permitted accessory uses, not a separate chicken license.",
+    "chickenLimit": "Up to 6 hens in the R-1 zone (up to 25 in the R-A and R-E zones)",
+    "roosterRule": "Roosters are not listed as permitted in the R-1 zone. The R-A zone allows 1 to 2. The R-E zone allows 1 with a conditional use permit.",
+    "permitRequired": "The standard hen numbers and animal enclosures are permitted accessory uses. A conditional use permit is required for the R-E rooster allowance. The opened sections do not create a separate chicken license or print a fee for the standard flock.",
+    "prerequisites": [
+      "Confirm the zone. R-1 allows 6 hens. R-A and R-E allow 25.",
+      "Place the enclosure 15 feet from the side lot line, 10 feet from the rear, 15 feet from the front in R-1, and 20 feet from any residence.",
+      "Do not add a rooster in R-1. The table leaves that cell blank."
+    ],
+    "rules": [
+      "Table 33-95a allows chickens, hens only, up to 25 in R-A, 25 in R-E, and 6 in R-1. The same table's domesticated-fowl row uses those counts as a combined total that includes roosters where roosters are allowed.",
+      "The rooster row allows 1 to 2 in R-A and 1 with a conditional use permit in R-E. It does not list a rooster allowance for R-1.",
+      "Section 33-145 requires animal enclosures to be set back 25 feet from the front in R-A and R-E and 15 feet in R-1 and several other residential zones, 15 feet from the side, and 10 feet from the rear. Enclosures must also be 20 feet from any residence.",
+      "Section 33-144 requires animals to be confined in an enclosure and sets manure-removal rules. Accessory animal enclosures are a permitted use in the residential table."
+    ],
+    "links": [
+      {
+        "label": "Escondido Code Article 6, residential zones (eCode360)",
+        "detail": "Official Table 33-95a: hen limits by zone and the rooster row.",
+        "href": "https://ecode360.com/43265438"
+      },
+      {
+        "label": "Escondido Code Section 33-145, animal enclosure setbacks (eCode360)",
+        "detail": "Official setbacks: 15 or 25 feet in front, 15 feet on the side, 10 feet in the rear, and 20 feet from any residence.",
+        "href": "https://ecode360.com/43265686"
+      }
+    ],
+    "sourceLastChecked": "2026-11-22",
+    "page": "laws/escondido-ca.html",
+    "verified": "2026-11-22"
   }
 ]
